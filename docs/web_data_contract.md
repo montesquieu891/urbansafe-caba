@@ -82,3 +82,5 @@ No quedan discrepancias numéricas o de claves pendientes. Se mantienen las limi
 Versión generada: `2019-2025-5685c2f9c0a0`. Entorno: numpy 2.5.4, pandas 3.1.1, python 3.13.7.
 
 Resultado: **19 pruebas aprobadas** (exportador, etiquetas y evaluación); `--check` aprobado con igualdad byte a byte de los seis archivos. Verificación ejecutada el 2026-11-10.
+
+**Actualización (2026-11-10, revisión pedagógica):** los hashes de insumos de texto se calculan tras normalizar CRLF a LF (`manifest.definiciones.hash_insumos`). Los cinco archivos de datos no cambian; la versión derivada pasa a `2019-2025-692728914e40`. Ver [web_pedagogy_review.md](web_pedagogy_review.md).

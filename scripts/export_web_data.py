@@ -51,8 +51,17 @@ def require(condition, message):
         raise ValueError(message)
 
 
+TEXT_SUFFIXES = {'.py', '.md', '.csv', '.json', '.geojson'}
+HASH_RULE = ('SHA-256 de los bytes del insumo; en archivos de texto (.py, .md, .csv, .json, .geojson) '
+             'tras normalizar CRLF a LF, para que la procedencia no dependa de la configuración de Git')
+
+
 def sha(path):
-    return hashlib.sha256(path.read_bytes()).hexdigest()
+    """Hash de procedencia estable entre copias de trabajo con distintos finales de línea."""
+    data = path.read_bytes()
+    if path.suffix.lower() in TEXT_SUFFIXES:
+        data = data.replace(b'\r\n', b'\n')
+    return hashlib.sha256(data).hexdigest()
 
 
 def encode(value):
@@ -258,7 +267,8 @@ def build(root=ROOT):
                 'modelos_congelados': {'regresion': model_r, 'clasificador': model_c},
                 'desempate': {'regla': 'R0', 'semilla': SEED, 'orden_unidades': 'barrio ascendente',
                               'implementacion': 'src.labels.top_k_labels'},
-                'definiciones': {'cobertura_anual': 'Media de 12 coberturas mensuales, igual peso por mes',
+                'definiciones': {'hash_insumos': HASH_RULE,
+                    'cobertura_anual': 'Media de 12 coberturas mensuales, igual peso por mes',
                     'cobertura_agregada': 'Suma de hechos cubiertos / suma de hechos del año; no es el indicador principal',
                     'cero': {'valor': 0, 'estado': 'observado'},
                     'ausencia': {'valor': None, 'estado': 'sin_datos'},

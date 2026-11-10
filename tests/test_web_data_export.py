@@ -7,7 +7,7 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-from scripts.export_web_data import INPUTS, ROOT, build, observation
+from scripts.export_web_data import INPUTS, ROOT, build, observation, sha
 
 
 @pytest.fixture(scope='module')
@@ -81,3 +81,13 @@ def test_inconsistent_inputs_rejected(tmp_path, fault):
     with pytest.raises(ValueError):
         build(tmp_path)
     assert not (tmp_path / 'web').exists()
+
+
+def test_provenance_hash_ignores_line_endings(tmp_path):
+    # Una copia con CRLF (Windows) y otra con LF (clon nuevo) deben registrar la misma procedencia.
+    lf, crlf, binary = tmp_path / 'a.py', tmp_path / 'b.py', tmp_path / 'c.bin'
+    lf.write_bytes(b'x = 1\ny = 2\n')
+    crlf.write_bytes(b'x = 1\r\ny = 2\r\n')
+    binary.write_bytes(b'x = 1\r\ny = 2\r\n')
+    assert sha(lf) == sha(crlf)
+    assert sha(binary) != sha(lf)

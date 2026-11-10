@@ -50,3 +50,7 @@ Resultados: `astro check` sin errores ni advertencias; `astro build` correcto (p
 ## Limitaciones
 
 Una sola temporada de prueba (2025), datos de 2025 posiblemente provisorios y disponibilidad operativa al cierre de cada mes no acreditada. La cobertura mide concentración registrada, no siniestros evitados ni riesgo ajustado por exposición. Las pruebas usan Chromium (escritorio y móvil emulado); no equivalen a Safari/iOS físico. Las claves de `inputs` del fixture usan separador de rutas de Windows; no afecta las pruebas.
+
+## Revisión pedagógica posterior
+
+Se revisaron el propósito de ambas vistas, la secuencia de lectura, las definiciones en contexto y la separación entre perfil histórico y conteo mensual. Ver [web_pedagogy_review.md](web_pedagogy_review.md). Cambios locales, sin nueva publicación en esta revisión.

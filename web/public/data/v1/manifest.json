@@ -21,7 +21,7 @@
       "sha256": "cc8ea0e2329c4951be0631e46e2b712644b07c1412ca86d487162daa853778d1"
     }
   },
-  "data_version": "2019-2025-5685c2f9c0a0",
+  "data_version": "2019-2025-692728914e40",
   "definiciones": {
     "ausencia": {
       "estado": "sin_datos",
@@ -36,6 +36,7 @@
     "cobertura_anual": "Media de 12 coberturas mensuales, igual peso por mes",
     "densidad": "Hechos registrados por km²; no mide riesgo por exposición",
     "grupo": "K-Means k=2: 0 interior, 1 borde; desarrollo 2019–2024 sin meses anómalos",
+    "hash_insumos": "SHA-256 de los bytes del insumo; en archivos de texto (.py, .md, .csv, .json, .geojson) tras normalizar CRLF a LF, para que la procedencia no dependa de la configuración de Git",
     "k3": "Subdivisión exploratoria anidada; separación interior débil",
     "mes_observable": "Mes objetivo menos un mes; supuesto retrospectivo gap=0, no disponibilidad operativa acreditada",
     "modo_sd": "Hechos con modo sin informar; no equivale a celda sin datos",
@@ -93,7 +94,7 @@
     {
       "rol": "panel",
       "ruta": "data/processed/panel_barrio_mes.csv",
-      "sha256": "00459280f49b68cda83481ae2c6489a22ce126793128dd909112300ba7496776"
+      "sha256": "e596fafb7f923d23cf32024cfa991b20350ff6c7a987b46536b3af4223de20ab"
     },
     {
       "rol": "geometria",
@@ -138,7 +139,7 @@
     {
       "rol": "fuentes",
       "ruta": "docs/source_register.csv",
-      "sha256": "9aae3dce78bd3996c2b085ce42a96b74fd25f8df767c34a7182f7e2c44adeeed"
+      "sha256": "dc8ba8d0ea515e7dc69010ef90e4fa5cc3a6b61c8c5b5ddf822c60b90272f385"
     },
     {
       "rol": "diccionario",
@@ -168,7 +169,7 @@
     {
       "rol": "exportador",
       "ruta": "scripts/export_web_data.py",
-      "sha256": "554c5d610b99b6f2a030e3619351d79de77cd8d11cc2cc1cfa19edf9a3bec2ad"
+      "sha256": "2ee03f7e01f7ec3f47d404aeac0ca303c4d646cc63ac56b23e7f9de73a45218a"
     }
   ],
   "limitaciones": [
