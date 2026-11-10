@@ -19,7 +19,7 @@ test('recorrido completo sin recursos de terceros ni errores', async ({ page, ba
  await page.getByLabel('Métrica', { exact: true }).selectOption('densidad');
  await page.getByRole('button', { name: 'Simulador 2025', exact: true }).click();
  await expect(page.locator('#annual-strategy')).toHaveText('43,05 %');
- await page.getByLabel('Cantidad de barrios K').selectOption('5');
+ await page.getByLabel('Barrios a atender').selectOption('5');
  await page.getByRole('button', { name: 'Perfiles barriales', exact: true }).click();
  await expect(page.locator('#profile-summary')).toContainText('barrios de borde');
  await expect(page.locator('#map')).toHaveAttribute('data-view', 'perfiles');

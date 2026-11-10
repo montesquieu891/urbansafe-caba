@@ -48,3 +48,16 @@ Las descripciones de los perfiles se contrastaron con la tabla de §5 de `docs/c
 El encabezado («modos, tipos de vía y momentos de ocurrencia») coincide con los atributos del agrupamiento, que excluyen volumen y densidad (§2).
 
 La implementación comenzó en Codex y la revisión y reconciliación se hicieron en Claude Code: es una autoauditoría. Estos cambios todavía no están publicados.
+
+## Segunda revisión: propuesta antes que método (simulador)
+
+Pedido del responsable: el bloque inicial «parecía una clase de estadística». Debía dejar claros la propuesta, el problema, la pregunta y cómo el mapa ayuda a entender la realidad.
+
+Cambios:
+
+- **Orden de lectura.** Primero la pregunta («¿Qué barrios conviene atender primero cada mes?»). Después tres tarjetas: *El problema* (recursos para pocos barrios), *La pregunta* (¿un modelo elige mejor que mirar el último año?) y *La respuesta con datos de 2025*. Más abajo, *Cómo usarlo*, con cuatro acciones, y el límite de alcance.
+- **Respuesta calculada, no escrita a mano.** «Prácticamente empatados» y las cifras de 42,7 % y 43,1 % salen de `cobertura.json` (10 barrios, modelo de clasificación frente al historial). El veredicto depende de si el IC por bloques incluye el cero. «Casi toda la ventaja posible frente al azar» traduce la fracción de ganancia del 92 % y solo se muestra si es al menos 0,85.
+- **Sin jerga en el texto visible.** K → «barrios a atender»; cobertura → «porcentaje de siniestros dentro de la elección»; gap → «datos hasta el mes anterior»; IC → «margen de incertidumbre»; estrategias → «métodos», con nombres llanos. Los términos técnicos siguen definidos en el desplegable «Detalle técnico». Una prueba E2E comprueba que el texto visible del simulador no contenga «K =», «cobertura» ni «gap».
+- **Mapa y ficha.** La leyenda dice quién eligió cada barrio («Elegido por los dos», «Solo por el método», «Solo por el historial», «No elegido»). La ficha traduce el puntaje de cada método a su significado, por ejemplo «probabilidad estimada de estar entre los 10 con más siniestros».
+
+No cambian datos, selecciones ni cifras. Verificación: `npm run test:release` con 40/40 E2E (escritorio y móvil, incluida la accesibilidad automática de los colores nuevos) y auditoría aprobada (JS inicial 28,8 kB). Revisión visual en escritorio y móvil con capturas en `docs/evidence/web_phase3/`. Sigue pendiente una prueba de comprensión con lectores externos.
