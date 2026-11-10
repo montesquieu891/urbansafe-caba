@@ -1,0 +1,3608 @@
+{
+  "inputs": {
+    "reports\\tables\\03_regression\\predicciones_test.csv": "bc37260a81d8ca08083527b5030777613bf751ed4497b03fb13623c13cdc600d",
+    "reports\\tables\\04_classification\\predicciones_test.csv": "a54b78d3fa5cc908ce652b24364d827be72187d8dd3d73680d6660709334303f"
+  },
+  "references": [
+    {
+      "month": "2025-01",
+      "k": 5,
+      "strategy": "clasificador",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 202,
+      "total": 757,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-02",
+      "k": 5,
+      "strategy": "clasificador",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 171,
+      "total": 719,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-03",
+      "k": 5,
+      "strategy": "clasificador",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 225,
+      "total": 882,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-04",
+      "k": 5,
+      "strategy": "clasificador",
+      "ids": [
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "captured": 274,
+      "total": 959,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-05",
+      "k": 5,
+      "strategy": "clasificador",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 276,
+      "total": 935,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-06",
+      "k": 5,
+      "strategy": "clasificador",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 236,
+      "total": 913,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-07",
+      "k": 5,
+      "strategy": "clasificador",
+      "ids": [
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "captured": 257,
+      "total": 929,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-08",
+      "k": 5,
+      "strategy": "clasificador",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 264,
+      "total": 956,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-09",
+      "k": 5,
+      "strategy": "clasificador",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 225,
+      "total": 902,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-10",
+      "k": 5,
+      "strategy": "clasificador",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 261,
+      "total": 1052,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-11",
+      "k": 5,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        8,
+        13,
+        21
+      ],
+      "captured": 278,
+      "total": 1037,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-12",
+      "k": 5,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        8,
+        13,
+        21
+      ],
+      "captured": 272,
+      "total": 1058,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-01",
+      "k": 5,
+      "strategy": "historial_media12",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 202,
+      "total": 757,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-02",
+      "k": 5,
+      "strategy": "historial_media12",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 171,
+      "total": 719,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-03",
+      "k": 5,
+      "strategy": "historial_media12",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 225,
+      "total": 882,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-04",
+      "k": 5,
+      "strategy": "historial_media12",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 270,
+      "total": 959,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-05",
+      "k": 5,
+      "strategy": "historial_media12",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 276,
+      "total": 935,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-06",
+      "k": 5,
+      "strategy": "historial_media12",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 236,
+      "total": 913,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-07",
+      "k": 5,
+      "strategy": "historial_media12",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 259,
+      "total": 929,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-08",
+      "k": 5,
+      "strategy": "historial_media12",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 264,
+      "total": 956,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-09",
+      "k": 5,
+      "strategy": "historial_media12",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 225,
+      "total": 902,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-10",
+      "k": 5,
+      "strategy": "historial_media12",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 261,
+      "total": 1052,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-11",
+      "k": 5,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        8,
+        13,
+        21
+      ],
+      "captured": 278,
+      "total": 1037,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-12",
+      "k": 5,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        8,
+        13,
+        21
+      ],
+      "captured": 272,
+      "total": 1058,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-01",
+      "k": 5,
+      "strategy": "regresion",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 202,
+      "total": 757,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-02",
+      "k": 5,
+      "strategy": "regresion",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 171,
+      "total": 719,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-03",
+      "k": 5,
+      "strategy": "regresion",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 225,
+      "total": 882,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-04",
+      "k": 5,
+      "strategy": "regresion",
+      "ids": [
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "captured": 274,
+      "total": 959,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-05",
+      "k": 5,
+      "strategy": "regresion",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 276,
+      "total": 935,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-06",
+      "k": 5,
+      "strategy": "regresion",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 236,
+      "total": 913,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-07",
+      "k": 5,
+      "strategy": "regresion",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 259,
+      "total": 929,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-08",
+      "k": 5,
+      "strategy": "regresion",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 264,
+      "total": 956,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-09",
+      "k": 5,
+      "strategy": "regresion",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 225,
+      "total": 902,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-10",
+      "k": 5,
+      "strategy": "regresion",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 261,
+      "total": 1052,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-11",
+      "k": 5,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        8,
+        13,
+        21
+      ],
+      "captured": 278,
+      "total": 1037,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-12",
+      "k": 5,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        8,
+        13,
+        21
+      ],
+      "captured": 272,
+      "total": 1058,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-01",
+      "k": 5,
+      "strategy": "oraculo",
+      "ids": [
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "captured": 208,
+      "total": 757,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-02",
+      "k": 5,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        13,
+        21,
+        30
+      ],
+      "captured": 184,
+      "total": 719,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-03",
+      "k": 5,
+      "strategy": "oraculo",
+      "ids": [
+        3,
+        5,
+        13,
+        21,
+        30
+      ],
+      "captured": 238,
+      "total": 882,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-04",
+      "k": 5,
+      "strategy": "oraculo",
+      "ids": [
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "captured": 274,
+      "total": 959,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-05",
+      "k": 5,
+      "strategy": "oraculo",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 276,
+      "total": 935,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-06",
+      "k": 5,
+      "strategy": "oraculo",
+      "ids": [
+        3,
+        5,
+        13,
+        21,
+        36
+      ],
+      "captured": 248,
+      "total": 913,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-07",
+      "k": 5,
+      "strategy": "oraculo",
+      "ids": [
+        3,
+        8,
+        12,
+        13,
+        21
+      ],
+      "captured": 265,
+      "total": 929,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-08",
+      "k": 5,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        13,
+        21,
+        36
+      ],
+      "captured": 274,
+      "total": 956,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-09",
+      "k": 5,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        8,
+        21,
+        28
+      ],
+      "captured": 230,
+      "total": 902,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-10",
+      "k": 5,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        8,
+        13,
+        21,
+        36
+      ],
+      "captured": 279,
+      "total": 1052,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-11",
+      "k": 5,
+      "strategy": "oraculo",
+      "ids": [
+        3,
+        8,
+        13,
+        17,
+        21
+      ],
+      "captured": 283,
+      "total": 1037,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-12",
+      "k": 5,
+      "strategy": "oraculo",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 277,
+      "total": 1058,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-01",
+      "k": 5,
+      "strategy": "historial_persistencia",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 202,
+      "total": 757,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-02",
+      "k": 5,
+      "strategy": "historial_persistencia",
+      "ids": [
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "captured": 173,
+      "total": 719,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-03",
+      "k": 5,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        13,
+        21,
+        30
+      ],
+      "captured": 236,
+      "total": 882,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-04",
+      "k": 5,
+      "strategy": "historial_persistencia",
+      "ids": [
+        3,
+        5,
+        13,
+        21,
+        30
+      ],
+      "captured": 239,
+      "total": 959,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-05",
+      "k": 5,
+      "strategy": "historial_persistencia",
+      "ids": [
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "captured": 265,
+      "total": 935,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-06",
+      "k": 5,
+      "strategy": "historial_persistencia",
+      "ids": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "captured": 236,
+      "total": 913,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-07",
+      "k": 5,
+      "strategy": "historial_persistencia",
+      "ids": [
+        3,
+        5,
+        13,
+        21,
+        36
+      ],
+      "captured": 238,
+      "total": 929,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-08",
+      "k": 5,
+      "strategy": "historial_persistencia",
+      "ids": [
+        3,
+        8,
+        12,
+        13,
+        21
+      ],
+      "captured": 261,
+      "total": 956,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-09",
+      "k": 5,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        13,
+        21,
+        36
+      ],
+      "captured": 213,
+      "total": 902,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-10",
+      "k": 5,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        8,
+        21,
+        28
+      ],
+      "captured": 260,
+      "total": 1052,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-11",
+      "k": 5,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        8,
+        13,
+        21,
+        36
+      ],
+      "captured": 257,
+      "total": 1037,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-12",
+      "k": 5,
+      "strategy": "historial_persistencia",
+      "ids": [
+        3,
+        8,
+        13,
+        17,
+        21
+      ],
+      "captured": 260,
+      "total": 1058,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-01",
+      "k": 10,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "captured": 332,
+      "total": 757,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-02",
+      "k": 10,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        38
+      ],
+      "captured": 302,
+      "total": 719,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-03",
+      "k": 10,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "captured": 381,
+      "total": 882,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-04",
+      "k": 10,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        38
+      ],
+      "captured": 408,
+      "total": 959,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-05",
+      "k": 10,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "captured": 418,
+      "total": 935,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-06",
+      "k": 10,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "captured": 376,
+      "total": 913,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-07",
+      "k": 10,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        30,
+        36
+      ],
+      "captured": 402,
+      "total": 929,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-08",
+      "k": 10,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        30,
+        36
+      ],
+      "captured": 413,
+      "total": 956,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-09",
+      "k": 10,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        28,
+        36
+      ],
+      "captured": 376,
+      "total": 902,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-10",
+      "k": 10,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        28,
+        36
+      ],
+      "captured": 457,
+      "total": 1052,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-11",
+      "k": 10,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        28,
+        36
+      ],
+      "captured": 464,
+      "total": 1037,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-12",
+      "k": 10,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        28,
+        36
+      ],
+      "captured": 453,
+      "total": 1058,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-01",
+      "k": 10,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "captured": 332,
+      "total": 757,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-02",
+      "k": 10,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "captured": 308,
+      "total": 719,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-03",
+      "k": 10,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "captured": 381,
+      "total": 882,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-04",
+      "k": 10,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "captured": 408,
+      "total": 959,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-05",
+      "k": 10,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "captured": 418,
+      "total": 935,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-06",
+      "k": 10,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "captured": 376,
+      "total": 913,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-07",
+      "k": 10,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        16,
+        21,
+        28,
+        30,
+        36
+      ],
+      "captured": 387,
+      "total": 929,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-08",
+      "k": 10,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        30,
+        36
+      ],
+      "captured": 413,
+      "total": 956,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-09",
+      "k": 10,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        30,
+        36
+      ],
+      "captured": 369,
+      "total": 902,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-10",
+      "k": 10,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        30,
+        36
+      ],
+      "captured": 437,
+      "total": 1052,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-11",
+      "k": 10,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        28,
+        36
+      ],
+      "captured": 464,
+      "total": 1037,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-12",
+      "k": 10,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        36,
+        40
+      ],
+      "captured": 449,
+      "total": 1058,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-01",
+      "k": 10,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "captured": 332,
+      "total": 757,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-02",
+      "k": 10,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "captured": 308,
+      "total": 719,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-03",
+      "k": 10,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "captured": 381,
+      "total": 882,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-04",
+      "k": 10,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        38
+      ],
+      "captured": 408,
+      "total": 959,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-05",
+      "k": 10,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "captured": 418,
+      "total": 935,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-06",
+      "k": 10,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "captured": 376,
+      "total": 913,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-07",
+      "k": 10,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        15,
+        21,
+        28,
+        30,
+        36
+      ],
+      "captured": 386,
+      "total": 929,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-08",
+      "k": 10,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        30,
+        36
+      ],
+      "captured": 413,
+      "total": 956,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-09",
+      "k": 10,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        30,
+        36
+      ],
+      "captured": 369,
+      "total": 902,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-10",
+      "k": 10,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        28,
+        36
+      ],
+      "captured": 457,
+      "total": 1052,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-11",
+      "k": 10,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        36,
+        40
+      ],
+      "captured": 459,
+      "total": 1037,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-12",
+      "k": 10,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        36,
+        40
+      ],
+      "captured": 449,
+      "total": 1058,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-01",
+      "k": 10,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        36,
+        38
+      ],
+      "captured": 344,
+      "total": 757,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-02",
+      "k": 10,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        30,
+        48
+      ],
+      "captured": 309,
+      "total": 719,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-03",
+      "k": 10,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        15,
+        21,
+        28,
+        30,
+        38
+      ],
+      "captured": 390,
+      "total": 882,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-04",
+      "k": 10,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        19,
+        21,
+        28,
+        29,
+        36
+      ],
+      "captured": 441,
+      "total": 959,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-05",
+      "k": 10,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        19,
+        21,
+        28,
+        30,
+        36
+      ],
+      "captured": 426,
+      "total": 935,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-06",
+      "k": 10,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        21,
+        28,
+        36
+      ],
+      "captured": 402,
+      "total": 913,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-07",
+      "k": 10,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        19,
+        21,
+        28,
+        32
+      ],
+      "captured": 420,
+      "total": 929,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-08",
+      "k": 10,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        8,
+        13,
+        16,
+        17,
+        21,
+        28,
+        29,
+        36
+      ],
+      "captured": 438,
+      "total": 956,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-09",
+      "k": 10,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        19,
+        21,
+        28,
+        36
+      ],
+      "captured": 383,
+      "total": 902,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-10",
+      "k": 10,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        32,
+        36
+      ],
+      "captured": 462,
+      "total": 1052,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-11",
+      "k": 10,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        32,
+        36,
+        40
+      ],
+      "captured": 473,
+      "total": 1037,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-12",
+      "k": 10,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        8,
+        12,
+        13,
+        16,
+        21,
+        28,
+        36,
+        40
+      ],
+      "captured": 468,
+      "total": 1058,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-01",
+      "k": 10,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        30,
+        31
+      ],
+      "captured": 326,
+      "total": 757,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-02",
+      "k": 10,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        36,
+        38
+      ],
+      "captured": 286,
+      "total": 719,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-03",
+      "k": 10,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        30,
+        48
+      ],
+      "captured": 374,
+      "total": 882,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-04",
+      "k": 10,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        15,
+        21,
+        28,
+        30,
+        38
+      ],
+      "captured": 408,
+      "total": 959,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-05",
+      "k": 10,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        15,
+        19,
+        21,
+        28,
+        29
+      ],
+      "captured": 404,
+      "total": 935,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-06",
+      "k": 10,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        19,
+        21,
+        28,
+        30,
+        36
+      ],
+      "captured": 383,
+      "total": 913,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-07",
+      "k": 10,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        15,
+        21,
+        28,
+        31,
+        36
+      ],
+      "captured": 389,
+      "total": 929,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-08",
+      "k": 10,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        19,
+        21,
+        28,
+        32
+      ],
+      "captured": 410,
+      "total": 956,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-09",
+      "k": 10,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        8,
+        13,
+        16,
+        17,
+        21,
+        28,
+        29,
+        36
+      ],
+      "captured": 361,
+      "total": 902,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-10",
+      "k": 10,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        19,
+        21,
+        28,
+        36
+      ],
+      "captured": 449,
+      "total": 1052,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-11",
+      "k": 10,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        32,
+        36
+      ],
+      "captured": 466,
+      "total": 1037,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-12",
+      "k": 10,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        32,
+        36,
+        40
+      ],
+      "captured": 431,
+      "total": 1058,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-01",
+      "k": 15,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        31,
+        36,
+        38,
+        48
+      ],
+      "captured": 441,
+      "total": 757,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-02",
+      "k": 15,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        31,
+        36,
+        38,
+        48
+      ],
+      "captured": 396,
+      "total": 719,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-03",
+      "k": 15,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        31,
+        36,
+        38,
+        48
+      ],
+      "captured": 487,
+      "total": 882,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-04",
+      "k": 15,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "captured": 516,
+      "total": 959,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-05",
+      "k": 15,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        17,
+        21,
+        28,
+        29,
+        30,
+        36,
+        38,
+        48
+      ],
+      "captured": 518,
+      "total": 935,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-06",
+      "k": 15,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        17,
+        19,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "captured": 499,
+      "total": 913,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-07",
+      "k": 15,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        17,
+        21,
+        28,
+        30,
+        31,
+        36,
+        38,
+        48
+      ],
+      "captured": 511,
+      "total": 929,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-08",
+      "k": 15,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        30,
+        32,
+        36,
+        38,
+        48
+      ],
+      "captured": 526,
+      "total": 956,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-09",
+      "k": 15,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        17,
+        19,
+        21,
+        28,
+        30,
+        31,
+        32,
+        36
+      ],
+      "captured": 481,
+      "total": 902,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-10",
+      "k": 15,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40,
+        48
+      ],
+      "captured": 569,
+      "total": 1052,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-11",
+      "k": 15,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        30,
+        32,
+        36,
+        40,
+        48
+      ],
+      "captured": 601,
+      "total": 1037,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-12",
+      "k": 15,
+      "strategy": "clasificador",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        30,
+        31,
+        32,
+        36,
+        40
+      ],
+      "captured": 582,
+      "total": 1058,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-01",
+      "k": 15,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "captured": 440,
+      "total": 757,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-02",
+      "k": 15,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "captured": 395,
+      "total": 719,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-03",
+      "k": 15,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "captured": 494,
+      "total": 882,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-04",
+      "k": 15,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "captured": 516,
+      "total": 959,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-05",
+      "k": 15,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40,
+        48
+      ],
+      "captured": 523,
+      "total": 935,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-06",
+      "k": 15,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40,
+        48
+      ],
+      "captured": 497,
+      "total": 913,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-07",
+      "k": 15,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "captured": 508,
+      "total": 929,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-08",
+      "k": 15,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40
+      ],
+      "captured": 540,
+      "total": 956,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-09",
+      "k": 15,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        31,
+        36,
+        40
+      ],
+      "captured": 491,
+      "total": 902,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-10",
+      "k": 15,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        19,
+        21,
+        28,
+        30,
+        36,
+        40
+      ],
+      "captured": 581,
+      "total": 1052,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-11",
+      "k": 15,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        19,
+        21,
+        28,
+        30,
+        36,
+        40
+      ],
+      "captured": 592,
+      "total": 1037,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-12",
+      "k": 15,
+      "strategy": "historial_media12",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        19,
+        21,
+        28,
+        30,
+        32,
+        36,
+        40
+      ],
+      "captured": 601,
+      "total": 1058,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-01",
+      "k": 15,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        29,
+        30,
+        36,
+        38,
+        48
+      ],
+      "captured": 436,
+      "total": 757,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-02",
+      "k": 15,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40,
+        48
+      ],
+      "captured": 403,
+      "total": 719,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-03",
+      "k": 15,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40,
+        48
+      ],
+      "captured": 484,
+      "total": 882,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-04",
+      "k": 15,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "captured": 516,
+      "total": 959,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-05",
+      "k": 15,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "captured": 516,
+      "total": 935,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-06",
+      "k": 15,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40,
+        48
+      ],
+      "captured": 497,
+      "total": 913,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-07",
+      "k": 15,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "captured": 508,
+      "total": 929,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-08",
+      "k": 15,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        32,
+        36,
+        40
+      ],
+      "captured": 552,
+      "total": 956,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-09",
+      "k": 15,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        31,
+        36,
+        40
+      ],
+      "captured": 491,
+      "total": 902,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-10",
+      "k": 15,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        19,
+        21,
+        28,
+        30,
+        31,
+        36,
+        40
+      ],
+      "captured": 577,
+      "total": 1052,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-11",
+      "k": 15,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        19,
+        21,
+        28,
+        30,
+        32,
+        36,
+        40
+      ],
+      "captured": 607,
+      "total": 1037,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-12",
+      "k": 15,
+      "strategy": "regresion",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        19,
+        21,
+        28,
+        30,
+        32,
+        36,
+        40
+      ],
+      "captured": 601,
+      "total": 1058,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-01",
+      "k": 15,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        5,
+        7,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40
+      ],
+      "captured": 447,
+      "total": 757,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-02",
+      "k": 15,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40,
+        48
+      ],
+      "captured": 406,
+      "total": 719,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-03",
+      "k": 15,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        12,
+        13,
+        15,
+        16,
+        21,
+        28,
+        30,
+        36,
+        38
+      ],
+      "captured": 503,
+      "total": 882,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-04",
+      "k": 15,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        5,
+        7,
+        8,
+        13,
+        15,
+        17,
+        19,
+        21,
+        28,
+        29,
+        32,
+        36,
+        40
+      ],
+      "captured": 570,
+      "total": 959,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-05",
+      "k": 15,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        15,
+        19,
+        20,
+        21,
+        28,
+        30,
+        36,
+        40
+      ],
+      "captured": 546,
+      "total": 935,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-06",
+      "k": 15,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        22,
+        28,
+        31,
+        36
+      ],
+      "captured": 528,
+      "total": 913,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-07",
+      "k": 15,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        31,
+        32,
+        36,
+        40
+      ],
+      "captured": 543,
+      "total": 929,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-08",
+      "k": 15,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        19,
+        21,
+        28,
+        29,
+        31,
+        36,
+        40
+      ],
+      "captured": 575,
+      "total": 956,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-09",
+      "k": 15,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        16,
+        19,
+        21,
+        23,
+        28,
+        36,
+        38,
+        40
+      ],
+      "captured": 519,
+      "total": 902,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-10",
+      "k": 15,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        20,
+        21,
+        28,
+        32,
+        36,
+        40
+      ],
+      "captured": 609,
+      "total": 1052,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-11",
+      "k": 15,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        31,
+        32,
+        36,
+        40
+      ],
+      "captured": 618,
+      "total": 1037,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-12",
+      "k": 15,
+      "strategy": "oraculo",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        19,
+        21,
+        28,
+        29,
+        36,
+        40
+      ],
+      "captured": 620,
+      "total": 1058,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-01",
+      "k": 15,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        31,
+        36,
+        38,
+        40,
+        48
+      ],
+      "captured": 436,
+      "total": 757,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-02",
+      "k": 15,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        7,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40
+      ],
+      "captured": 394,
+      "total": 719,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-03",
+      "k": 15,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        23,
+        28,
+        30,
+        36,
+        40,
+        48
+      ],
+      "captured": 476,
+      "total": 882,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-04",
+      "k": 15,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        12,
+        13,
+        15,
+        16,
+        21,
+        28,
+        30,
+        36,
+        38
+      ],
+      "captured": 520,
+      "total": 959,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-05",
+      "k": 15,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        7,
+        8,
+        13,
+        15,
+        17,
+        19,
+        21,
+        28,
+        29,
+        32,
+        36,
+        40
+      ],
+      "captured": 523,
+      "total": 935,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-06",
+      "k": 15,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        15,
+        19,
+        20,
+        21,
+        28,
+        30,
+        36,
+        40
+      ],
+      "captured": 506,
+      "total": 913,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-07",
+      "k": 15,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        22,
+        28,
+        31,
+        36,
+        40
+      ],
+      "captured": 507,
+      "total": 929,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-08",
+      "k": 15,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        31,
+        32,
+        36,
+        40
+      ],
+      "captured": 547,
+      "total": 956,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-09",
+      "k": 15,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        19,
+        21,
+        28,
+        29,
+        31,
+        36,
+        40
+      ],
+      "captured": 495,
+      "total": 902,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-10",
+      "k": 15,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        16,
+        19,
+        21,
+        23,
+        28,
+        36,
+        38,
+        40
+      ],
+      "captured": 573,
+      "total": 1052,
+      "boundary_tie": false
+    },
+    {
+      "month": "2025-11",
+      "k": 15,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        19,
+        20,
+        21,
+        28,
+        32,
+        36,
+        40
+      ],
+      "captured": 601,
+      "total": 1037,
+      "boundary_tie": true
+    },
+    {
+      "month": "2025-12",
+      "k": 15,
+      "strategy": "historial_persistencia",
+      "ids": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        31,
+        32,
+        36,
+        40
+      ],
+      "captured": 588,
+      "total": 1058,
+      "boundary_tie": false
+    }
+  ]
+}

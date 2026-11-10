@@ -129,3 +129,14 @@ Las URL exactas, los hashes y las limitaciones de cada fuente están en el [regi
 | 10 Integración y robustez | Completado |
 | 11 Storytelling y presentación | Completado |
 | 12 Validación final y entrega | Completado: [docs/final_validation.md](docs/final_validation.md) |
+
+## Datos para la web (fases 0 y 1)
+
+Con el entorno del proyecto activado y los artefactos auditados disponibles:
+
+```powershell
+python scripts/export_web_data.py
+python scripts/export_web_data.py --check
+```
+
+Genera seis archivos públicos agregados en `web/public/data/v1/`, con manifiesto de fuentes, licencias, hashes y reconciliación. No entrena modelos ni modifica notebooks. Inventario, contrato, reglas de desempate, pruebas y limitaciones: [docs/web_data_contract.md](docs/web_data_contract.md). El atlas (fase 2), el simulador 2025 y los perfiles (fase 3) están implementados; QA integral y despliegue siguen pendientes. Ejecutar `npm --prefix web ci` y `npm --prefix web run dev`. Ver [validación del atlas](docs/web_atlas_validation.md) y [validación del simulador y perfiles](docs/web_simulator_validation.md).
