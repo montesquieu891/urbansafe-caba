@@ -75,11 +75,16 @@ test('si MapLibre no carga, la lista y la ficha siguen operativas', async ({ pag
 });
 
 test('la CSP de public/_headers no bloquea el sitio', async ({ page, request }) => {
- // `astro preview` no aplica _headers; se inyecta la política de dist/_headers que servirá Cloudflare Pages.
- const csp = (await (await request.get('/_headers')).text()).match(/Content-Security-Policy: (.+)/)![1].trim();
- await page.route(url => url.pathname === '/', async route => { const response = await route.fetch(); await route.fulfill({ response, headers: { ...response.headers(), 'content-security-policy': csp } }); });
+ // Local: `astro preview` sirve _headers como archivo sin aplicarlo, así que se inyecta esa política.
+ // Publicado: Cloudflare consume _headers y aplica la cabecera real, que debe estar presente.
+ const headersFile = await request.get('/_headers');
+ if (headersFile.ok()) {
+  const csp = (await headersFile.text()).match(/Content-Security-Policy: (.+)/)![1].trim();
+  await page.route(url => url.pathname === '/', async route => { const response = await route.fetch(); await route.fulfill({ response, headers: { ...response.headers(), 'content-security-policy': csp } }); });
+ }
  const { issues } = watch(page);
- await page.goto('/?vista=simulador&mes=2025-03&barrio=21&k=10');
+ const response = await page.goto('/?vista=simulador&mes=2025-03&barrio=21&k=10');
+ expect(response?.headers()['content-security-policy']).toContain("script-src 'self'");
  await expect(page.locator('#map')).toHaveAttribute('data-ready', 'true');
  await expect(page.locator('#annual-strategy')).toHaveText('43,05 %');
  await expect(page.locator('#legend-items .swatch').first()).toHaveCSS('background-color', 'rgb(65, 109, 101)');

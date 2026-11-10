@@ -50,11 +50,11 @@ AUSA 2026 queda como fase posterior. Primero se comprueba el último mes complet
 - [dashboard-e2e](../.agents/skills/dashboard-e2e/SKILL.md)
 - [static-web-release](../.agents/skills/static-web-release/SKILL.md)
 
-## Estado de ejecución — fases 0 a 4
+## Estado de ejecución — fases 0 a 5
 
 - [x] Fase 0: inventario, diferencias de contrato, recorridos y textos documentados en [web_data_contract.md](web_data_contract.md), incluido el significado del 92 %.
 - [x] Fase 1: `scripts/export_web_data.py`, paquete público `web/public/data/v1/` y manifiesto con reconciliación de 48 barrios, 4.032 claves y 576 filas de evaluación. Evidencia y comandos en [web_data_contract.md](web_data_contract.md).
 - [x] Fase 2: atlas Astro/TypeScript/MapLibre, filtros y ficha sincronizados, navegación accesible y móvil. Evidencia: [web_atlas_validation.md](web_atlas_validation.md).
 - [x] Fase 3: simulador 2025 (cinco estrategias, K = 5/10/15, reproducción mensual, IC de la diferencia, oráculo como referencia retrospectiva) y perfiles K=2/K=3 sobre el estado compartido. Evidencia: [web_simulator_validation.md](web_simulator_validation.md).
 - [x] Fase 4: auditoría de la salida estática, carga diferida de MapLibre, accesibilidad WCAG A/AA automática, 404, red de origen único y 36 pruebas E2E. Vista previa local; la remota requiere autorización. Evidencia: [web_release_qa.md](web_release_qa.md).
-- [ ] Fase 5: publicación con autorización expresa. AUSA 2026 sigue fuera del MVP.
+- [x] Fase 5: publicado con autorización en https://urbansafe-caba.urbansafe-atlas.workers.dev (Cloudflare Workers con recursos estáticos, que integra Pages). Vista previa verificada antes de promover y 38/38 E2E contra la URL pública. Registro, versiones y reversión: [web_release_register.md](web_release_register.md). AUSA 2026 sigue fuera del MVP.

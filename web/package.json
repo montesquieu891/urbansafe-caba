@@ -10,8 +10,8 @@
     "test:e2e": "playwright test",
     "audit:dist": "node scripts/audit-dist.mjs",
     "test:release": "npm run check && npm run build && npm run audit:dist && npm run test:e2e",
-    "deploy:preview": "npm run test:release && wrangler pages deploy dist --project-name urbansafe-caba --branch preview && npm run audit:dist -- --report ../docs/evidence/web_phase5/dist-audit-preview.json",
-    "deploy:production": "npm run test:release && wrangler pages deploy dist --project-name urbansafe-caba --branch main && npm run audit:dist -- --report ../docs/evidence/web_phase5/dist-audit-production.json"
+    "release:preview": "npm run test:release && wrangler deploy --env preview && npm run audit:dist -- --report ../docs/evidence/web_phase5/dist-audit-preview.json",
+    "release:production": "npm run test:release && wrangler deploy && npm run audit:dist -- --report ../docs/evidence/web_phase5/dist-audit-production.json"
   },
   "dependencies": {
     "astro": "^7.4.9",
@@ -22,6 +22,7 @@
     "@axe-core/playwright": "4.14.0",
     "@playwright/test": "^1.65.0",
     "@types/geojson": "^7946.0.16",
+    "@types/node": "24.19.2",
     "typescript": "^6.0.3",
     "wrangler": "4.160.0"
   }
