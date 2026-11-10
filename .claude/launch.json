@@ -4,12 +4,34 @@
     {
       "name": "urbansafe-web",
       "runtimeExecutable": "npm",
-      "runtimeArgs": ["--prefix", "web", "run", "dev", "--", "--port", "4322"],
+      "runtimeArgs": [
+        "--prefix",
+        "web",
+        "run",
+        "dev",
+        "--",
+        "--port",
+        "4322"
+      ],
       "port": 4322
     },
     {
       "name": "urbansafe-web-existing",
       "url": "http://127.0.0.1:4322"
+    },
+    {
+      "name": "urbansafe-web-build",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "--prefix",
+        "web",
+        "run",
+        "preview",
+        "--",
+        "--port",
+        "4324"
+      ],
+      "port": 4324
     }
   ]
 }
