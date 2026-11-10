@@ -39,7 +39,7 @@ Los informes de `docs/evidence/web_phase5/` corresponden a esta versión; los de
 
 La primera opción era Cloudflare Pages clásico (`*.pages.dev`). Wrangler 4.160 redirige los proyectos de Pages a Workers, y el usuario eligió ese modelo actual en lugar de forzar el producto anterior. El subdominio de cuenta `urbansafe-atlas` no expone datos personales.
 
-## Verificación
+### Verificación de la versión 1
 
 Se hizo antes de promover a producción, en la vista previa, y se repitió en producción con los mismos resultados:
 
