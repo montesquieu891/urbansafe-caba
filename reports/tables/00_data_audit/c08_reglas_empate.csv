@@ -1,0 +1,6 @@
+,tipo,positivos_por_mes_min,positivos_por_mes_max,etiquetas_distintas_vs_R0,distintas_vs_R0_en_meses_sin_empate
+R0,desempate,10,10,0,0
+R-id,desempate,10,10,28,0
+R-incl,definición (solo meses con empate),10,13,36,0
+R-excl-empates,definición (solo meses con empate),7,10,33,0
+R-estricta,definición (todos los meses),7,9,102,69

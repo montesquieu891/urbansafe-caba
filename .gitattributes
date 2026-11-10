@@ -1,0 +1,6 @@
+# Finales de línea LF en el repositorio y en las copias de trabajo.
+# Así sha256sum -c funciona en cualquier sistema y los diffs son estables.
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.xlsx binary

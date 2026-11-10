@@ -1,0 +1,102 @@
+{
+  "generado_utc": "2026-11-10T15:34:29+00:00",
+  "fuentes": {
+    "hechos": {
+      "estado": "verificado",
+      "sha256": "e1d232514458c110b5daee5350042e2d8d4b666f6caf4bce4d8675a1b8b93be5"
+    },
+    "victimas": {
+      "estado": "verificado",
+      "sha256": "2d878e6123dda2b3b070c4eb9633a56ddda2548b8d190a800b511bdbae593e4e"
+    },
+    "notas": {
+      "estado": "verificado",
+      "sha256": "47b6e32bf27bf92b071445a02dfcc4ec11294ee5a95d36acd343c5b174bac424"
+    },
+    "barrios": {
+      "estado": "verificado",
+      "sha256": "c24fabd01c61b889388f0a8cfd9ca4757c1f57583c0ffd1b4ed3b96d768bb655"
+    },
+    "comunas": {
+      "estado": "verificado",
+      "sha256": "a4a7be8222a6a5c4a5a28c5e6e1b5ff5b0f6ba25f2788250f0ab3f9d6d59959f"
+    },
+    "callejero": {
+      "estado": "verificado",
+      "sha256": "8f398258b9957effa5613423db83c94e3f9e1e04ecb6dc358db54872ae427211"
+    },
+    "cruces": {
+      "estado": "verificado",
+      "sha256": "1283d338319a3706e045a02e96231572db92a8ffdbe5a57f1a0a187579eba527"
+    },
+    "conteo_2024": {
+      "estado": "verificado",
+      "sha256": "7fa2ae07e3e9339b4a1d0772b298c9380d7f370989fec66af5a5e847df3f488b"
+    },
+    "ubicaciones": {
+      "estado": "verificado",
+      "sha256": "596043f726cb401124ede25fc0d32cbb4e2be281e3d3de9483b6c9d14804c063"
+    },
+    "diccionario_conteo": {
+      "estado": "verificado",
+      "sha256": "5b5cc956fb04487d97d4e11ef16a125cef6b93520ceccb345ddb54847485c621"
+    }
+  },
+  "hechos": {
+    "filas_fuente": 65818,
+    "filas_limpias": 65818,
+    "id_unico": true,
+    "fechas_no_parseables": 0,
+    "sin_coordenada_valida": 3031,
+    "metodo_asignacion": {
+      "within": 62500,
+      "sin_coordenada": 3031,
+      "nearest_200m": 287
+    },
+    "en_panel_barrio": 62787,
+    "en_panel_comuna": 63158,
+    "comuna_discordante": 2329,
+    "posible_duplicado": 274,
+    "grupos_duplicado": 134,
+    "discrepancia_plana_500m": 472
+  },
+  "victimas": {
+    "filas_fuente": 75197,
+    "filas_limpias": 75197,
+    "sin_id_hecho": 4,
+    "huerfanas": 0,
+    "conteo_hecho_igual_filas": true
+  },
+  "paneles": {
+    "barrio_mes": {
+      "filas": 4032,
+      "unidades": 48,
+      "meses": 84,
+      "y_hechos_total": 62787,
+      "y_hechos_desarrollo": 51688
+    },
+    "comuna_mes": {
+      "filas": 1260,
+      "unidades": 15,
+      "meses": 84,
+      "y_hechos_total": 63158
+    }
+  },
+  "exclusiones_por_motivo": [
+    {
+      "tabla": "hechos",
+      "motivo": "sin coordenada válida ni comuna",
+      "n": 2660
+    },
+    {
+      "tabla": "hechos",
+      "motivo": "sin coordenada válida; comuna informada por la fuente",
+      "n": 371
+    },
+    {
+      "tabla": "victimas",
+      "motivo": "fila de víctima sin id_siniestro",
+      "n": 4
+    }
+  ]
+}

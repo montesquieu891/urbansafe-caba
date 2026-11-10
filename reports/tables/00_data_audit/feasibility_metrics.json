@@ -1,0 +1,876 @@
+{
+  "n_hechos": 65818,
+  "n_victimas": 75197,
+  "meses_cubiertos": 84,
+  "meses_atipicos": [
+    "2019-11",
+    "2019-12",
+    "2020-03",
+    "2020-04",
+    "2020-05",
+    "2020-06",
+    "2020-07",
+    "2020-08",
+    "2020-09",
+    "2020-10",
+    "2021-02",
+    "2021-05",
+    "2024-12",
+    "2025-12"
+  ],
+  "c2": {
+    "id_hecho_unico": true,
+    "filas_hecho_identicas": 0,
+    "victimas_sin_id": 4,
+    "victimas_huerfanas": 0,
+    "hechos_sin_victima": 0,
+    "conteo_hecho_igual_filas_victima": 1.0,
+    "victimas_por_hecho_dist": {
+      "1": 59053,
+      "2": 5294,
+      "3": 911,
+      "4": 303,
+      "5": 135,
+      "6": 61
+    },
+    "filas_victima_identicas": 1439,
+    "filas_en_grupos_identicos_con_sexo_o_edad_SD": "1671 de 2620",
+    "gravedad_hecho_igual_max_victima": 0.9995290042237686,
+    "HC_igual_MORTAL": true,
+    "hechos_en_grupos_misma_fecha_hora_lugar": 274,
+    "grupos_misma_fecha_hora_lugar": 134
+  },
+  "c3": {
+    "sin_coordenada": 3031,
+    "sin_coordenada_pct": 4.61,
+    "no_numericas_SD": 653,
+    "fuera_de_CABA": 286,
+    "fuera_de_CABA_distancia_m": {
+      "mediana": 7.7,
+      "p95": 46.9,
+      "max": 159.1,
+      "a_menos_de_200m": 286
+    },
+    "a_menos_de_25m_de_limite_barrio": 13278,
+    "coordenada_mas_repetida_n": 60,
+    "coordenadas_con_mas_de_50_hechos": 2,
+    "sin_coordenada_por_gravedad": {
+      "GRAVE": 0.151,
+      "LEVE": 0.042,
+      "MORTAL": 0.004
+    },
+    "plana_comparables": 58761,
+    "plana_mediana_m": 0.05,
+    "plana_discrepancia_mayor_500m": 472,
+    "plana_mal_formada_o_otra_escala": 4026,
+    "plana_discrepancia_500m_por_anio": {
+      "2019": 4,
+      "2020": 1,
+      "2022": 427,
+      "2023": 21,
+      "2024": 15,
+      "2025": 4
+    }
+  },
+  "c4": {
+    "puntos": 62787,
+    "filas_tras_union": 62787,
+    "coincidencias_multiples": 0,
+    "sin_barrio_within": 287,
+    "asignados_por_cercania_200m": 287,
+    "comuna_fuente_igual_geo": 0.9624,
+    "comuna_discordante_n": 2329,
+    "discordantes_a_menos_de_100m_de_limite": 2296,
+    "sin_coord_con_comuna_fuente": 371,
+    "sin_coord_ni_comuna": 2660,
+    "barrio_distinto_con_plana": 773,
+    "barrio_distinto_con_plana_pct": 1.32,
+    "asignables_barrio_pct": 95.39,
+    "asignables_comuna_pct": 95.96
+  },
+  "c5": {
+    "ratio_mensual_nov_dic_vs_ene_oct_2019": 0.606,
+    "chi2_p_composicion_comunal_2019": 0.00042193210888188124,
+    "max_dif_participacion_comunal_pp": 2.6,
+    "tipo_de_via_faltante_2019": 0.951
+  },
+  "c6": {
+    "barrio": {
+      "unidades": 48,
+      "top10pct_share": 0.262,
+      "top20pct_share": 0.424,
+      "share_esperado_top20_si_prop_area": 0.347,
+      "gini": 0.356,
+      "cv": 0.698,
+      "spearman_anual": {
+        "2019-2020": 0.958,
+        "2020-2021": 0.974,
+        "2021-2022": 0.982,
+        "2022-2023": 0.969,
+        "2023-2024": 0.968
+      },
+      "spearman_mensual_consecutivo": {
+        "mediana": 0.824,
+        "min": 0.547,
+        "max": 0.887
+      }
+    },
+    "comuna": {
+      "unidades": 15,
+      "top10pct_share": 0.197,
+      "top20pct_share": 0.272,
+      "share_esperado_top20_si_prop_area": 0.196,
+      "gini": 0.14,
+      "cv": 0.284,
+      "spearman_anual": {
+        "2019-2020": 0.896,
+        "2020-2021": 0.854,
+        "2021-2022": 0.932,
+        "2022-2023": 0.947,
+        "2023-2024": 0.953
+      }
+    }
+  },
+  "c7": [
+    {
+      "unidad": "barrio",
+      "periodo": "mes",
+      "objetivo": "Y1_hechos",
+      "n_unidades": 48,
+      "n_periodos": 72,
+      "n_obs": 3456,
+      "media": 14.956,
+      "mediana": 12.0,
+      "var": 145.8,
+      "dispersion_var_media": 9.75,
+      "prop_ceros": 0.012,
+      "prop_ceros_poisson_esperada": 0.003,
+      "unidades_siempre_cero": 0
+    },
+    {
+      "unidad": "barrio",
+      "periodo": "mes",
+      "objetivo": "Y2_victimas",
+      "n_unidades": 48,
+      "n_periodos": 72,
+      "n_obs": 3456,
+      "media": 17.173,
+      "mediana": 14.0,
+      "var": 195.19,
+      "dispersion_var_media": 11.37,
+      "prop_ceros": 0.012,
+      "prop_ceros_poisson_esperada": 0.002,
+      "unidades_siempre_cero": 0
+    },
+    {
+      "unidad": "barrio",
+      "periodo": "mes",
+      "objetivo": "Y3_ksi",
+      "n_unidades": 48,
+      "n_periodos": 72,
+      "n_obs": 3456,
+      "media": 0.722,
+      "mediana": 0.0,
+      "var": 1.1,
+      "dispersion_var_media": 1.53,
+      "prop_ceros": 0.555,
+      "prop_ceros_poisson_esperada": 0.54,
+      "unidades_siempre_cero": 0
+    },
+    {
+      "unidad": "barrio",
+      "periodo": "trimestre",
+      "objetivo": "Y1_hechos",
+      "n_unidades": 48,
+      "n_periodos": 24,
+      "n_obs": 1152,
+      "media": 44.868,
+      "mediana": 36.0,
+      "var": 1176.6,
+      "dispersion_var_media": 26.22,
+      "prop_ceros": 0.0,
+      "prop_ceros_poisson_esperada": 0.0,
+      "unidades_siempre_cero": 0
+    },
+    {
+      "unidad": "barrio",
+      "periodo": "trimestre",
+      "objetivo": "Y2_victimas",
+      "n_unidades": 48,
+      "n_periodos": 24,
+      "n_obs": 1152,
+      "media": 51.519,
+      "mediana": 42.5,
+      "var": 1540.44,
+      "dispersion_var_media": 29.9,
+      "prop_ceros": 0.0,
+      "prop_ceros_poisson_esperada": 0.0,
+      "unidades_siempre_cero": 0
+    },
+    {
+      "unidad": "barrio",
+      "periodo": "trimestre",
+      "objetivo": "Y3_ksi",
+      "n_unidades": 48,
+      "n_periodos": 24,
+      "n_obs": 1152,
+      "media": 2.166,
+      "mediana": 2.0,
+      "var": 5.48,
+      "dispersion_var_media": 2.53,
+      "prop_ceros": 0.248,
+      "prop_ceros_poisson_esperada": 0.218,
+      "unidades_siempre_cero": 0
+    },
+    {
+      "unidad": "comuna",
+      "periodo": "mes",
+      "objetivo": "Y1_hechos",
+      "n_unidades": 15,
+      "n_periodos": 72,
+      "n_obs": 1080,
+      "media": 48.056,
+      "mediana": 47.0,
+      "var": 390.64,
+      "dispersion_var_media": 8.13,
+      "prop_ceros": 0.0,
+      "prop_ceros_poisson_esperada": 0.0,
+      "unidades_siempre_cero": 0
+    },
+    {
+      "unidad": "comuna",
+      "periodo": "mes",
+      "objetivo": "Y2_victimas",
+      "n_unidades": 15,
+      "n_periodos": 72,
+      "n_obs": 1080,
+      "media": 55.194,
+      "mediana": 54.0,
+      "var": 548.75,
+      "dispersion_var_media": 9.94,
+      "prop_ceros": 0.0,
+      "prop_ceros_poisson_esperada": 0.0,
+      "unidades_siempre_cero": 0
+    },
+    {
+      "unidad": "comuna",
+      "periodo": "mes",
+      "objetivo": "Y3_ksi",
+      "n_unidades": 15,
+      "n_periodos": 72,
+      "n_obs": 1080,
+      "media": 2.322,
+      "mediana": 2.0,
+      "var": 3.48,
+      "dispersion_var_media": 1.5,
+      "prop_ceros": 0.163,
+      "prop_ceros_poisson_esperada": 0.13,
+      "unidades_siempre_cero": 0
+    },
+    {
+      "unidad": "comuna",
+      "periodo": "trimestre",
+      "objetivo": "Y1_hechos",
+      "n_unidades": 15,
+      "n_periodos": 24,
+      "n_obs": 360,
+      "media": 144.167,
+      "mediana": 139.5,
+      "var": 2925.42,
+      "dispersion_var_media": 20.29,
+      "prop_ceros": 0.0,
+      "prop_ceros_poisson_esperada": 0.0,
+      "unidades_siempre_cero": 0
+    },
+    {
+      "unidad": "comuna",
+      "periodo": "trimestre",
+      "objetivo": "Y2_victimas",
+      "n_unidades": 15,
+      "n_periodos": 24,
+      "n_obs": 360,
+      "media": 165.581,
+      "mediana": 160.0,
+      "var": 4007.6,
+      "dispersion_var_media": 24.2,
+      "prop_ceros": 0.0,
+      "prop_ceros_poisson_esperada": 0.0,
+      "unidades_siempre_cero": 0
+    },
+    {
+      "unidad": "comuna",
+      "periodo": "trimestre",
+      "objetivo": "Y3_ksi",
+      "n_unidades": 15,
+      "n_periodos": 24,
+      "n_obs": 360,
+      "media": 6.967,
+      "mediana": 7.0,
+      "var": 17.84,
+      "dispersion_var_media": 2.56,
+      "prop_ceros": 0.017,
+      "prop_ceros_poisson_esperada": 0.006,
+      "unidades_siempre_cero": 0
+    },
+    {
+      "unidad": "grid1000",
+      "periodo": "mes",
+      "objetivo": "Y1_hechos",
+      "n_unidades": 244,
+      "n_periodos": 72,
+      "n_obs": 17568,
+      "media": 2.942,
+      "mediana": 2.0,
+      "var": 9.66,
+      "dispersion_var_media": 3.28,
+      "prop_ceros": 0.256,
+      "prop_ceros_poisson_esperada": 0.236,
+      "unidades_siempre_cero": 23
+    },
+    {
+      "unidad": "grid1000",
+      "periodo": "mes",
+      "objetivo": "Y2_victimas",
+      "n_unidades": 244,
+      "n_periodos": 72,
+      "n_obs": 17568,
+      "media": 3.378,
+      "mediana": 2.0,
+      "var": 13.45,
+      "dispersion_var_media": 3.98,
+      "prop_ceros": 0.256,
+      "prop_ceros_poisson_esperada": 0.211,
+      "unidades_siempre_cero": 23
+    },
+    {
+      "unidad": "grid1000",
+      "periodo": "mes",
+      "objetivo": "Y3_ksi",
+      "n_unidades": 244,
+      "n_periodos": 72,
+      "n_obs": 17568,
+      "media": 0.142,
+      "mediana": 0.0,
+      "var": 0.16,
+      "dispersion_var_media": 1.1,
+      "prop_ceros": 0.873,
+      "prop_ceros_poisson_esperada": 0.873,
+      "unidades_siempre_cero": 27
+    },
+    {
+      "unidad": "grid1000",
+      "periodo": "trimestre",
+      "objetivo": "Y1_hechos",
+      "n_unidades": 244,
+      "n_periodos": 24,
+      "n_obs": 5856,
+      "media": 8.827,
+      "mediana": 7.0,
+      "var": 66.82,
+      "dispersion_var_media": 7.57,
+      "prop_ceros": 0.15,
+      "prop_ceros_poisson_esperada": 0.139,
+      "unidades_siempre_cero": 23
+    },
+    {
+      "unidad": "grid1000",
+      "periodo": "trimestre",
+      "objetivo": "Y2_victimas",
+      "n_unidades": 244,
+      "n_periodos": 24,
+      "n_obs": 5856,
+      "media": 10.135,
+      "mediana": 8.0,
+      "var": 88.59,
+      "dispersion_var_media": 8.74,
+      "prop_ceros": 0.15,
+      "prop_ceros_poisson_esperada": 0.131,
+      "unidades_siempre_cero": 23
+    },
+    {
+      "unidad": "grid1000",
+      "periodo": "trimestre",
+      "objetivo": "Y3_ksi",
+      "n_unidades": 244,
+      "n_periodos": 24,
+      "n_obs": 5856,
+      "media": 0.426,
+      "mediana": 0.0,
+      "var": 0.58,
+      "dispersion_var_media": 1.36,
+      "prop_ceros": 0.694,
+      "prop_ceros_poisson_esperada": 0.686,
+      "unidades_siempre_cero": 27
+    },
+    {
+      "unidad": "grid500",
+      "periodo": "mes",
+      "objetivo": "Y1_hechos",
+      "n_unidades": 909,
+      "n_periodos": 72,
+      "n_obs": 65448,
+      "media": 0.79,
+      "mediana": 0.0,
+      "var": 1.4,
+      "dispersion_var_media": 1.77,
+      "prop_ceros": 0.56,
+      "prop_ceros_poisson_esperada": 0.547,
+      "unidades_siempre_cero": 92
+    },
+    {
+      "unidad": "grid500",
+      "periodo": "mes",
+      "objetivo": "Y2_victimas",
+      "n_unidades": 909,
+      "n_periodos": 72,
+      "n_obs": 65448,
+      "media": 0.907,
+      "mediana": 0.0,
+      "var": 2.07,
+      "dispersion_var_media": 2.29,
+      "prop_ceros": 0.56,
+      "prop_ceros_poisson_esperada": 0.511,
+      "unidades_siempre_cero": 92
+    },
+    {
+      "unidad": "grid500",
+      "periodo": "mes",
+      "objetivo": "Y3_ksi",
+      "n_unidades": 909,
+      "n_periodos": 72,
+      "n_obs": 65448,
+      "media": 0.038,
+      "mediana": 0.0,
+      "var": 0.04,
+      "dispersion_var_media": 1.05,
+      "prop_ceros": 0.963,
+      "prop_ceros_poisson_esperada": 0.963,
+      "unidades_siempre_cero": 219
+    },
+    {
+      "unidad": "grid500",
+      "periodo": "trimestre",
+      "objetivo": "Y1_hechos",
+      "n_unidades": 909,
+      "n_periodos": 24,
+      "n_obs": 21816,
+      "media": 2.369,
+      "mediana": 2.0,
+      "var": 7.56,
+      "dispersion_var_media": 3.19,
+      "prop_ceros": 0.307,
+      "prop_ceros_poisson_esperada": 0.291,
+      "unidades_siempre_cero": 92
+    },
+    {
+      "unidad": "grid500",
+      "periodo": "trimestre",
+      "objetivo": "Y2_victimas",
+      "n_unidades": 909,
+      "n_periodos": 24,
+      "n_obs": 21816,
+      "media": 2.72,
+      "mediana": 2.0,
+      "var": 10.65,
+      "dispersion_var_media": 3.91,
+      "prop_ceros": 0.307,
+      "prop_ceros_poisson_esperada": 0.265,
+      "unidades_siempre_cero": 92
+    },
+    {
+      "unidad": "grid500",
+      "periodo": "trimestre",
+      "objetivo": "Y3_ksi",
+      "n_unidades": 909,
+      "n_periodos": 24,
+      "n_obs": 21816,
+      "media": 0.114,
+      "mediana": 0.0,
+      "var": 0.13,
+      "dispersion_var_media": 1.14,
+      "prop_ceros": 0.898,
+      "prop_ceros_poisson_esperada": 0.898,
+      "unidades_siempre_cero": 219
+    }
+  ],
+  "c8_clasificacion": [
+    {
+      "unidad": "barrio",
+      "periodo": "mes",
+      "definicion": "Ca",
+      "umbral": 20.0,
+      "prevalencia": 0.249,
+      "prev_min_anual": 0.118,
+      "prev_max_anual": 0.316,
+      "positivos": 860
+    },
+    {
+      "unidad": "barrio",
+      "periodo": "mes",
+      "definicion": "Cb",
+      "umbral": NaN,
+      "prevalencia": 0.208,
+      "prev_min_anual": 0.208,
+      "prev_max_anual": 0.208,
+      "positivos": 720
+    },
+    {
+      "unidad": "barrio",
+      "periodo": "mes",
+      "definicion": "Cc",
+      "umbral": NaN,
+      "prevalencia": 0.445,
+      "prev_min_anual": 0.276,
+      "prev_max_anual": 0.528,
+      "positivos": 1538
+    },
+    {
+      "unidad": "barrio",
+      "periodo": "trimestre",
+      "definicion": "Ca",
+      "umbral": 60.0,
+      "prevalencia": 0.245,
+      "prev_min_anual": 0.099,
+      "prev_max_anual": 0.328,
+      "positivos": 282
+    },
+    {
+      "unidad": "barrio",
+      "periodo": "trimestre",
+      "definicion": "Cb",
+      "umbral": NaN,
+      "prevalencia": 0.208,
+      "prev_min_anual": 0.208,
+      "prev_max_anual": 0.208,
+      "positivos": 240
+    },
+    {
+      "unidad": "barrio",
+      "periodo": "trimestre",
+      "definicion": "Cc",
+      "umbral": NaN,
+      "prevalencia": 0.752,
+      "prev_min_anual": 0.573,
+      "prev_max_anual": 0.828,
+      "positivos": 866
+    },
+    {
+      "unidad": "comuna",
+      "periodo": "mes",
+      "definicion": "Ca",
+      "umbral": 60.0,
+      "prevalencia": 0.235,
+      "prev_min_anual": 0.05,
+      "prev_max_anual": 0.361,
+      "positivos": 254
+    },
+    {
+      "unidad": "comuna",
+      "periodo": "mes",
+      "definicion": "Cb",
+      "umbral": NaN,
+      "prevalencia": 0.2,
+      "prev_min_anual": 0.2,
+      "prev_max_anual": 0.2,
+      "positivos": 216
+    },
+    {
+      "unidad": "comuna",
+      "periodo": "mes",
+      "definicion": "Cc",
+      "umbral": NaN,
+      "prevalencia": 0.837,
+      "prev_min_anual": 0.617,
+      "prev_max_anual": 0.939,
+      "positivos": 904
+    },
+    {
+      "unidad": "comuna",
+      "periodo": "trimestre",
+      "definicion": "Ca",
+      "umbral": 177.0,
+      "prevalencia": 0.244,
+      "prev_min_anual": 0.033,
+      "prev_max_anual": 0.4,
+      "positivos": 88
+    },
+    {
+      "unidad": "comuna",
+      "periodo": "trimestre",
+      "definicion": "Cb",
+      "umbral": NaN,
+      "prevalencia": 0.2,
+      "prev_min_anual": 0.2,
+      "prev_max_anual": 0.2,
+      "positivos": 72
+    },
+    {
+      "unidad": "comuna",
+      "periodo": "trimestre",
+      "definicion": "Cc",
+      "umbral": NaN,
+      "prevalencia": 0.983,
+      "prev_min_anual": 0.95,
+      "prev_max_anual": 1.0,
+      "positivos": 354
+    }
+  ],
+  "c8_empates": {
+    "meses_con_empate_10_11": 23,
+    "meses": 72,
+    "barrio_mes_empatados_en_corte_meses_con_empate": 69,
+    "plazas_en_disputa_total": 33,
+    "empatados_por_mes_min_mediana_max": [
+      2,
+      3.0,
+      5
+    ],
+    "R_estricta_excluye_en_meses_sin_empate": 69
+  },
+  "c8_sensibilidad_empates": {
+    "meses_evaluados": 60,
+    "candidato": "media12",
+    "baseline": "persist",
+    "reglas": [
+      {
+        "regla": "R0",
+        "tipo": "desempate",
+        "P@10_media12": 0.75,
+        "P@10_persist": 0.6867,
+        "dif_P@10": 0.0633,
+        "recall_media12": 0.75,
+        "recall_persist": 0.6867
+      },
+      {
+        "regla": "R-id",
+        "tipo": "desempate",
+        "P@10_media12": 0.755,
+        "P@10_persist": 0.69,
+        "dif_P@10": 0.065,
+        "recall_media12": 0.755,
+        "recall_persist": 0.69
+      },
+      {
+        "regla": "R-incl",
+        "tipo": "definición (solo meses con empate)",
+        "P@10_media12": 0.7717,
+        "P@10_persist": 0.71,
+        "dif_P@10": 0.0617,
+        "recall_media12": 0.7339,
+        "recall_persist": 0.6751
+      },
+      {
+        "regla": "R-excl-empates",
+        "tipo": "definición (solo meses con empate)",
+        "P@10_media12": 0.7283,
+        "P@10_persist": 0.665,
+        "dif_P@10": 0.0633,
+        "recall_media12": 0.7673,
+        "recall_persist": 0.6986
+      },
+      {
+        "regla": "R-estricta",
+        "tipo": "definición (todos los meses)",
+        "P@10_media12": 0.6783,
+        "P@10_persist": 0.6233,
+        "dif_P@10": 0.055,
+        "recall_media12": 0.795,
+        "recall_persist": 0.7284
+      },
+      {
+        "regla": "esperada_invariante",
+        "tipo": "sin semilla",
+        "P@10_media12": 0.7501,
+        "P@10_persist": 0.6816,
+        "dif_P@10": 0.0685,
+        "recall_media12": NaN,
+        "recall_persist": NaN
+      }
+    ],
+    "semillas_500": {
+      "P@10_media12": {
+        "p2.5": 0.745,
+        "mediana": 0.75,
+        "p97.5": 0.7567,
+        "min": 0.7417,
+        "max": 0.7583
+      },
+      "P@10_persist": {
+        "p2.5": 0.6733,
+        "mediana": 0.6817,
+        "p97.5": 0.69,
+        "min": 0.6667,
+        "max": 0.6933
+      },
+      "dif_P@10": {
+        "p2.5": 0.06,
+        "mediana": 0.0683,
+        "p97.5": 0.0767,
+        "min": 0.0583,
+        "max": 0.0833
+      }
+    },
+    "R_incl_menos_R_estricta": {
+      "media12": 0.0934,
+      "persist": 0.0867
+    },
+    "dif_P@10_entre_meses_R0": {
+      "media": 0.0633,
+      "desvio": 0.1193
+    }
+  },
+  "c8_sobredispersion": [
+    {
+      "unidad": "barrio",
+      "periodo": "mes",
+      "alpha_NB2": 0.0732,
+      "loglik_poisson": -11339.5,
+      "loglik_NB2": -10534.1,
+      "LR_NB_vs_Poisson": 1610.8,
+      "dispersion_residual": 2.2
+    },
+    {
+      "unidad": "barrio",
+      "periodo": "trimestre",
+      "alpha_NB2": 0.0576,
+      "loglik_poisson": -5359.3,
+      "loglik_NB2": -4451.9,
+      "LR_NB_vs_Poisson": 1814.7,
+      "dispersion_residual": 3.82
+    },
+    {
+      "unidad": "comuna",
+      "periodo": "mes",
+      "alpha_NB2": 0.0681,
+      "loglik_poisson": -5638.4,
+      "loglik_NB2": -4489.9,
+      "LR_NB_vs_Poisson": 2297.0,
+      "dispersion_residual": 4.37
+    },
+    {
+      "unidad": "comuna",
+      "periodo": "trimestre",
+      "alpha_NB2": 0.0543,
+      "loglik_poisson": -2973.9,
+      "loglik_NB2": -1821.3,
+      "LR_NB_vs_Poisson": 2305.2,
+      "dispersion_residual": 9.27
+    }
+  ],
+  "c9": {
+    "sensores": 95,
+    "anios_cubiertos": [
+      2024
+    ],
+    "dias_semana": [
+      "Wednesday"
+    ],
+    "semanas_por_sensor_min": 45,
+    "barrios_con_sensor": 29,
+    "barrios_total": 48,
+    "sensores_por_tipo_via": {
+      "calle_avenida": 68,
+      "Carriles Exclusivos": 23,
+      "Autopista": 4
+    },
+    "hechos_2024_a_200m_de_sensor_pct": 12.83
+  },
+  "c10": {
+    "panel": [
+      {
+        "unidad": "comuna",
+        "periodo": "mes",
+        "unidades": 15,
+        "periodos_desarrollo": 72,
+        "obs_desarrollo": 1080,
+        "obs_con_rezago_anual": 900,
+        "obs_entrenamiento_fold1": 540,
+        "obs_test_2025": 180,
+        "periodos_test": 12
+      },
+      {
+        "unidad": "comuna",
+        "periodo": "trimestre",
+        "unidades": 15,
+        "periodos_desarrollo": 24,
+        "obs_desarrollo": 360,
+        "obs_con_rezago_anual": 300,
+        "obs_entrenamiento_fold1": 180,
+        "obs_test_2025": 60,
+        "periodos_test": 4
+      },
+      {
+        "unidad": "barrio",
+        "periodo": "mes",
+        "unidades": 48,
+        "periodos_desarrollo": 72,
+        "obs_desarrollo": 3456,
+        "obs_con_rezago_anual": 2880,
+        "obs_entrenamiento_fold1": 1728,
+        "obs_test_2025": 576,
+        "periodos_test": 12
+      },
+      {
+        "unidad": "barrio",
+        "periodo": "trimestre",
+        "unidades": 48,
+        "periodos_desarrollo": 24,
+        "obs_desarrollo": 1152,
+        "obs_con_rezago_anual": 960,
+        "obs_entrenamiento_fold1": 576,
+        "obs_test_2025": 192,
+        "periodos_test": 4
+      },
+      {
+        "unidad": "grid1000",
+        "periodo": "mes",
+        "unidades": 244,
+        "periodos_desarrollo": 72,
+        "obs_desarrollo": 17568,
+        "obs_con_rezago_anual": 14640,
+        "obs_entrenamiento_fold1": 8784,
+        "obs_test_2025": 2928,
+        "periodos_test": 12
+      },
+      {
+        "unidad": "grid1000",
+        "periodo": "trimestre",
+        "unidades": 244,
+        "periodos_desarrollo": 24,
+        "obs_desarrollo": 5856,
+        "obs_con_rezago_anual": 4880,
+        "obs_entrenamiento_fold1": 2928,
+        "obs_test_2025": 976,
+        "periodos_test": 4
+      },
+      {
+        "unidad": "grid500",
+        "periodo": "mes",
+        "unidades": 909,
+        "periodos_desarrollo": 72,
+        "obs_desarrollo": 65448,
+        "obs_con_rezago_anual": 54540,
+        "obs_entrenamiento_fold1": 32724,
+        "obs_test_2025": 10908,
+        "periodos_test": 12
+      },
+      {
+        "unidad": "grid500",
+        "periodo": "trimestre",
+        "unidades": 909,
+        "periodos_desarrollo": 24,
+        "obs_desarrollo": 21816,
+        "obs_con_rezago_anual": 18180,
+        "obs_entrenamiento_fold1": 10908,
+        "obs_test_2025": 3636,
+        "periodos_test": 4
+      }
+    ],
+    "cobertura": {
+      "hechos_desarrollo_total": 54066,
+      "hechos_desarrollo_asignados_barrio": 51688,
+      "hechos_desarrollo_asignados_comuna": 51900,
+      "posibles_duplicados_desarrollo": 270
+    }
+  }
+}

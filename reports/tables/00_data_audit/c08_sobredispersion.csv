@@ -1,0 +1,5 @@
+unidad,periodo,alpha_NB2,loglik_poisson,loglik_NB2,LR_NB_vs_Poisson,dispersion_residual
+barrio,mes,0.0732,-11339.5,-10534.1,1610.8,2.2
+barrio,trimestre,0.0576,-5359.3,-4451.9,1814.7,3.82
+comuna,mes,0.0681,-5638.4,-4489.9,2297.0,4.37
+comuna,trimestre,0.0543,-2973.9,-1821.3,2305.2,9.27

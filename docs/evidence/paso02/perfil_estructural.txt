@@ -1,0 +1,58 @@
+## Hechos (siniestros_viales_hechos.csv)
+filas=65818 columnas=21 id_unico=True
+columnas=['id_siniestro', 'numero_total_de_victimas', 'numero_victimas_leve_siniestro', 'numero_victimas_grave_siniestro', 'numero_victimas_mortal_siniestro', 'fecha_siniestro', 'anio_siniestro', 'mes_siniestro', 'dia_siniestro', 'hora_siniestro', 'rango_horario', 'direccion_normalizada_siniestro', 'comuna_siniestro', 'tipo_de_via_siniestro', 'geocodificacion_plana', 'longitud_siniestro', 'latitud_siniestro', 'participantes_siniestro', 'modo_desplazamiento_victima', 'contraparte_siniestro', 'gravedad_siniestro']
+fecha_min=2019-01-01 fecha_max=2025-12-31 fechas_no_parseables=0
+fechas_sin_formato_ISO=9406
+hechos por año y mes:
+fecha_siniestro   1    2    3    4     5    6     7     8    9     10    11    12
+fecha_siniestro                                                                  
+2019             750  801  960  967  1049  896   937   912  895   891   555   542
+2020             679  728  493  194   328  325   359   442  497   585   690   741
+2021             534  484  719  609   301  674   701   807  661   833   660   835
+2022             563  628  867  852   827  833   762   828  904   847   831   794
+2023             609  606  875  809   907  857   865   866  871   912   884   866
+2024             710  714  823  834   923  804   895   917  898   999   971  1081
+2025             782  740  915  998   990  977  1009  1021  957  1125  1099  1139
+hechos por año y gravedad:
+gravedad_siniestro  GRAVE   LEVE  MORTAL
+anio_siniestro                          
+2019                  373   9679     103
+2020                  143   5839      79
+2021                  358   7364      96
+2022                  522   8907     107
+2023                  356   9467     104
+2024                  516   9943     110
+2025                  687  10975      90
+prefijo_id={'LC': 65129, 'HC': 689}
+sin_coordenada_numerica=3031 (0.0461)
+fuera_bbox_CABA_aprox=0
+sin_coordenada_por_gravedad={'GRAVE': 0.151, 'LEVE': 0.042, 'MORTAL': 0.004}
+etiquetas_comuna_distintas=34 comuna_sin_dato=3552
+sin_coordenada_y_sin_comuna=2660
+tipo_de_via_faltante_por_año={'2019': 0.951, '2020': 0.047, '2021': 0.076, '2022': 0.119, '2023': 0.035, '2024': 0.02, '2025': 0.0}
+modo_victima_SD_por_año={'2019': 0.097, '2020': 0.217, '2021': 0.295, '2022': 0.104, '2023': 0.118, '2024': 0.265, '2025': 0.116}
+
+## Víctimas (siniestros_viales_victimas.csv)
+filas=75197 columnas=9 columnas=['id_siniestro', 'fecha_siniestro', 'anio_siniestro', 'modo_desplazamiento_victima', 'sexo_victima', 'edad_victima', 'GRAVEdad_victima', 'rol_victima', 'fecha_fallecimiento_victima']
+id_nulos=4 ids_distintos=65818
+huerfanos_victima_sin_hecho=0
+hechos_sin_victima=0
+suma_leve_grave_mortal_igual_filas_victimas=1.0000
+gravedad_victima_normalizada={'LEVE': 71308, 'GRAVE': 3182, 'MORTAL': 703}
+filas_victima_identicas=1439
+faltante_o_SD[modo_desplazamiento_victima]=0.3103
+faltante_o_SD[sexo_victima]=0.2274
+faltante_o_SD[edad_victima]=0.3109
+faltante_o_SD[rol_victima]=0.7998
+
+## Límites y red vial
+barrios: entidades=48 crs=urn:ogc:def:crs:OGC:1.3:CRS84 campos=['id', 'objeto', 'nombre', 'comuna', 'perimetro_', 'area_metro']
+comunas: entidades=15 crs=urn:ogc:def:crs:OGC:1.3:CRS84 campos=['id', 'objeto', 'comuna', 'barrios', 'perimetro', 'area']
+callejero: entidades=31961 crs=urn:ogc:def:crs:OGC:1.3:CRS84 campos=['id', 'codigo', 'nomoficial', 'alt_izqini', 'alt_izqfin', 'alt_derini', 'alt_derfin', 'nomanter', 'nom_mapa', 'tipo_c', 'long', 'sentido', 'observa', 'bicisenda', 'red_jerarq', 'tipo_ffcc', 'comuna', 'com_par', 'com_impar', 'barrio', 'barrio_par', 'barrio_imp']
+
+## Exposición
+volumen_2024: filas=4818 ubicaciones=95 fechas=2024-01-03..2024-12-25 n_fechas=52 dias_semana={'Wednesday': 4818} comunas=15 tipo_via={'calle_avenida': 3442, 'Carriles Exclusivos': 1179, 'Autopista': 197}
+conteos-peatonales.csv: filas=60 columnas=['dia', 'fecha', 'tipo_conteo', 'lat', 'long', 'interseccion', 'tiempo', 'volumen_cruce_debido_peatones_x_hora', 'volumen_cruce_indebido_peatones_x_hora'] fechas=2017-11-06..2019-09-24 (lexicográfico)
+conteo-vehicular.csv: filas=257 columnas=['cruce', 'fecha', 'hora_inicio', 'hora_final', 'livianos', 'colectivos', 'pesados', 'observaciones'] fechas=2018-03-15..2019-07-23 (lexicográfico)
+sensores.csv: filas=52 columnas=['long', 'lat', 'id_sensor', 'sistema_co', 'ubicacion', 'ubicacion_', 'año_insta', 'direccion_', 'calle', 'cruce', 'barrio', 'comuna']
+cruces-semaforizados.csv: filas=3940 columnas=['long', 'lat', 'n_cruce', 'id_codigo', 'fecha_inau', 'anio_inau', 'dom_orig', 'dom_norma', 'origen', 'observ', 'nro_nva', 'instala', 'horario', 'fecha_fina', 'id_usig', 'objeto', 'calle_nombre', 'calle_altura', 'barrio', 'comuna', 'codigo_postal', 'codigo_postal_argentino'] fechas=1-jun..No es nuevo (lexicográfico)

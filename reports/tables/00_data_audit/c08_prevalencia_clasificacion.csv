@@ -1,0 +1,13 @@
+unidad,periodo,definicion,umbral,prevalencia,prev_min_anual,prev_max_anual,positivos
+barrio,mes,Ca,20.0,0.249,0.118,0.316,860
+barrio,mes,Cb,,0.208,0.208,0.208,720
+barrio,mes,Cc,,0.445,0.276,0.528,1538
+barrio,trimestre,Ca,60.0,0.245,0.099,0.328,282
+barrio,trimestre,Cb,,0.208,0.208,0.208,240
+barrio,trimestre,Cc,,0.752,0.573,0.828,866
+comuna,mes,Ca,60.0,0.235,0.05,0.361,254
+comuna,mes,Cb,,0.2,0.2,0.2,216
+comuna,mes,Cc,,0.837,0.617,0.939,904
+comuna,trimestre,Ca,177.0,0.244,0.033,0.4,88
+comuna,trimestre,Cb,,0.2,0.2,0.2,72
+comuna,trimestre,Cc,,0.983,0.95,1.0,354

@@ -1,0 +1,7 @@
+regla,tipo,P@10_media12,P@10_persist,dif_P@10,recall_media12,recall_persist
+R0,desempate,0.75,0.6867,0.0633,0.75,0.6867
+R-id,desempate,0.755,0.69,0.065,0.755,0.69
+R-incl,definición (solo meses con empate),0.7717,0.71,0.0617,0.7339,0.6751
+R-excl-empates,definición (solo meses con empate),0.7283,0.665,0.0633,0.7673,0.6986
+R-estricta,definición (todos los meses),0.6783,0.6233,0.055,0.795,0.7284
+esperada_invariante,sin semilla,0.7501,0.6816,0.0685,,

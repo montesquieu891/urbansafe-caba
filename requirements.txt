@@ -1,0 +1,19 @@
+# UrbanSafe CABA — dependencias con las versiones verificadas (Python 3.13)
+# Datos y geoespacial
+pandas==3.1.1
+numpy==2.5.4
+geopandas==1.2.0
+shapely==2.2.0
+pyogrio==0.13.0
+pyproj==3.8.0
+openpyxl==3.1.5
+# Estadística y visualización
+scipy==1.18.1
+statsmodels==0.15.0
+matplotlib==3.11.2
+# Notebooks y pruebas
+nbformat==5.11.1
+nbclient==0.11.0
+nbconvert==7.17.2
+ipykernel==7.4.0
+pytest==9.2.0

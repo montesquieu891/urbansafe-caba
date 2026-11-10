@@ -1,0 +1,9 @@
+unidad,periodo,unidades,periodos_desarrollo,obs_desarrollo,obs_con_rezago_anual,obs_entrenamiento_fold1,obs_test_2025,periodos_test
+comuna,mes,15,72,1080,900,540,180,12
+comuna,trimestre,15,24,360,300,180,60,4
+barrio,mes,48,72,3456,2880,1728,576,12
+barrio,trimestre,48,24,1152,960,576,192,4
+grid1000,mes,244,72,17568,14640,8784,2928,12
+grid1000,trimestre,244,24,5856,4880,2928,976,4
+grid500,mes,909,72,65448,54540,32724,10908,12
+grid500,trimestre,909,24,21816,18180,10908,3636,4

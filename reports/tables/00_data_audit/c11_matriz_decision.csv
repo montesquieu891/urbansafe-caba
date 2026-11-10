@@ -1,0 +1,7 @@
+unidad,periodo,media_Y1_hechos,media_Y2_victimas,media_Y3_ksi,prop_ceros_Y1_hechos,prop_ceros_Y2_victimas,prop_ceros_Y3_ksi,unidades,obs_entrenamiento_fold1,obs_test_2025,spearman_anual_mediana
+barrio,mes,14.956,17.173,0.722,0.012,0.012,0.555,48,1728,576,0.969
+barrio,trimestre,44.868,51.519,2.166,0.0,0.0,0.248,48,576,192,0.969
+comuna,mes,48.056,55.194,2.322,0.0,0.0,0.163,15,540,180,0.932
+comuna,trimestre,144.167,165.581,6.967,0.0,0.0,0.017,15,180,60,0.932
+grid1000,mes,2.942,3.378,0.142,0.256,0.256,0.873,244,8784,2928,
+grid1000,trimestre,8.827,10.135,0.426,0.15,0.15,0.694,244,2928,976,
