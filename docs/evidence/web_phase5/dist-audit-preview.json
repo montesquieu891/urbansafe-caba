@@ -1,0 +1,89 @@
+{
+  "resultado": "aprobado",
+  "commit": "75393cfb7876cd2d5256674e6a1433b2c2c0f82e",
+  "arbol_con_cambios": true,
+  "schema_version": "1.0.0",
+  "data_version": "2019-2025-5685c2f9c0a0",
+  "fecha_corte": "2025-12-31",
+  "js_inicial_bytes": 21682,
+  "total_bytes": 7181648,
+  "total_gzip_bytes": 823423,
+  "archivos": [
+    {
+      "ruta": "_astro/atlas.Bix6HtHX.css",
+      "bytes": 11658,
+      "sha256": "bee45eaa2b1b52398e1a64cf0ef7cfa6bfda7be685dd9bf67309e39f1e7b6ee2"
+    },
+    {
+      "ruta": "_astro/index.astro_astro_type_script_index_0_lang.CXxmyh_b.js",
+      "bytes": 21682,
+      "sha256": "c9d7c5474a83f1a4883160bc9f7659d5d984f71054f028cdfaf756885f3d3c6d"
+    },
+    {
+      "ruta": "_astro/maplibre-gl-worker-DTh23QKw.js",
+      "bytes": 519751,
+      "sha256": "a0da9c70dd13e7313cd609659ac1d231424e1a9ec2cb701758b64bc1ee5c09d9"
+    },
+    {
+      "ruta": "_astro/maplibre-gl.8qRUISz9.css",
+      "bytes": 71450,
+      "sha256": "05796e8317b3fa6019379ee8ea5169e2d0687698ca12949fbfe49668b3486c7e"
+    },
+    {
+      "ruta": "_astro/maplibre-gl.BUwiJpK_.js",
+      "bytes": 1106497,
+      "sha256": "7a8fed39a560a3ad9a0d03e70109d2679af31496750b3ee39be22790b1e6fb94"
+    },
+    {
+      "ruta": "_headers",
+      "bytes": 595,
+      "sha256": "c8600221c87d139781a9b49a434b2641fcc7397490c34c76cdcb1214305e7284"
+    },
+    {
+      "ruta": "404.html",
+      "bytes": 916,
+      "sha256": "29ca5a54b58c151e6de5f9dbc143f731a07d694cfb2b6d0fe12348a9f69cc503"
+    },
+    {
+      "ruta": "data/v1/barrios.geojson",
+      "bytes": 1599753,
+      "sha256": "cce35f0765e5488937d3a1fdc379a913043ae7f2603d0c63c09437607fdc9a01"
+    },
+    {
+      "ruta": "data/v1/cobertura.json",
+      "bytes": 68445,
+      "sha256": "fb2e7adad15c4b720eaff538b4b9cc371991b6f1f493d7694a68dd09381c10f9"
+    },
+    {
+      "ruta": "data/v1/manifest.json",
+      "bytes": 8495,
+      "sha256": "f68077ce094ef5cb300f7285c23e4f623e972b79872a5b4dc043a914d859ac33"
+    },
+    {
+      "ruta": "data/v1/panel-mensual.json",
+      "bytes": 3201587,
+      "sha256": "8f444f23c668d2f6a23e11d99caa68d95b8c11ffd85c2991bde7365a1c2c4b34"
+    },
+    {
+      "ruta": "data/v1/perfiles.json",
+      "bytes": 4852,
+      "sha256": "f8e610767d7ceb572029ecddbb5eaf02746ce32f45ae1fd0867969a486736549"
+    },
+    {
+      "ruta": "data/v1/priorizacion-2025.json",
+      "bytes": 556582,
+      "sha256": "cc8ea0e2329c4951be0631e46e2b712644b07c1412ca86d487162daa853778d1"
+    },
+    {
+      "ruta": "favicon.svg",
+      "bytes": 250,
+      "sha256": "8e16c08592bc13b21a2446aa8803fb2055b232847f7b691b17dcec5be8dc0c7a"
+    },
+    {
+      "ruta": "index.html",
+      "bytes": 9135,
+      "sha256": "c90f2fa37b3cb32f6f85e0483876abd97df5be68a06ee854cc72bdc96ee68128"
+    }
+  ],
+  "errores": []
+}

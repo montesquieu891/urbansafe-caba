@@ -9,7 +9,9 @@
     "check": "astro check",
     "test:e2e": "playwright test",
     "audit:dist": "node scripts/audit-dist.mjs",
-    "test:release": "npm run check && npm run build && npm run audit:dist && npm run test:e2e"
+    "test:release": "npm run check && npm run build && npm run audit:dist && npm run test:e2e",
+    "release:preview": "npm run test:release && wrangler deploy --env preview && npm run audit:dist -- --report ../docs/evidence/web_phase5/dist-audit-preview.json",
+    "release:production": "npm run test:release && wrangler deploy && npm run audit:dist -- --report ../docs/evidence/web_phase5/dist-audit-production.json"
   },
   "dependencies": {
     "astro": "^7.4.9",
@@ -20,6 +22,8 @@
     "@axe-core/playwright": "4.14.0",
     "@playwright/test": "^1.65.0",
     "@types/geojson": "^7946.0.16",
-    "typescript": "^6.0.3"
+    "@types/node": "24.19.2",
+    "typescript": "^6.0.3",
+    "wrangler": "4.160.0"
   }
 }

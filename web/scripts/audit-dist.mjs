@@ -9,7 +9,7 @@ import { gzipSync } from 'node:zlib';
 const root = resolve(import.meta.dirname, '..');
 const dist = join(root, 'dist'), publicData = join(root, 'public/data/v1');
 const DATA = ['barrios.geojson', 'cobertura.json', 'manifest.json', 'panel-mensual.json', 'perfiles.json', 'priorizacion-2025.json'];
-const ALLOWED = [/^index\.html$/, /^404\.html$/, /^favicon\.svg$/, /^_astro\/[\w.-]+\.(js|css)$/, ...DATA.map(f => new RegExp(`^data/v1/${f.replace(/[.-]/g, '\\$&')}$`))];
+const ALLOWED = [/^index\.html$/, /^404\.html$/, /^favicon\.svg$/, /^_headers$/,/^_astro\/[\w.-]+\.(js|css)$/, ...DATA.map(f => new RegExp(`^data/v1/${f.replace(/[.-]/g, '\\$&')}$`))];
 const EXTERNAL_LINKS = new Set(['data.buenosaires.gob.ar']);
 const BUDGET = { initialJsBytes: 60_000, totalBytes: 8_000_000 };
 const SECRET = [/-----BEGIN [A-Z ]*PRIVATE KEY-----/, /\bAKIA[0-9A-Z]{16}\b/, /\bgh[pousr]_[A-Za-z0-9]{36}\b/, /\bsk-[A-Za-z0-9_-]{20,}\b/, /\bxox[baprs]-[A-Za-z0-9-]{10,}\b/];
@@ -67,6 +67,12 @@ for (const f of files) {
   if (LOCAL_PATH.test(text)) fail(`${f.path}: contiene una ruta local`);
   if (/sourceMappingURL=/.test(text)) fail(`${f.path}: referencia a mapa de código`);
 }
+
+// 5b. Cabeceras de Cloudflare Pages: CSP sin scripts de terceros ni inline.
+const headers = files.find(f => f.path === '_headers')?.bytes.toString('utf8') ?? '';
+const csp = headers.match(/Content-Security-Policy: (.+)/)?.[1] ?? '';
+if (!/script-src 'self'(;|$)/.test(csp) || !/default-src 'self'/.test(csp) || !/frame-ancestors 'none'/.test(csp)) fail('_headers: falta una CSP restrictiva');
+if (!/X-Content-Type-Options: nosniff/.test(headers)) fail('_headers: falta nosniff');
 
 // 6. Presupuestos: JS inicial (scripts enlazados por index.html) y tamaño total.
 const index = files.find(f => f.path === 'index.html').bytes.toString('utf8');
