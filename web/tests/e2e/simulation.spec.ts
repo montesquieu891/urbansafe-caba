@@ -12,6 +12,7 @@ test('coberturas anuales, IC, selecciones y empates de los 12 meses',async({page
  await expect(page.locator('#annual-ci')).toContainText('+0,80');
  await expect(page.locator('#annual-ci')).toContainText('incluye cero');
  await expect(page.locator('#month-label')).toHaveText('01 / MES OBJETIVO');
+ await page.getByText('¿Qué significan el azar, el oráculo y el 92 %?',{exact:true}).click();
  await expect(page.locator('#gain-reference')).toContainText('92 % de la ganancia sobre el azar');
  await expect(page.locator('#cutoff')).toContainText('Información hasta 2024-12');
  await expect(page.locator('#map')).toHaveAttribute('data-ready','true');
@@ -69,7 +70,7 @@ test('perfiles principales y exploratorios, teclado y móvil',async({page},info)
  await expect(page.locator('#profile-summary')).toHaveText('39 barrios de interior · 9 barrios de borde.');
  await expect(page.locator('#neighborhood-list .badge').filter({hasText:'Borde'})).toHaveCount(9);
  await page.getByLabel('Nivel de perfiles').selectOption('3');
- await expect(page.locator('#profile-warning')).toContainText('separación débil');
+ await expect(page.locator('#profile-warning')).toContainText('es débil');
  await expect(page.locator('#neighborhood-list .badge').filter({hasText:'Interior residencial'})).toHaveCount(22);
  await expect(page.locator('#neighborhood-list .badge').filter({hasText:'Interior central-denso'})).toHaveCount(17);
  await page.reload();await expect(page.getByLabel('Nivel de perfiles')).toHaveValue('3');
@@ -80,3 +81,23 @@ test('perfiles principales y exploratorios, teclado y móvil',async({page},info)
  await page.screenshot({path:`test-results/profiles-${info.project.name}.png`,fullPage:true,scale:'css'});
 });
 
+
+ test('las dos vistas explican propósito, lectura y límites',async({page})=>{
+ await page.goto('/?vista=simulador&mes=2025-01&barrio=21&k=10');
+ await expect(page.getByRole('heading',{name:'¿Un modelo elige mejor que el historial?'})).toBeVisible();
+ await expect(page.getByLabel('Cómo usar el simulador')).toContainText('Ese número es K');
+ await expect(page.locator('#monthly-reading')).toContainText('de los 48 barrios');
+ const jan=reference.references.find(r=>r.strategy==='clasificador'&&r.month==='2025-01'&&r.k===10)!;
+ await expect(page.locator('#monthly-reading')).toContainText(`En enero de 2025, Clasificador eligió 10 de los 48 barrios. Después ocurrieron ${jan.captured} de los ${jan.total} hechos`);
+ await expect(page.locator('#monthly-reading')).toContainText('no significa que esos hechos se hubieran evitado');
+ await expect(page.locator('#map-reading')).toContainText('El color no representa cantidad de hechos');
+ await page.getByRole('button',{name:'Perfiles barriales',exact:true}).click();
+ await expect(page.getByRole('heading',{name:'¿Qué barrios comparten un perfil vial?'})).toBeVisible();
+ await expect(page.locator('#profile-cards .profile-card')).toHaveCount(2);
+ const before=await page.locator('#feature-detail').innerText();
+ await page.getByLabel('Mes observado').selectOption('2025-03');
+ await expect(page.locator('#feature-detail')).toHaveText(before,{useInnerText:true});
+ await page.getByLabel('Nivel de perfiles').selectOption('3');
+ await expect(page.locator('#profile-cards .profile-card')).toHaveCount(3);
+ await expect(page.locator('#profiles-panel')).toContainText('cambiar ese mes no vuelve a calcular los perfiles');
+ });
