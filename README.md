@@ -128,4 +128,4 @@ Las URL exactas, los hashes y las limitaciones de cada fuente están en el [regi
 | 09 Clustering no supervisado | Completado |
 | 10 Integración y robustez | Completado |
 | 11 Storytelling y presentación | Completado |
-| 12 Validación final y entrega | En revisión: [docs/final_validation.md](docs/final_validation.md) |
+| 12 Validación final y entrega | Completado: [docs/final_validation.md](docs/final_validation.md) |
