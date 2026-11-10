@@ -4,10 +4,15 @@
 
 | # | Fecha (UTC) | Versión de producción | Vista previa | Commit | Datos | Cambio |
 |---|---|---|---|---|---|---|
-| 2 | 2026-11-10 | `247ce276-3066-4add-8da2-c4ac73963a73` (vigente) | `8e1686f7-9446-4d63-9938-b8bb6262f6d0` | `8dc8184` (PR #6) | `2019-2025-692728914e40` | Revisión pedagógica del simulador y los perfiles; procedencia con finales de línea normalizados. Datos idénticos. |
+| 3 | 2026-11-10 | `accbb506-085d-44b1-9b67-f61eb322d2cb` (vigente) | `e60d73da-f516-4206-bf02-ba75874014c3` | `60d04ba` (PR #8) | `2019-2025-692728914e40` | Simulador centrado en la propuesta (problema, pregunta, respuesta) y sin jerga estadística visible. Datos idénticos. |
+| 2 | 2026-11-10 | `247ce276-3066-4add-8da2-c4ac73963a73` | `8e1686f7-9446-4d63-9938-b8bb6262f6d0` | `8dc8184` (PR #6) | `2019-2025-692728914e40` | Revisión pedagógica del simulador y los perfiles; procedencia con finales de línea normalizados. Datos idénticos. |
 | 1 | 2026-11-10 21:21 | `f6889653-5182-4034-acf7-749742da76e2` | `640eef13-6d22-4b3b-a315-f78639326928` | `75393cf` | `2019-2025-5685c2f9c0a0` | Primera publicación (fases 0–4). |
 
-Para volver a la versión 1: `npx wrangler rollback f6889653-5182-4034-acf7-749742da76e2` (desde `web/`).
+Para volver a una versión anterior, desde `web/`: `npx wrangler rollback 247ce276-3066-4add-8da2-c4ac73963a73` (versión 2) o `npx wrangler rollback f6889653-5182-4034-acf7-749742da76e2` (versión 1).
+
+### Versión 3 — simulador centrado en la propuesta
+
+Autorizada expresamente después de revisar la captura. Compilada desde `60d04ba` (fusión del PR #8), con el árbol limpio. `release:preview` ejecutó `test:release` (40/40 E2E y auditoría aprobada, JS inicial 28,8 kB) antes de subir. En la vista previa y en producción: 12/12 archivos servidos idénticos a `dist/` y **40/40 E2E remotas**; en producción se confirmó además que se sirve el texto nuevo. Los informes de `docs/evidence/web_phase5/` corresponden a esta versión; los anteriores están en el historial de Git.
 
 ### Versión 2 — revisión pedagógica
 
@@ -19,7 +24,7 @@ Verificación:
 - **Vista previa:** 12/12 archivos servidos idénticos a `dist/`, CSP activa, manifiesto con la versión `692728914e40` y **40/40 E2E remotas**.
 - **Producción:** los mismos controles, con resultado igual (12/12 idénticos y 40/40 E2E remotas).
 
-Los informes de `docs/evidence/web_phase5/` corresponden a esta versión; los de la versión 1 están en el historial de Git (commit `bba2992`). Los datos tienen caché de una hora, así que un navegador que ya visitó el sitio puede mostrar hasta una hora la versión anterior del manifiesto. Las cifras no cambian.
+Sus informes de auditoría están en el historial de Git (commit `449cf6d`); los de la versión 1, en `bba2992`. Los datos tienen caché de una hora, así que un navegador que ya visitó el sitio puede mostrar hasta una hora la versión anterior del manifiesto. Las cifras no cambian.
 
 ## Versión 1 — primera publicación
 
