@@ -1,0 +1,22 @@
+{
+  "modelo_seleccionado": "poisson|conjunto=compacto,alpha=0.1,excluir_pandemia=True",
+  "familia": "poisson",
+  "params": {
+    "conjunto": "compacto",
+    "alpha": 0.1,
+    "excluir_pandemia": true
+  },
+  "MAE_validacion_media": 3.863037904163764,
+  "mejor_baseline": "baseline:media12",
+  "MAE_baseline_validacion_media": 3.8495852623456788,
+  "ratio": 1.0034945691292179,
+  "folds_ganados": 2,
+  "cumple_criterio_validacion": false,
+  "mejores_por_familia": {
+    "hgb": "hgb|learning_rate=0.03,max_leaf_nodes=7,min_samples_leaf=20,max_iter=300,excluir_pandemia=True",
+    "negbin": "negbin|conjunto=compacto,excluir_pandemia=False",
+    "poisson": "poisson|conjunto=compacto,alpha=0.1,excluir_pandemia=True"
+  },
+  "congelado_utc": "2026-11-10T18:30:07+00:00",
+  "configs_probadas": 38
+}

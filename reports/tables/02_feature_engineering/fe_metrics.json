@@ -1,0 +1,195 @@
+{
+  "n_variables": {
+    "numericas": 30,
+    "categoricas": 1,
+    "excluidas": 5
+  },
+  "particiones": [
+    {
+      "fold": "V2022",
+      "gap": 0,
+      "train_desde": "2020-01",
+      "train_hasta": "2021-12",
+      "val_desde": "2022-01",
+      "val_hasta": "2022-12",
+      "ultimo_observable": "2021-12",
+      "filas_train": 1152,
+      "filas_val": 576,
+      "prevalencia_top10_val": 0.208
+    },
+    {
+      "fold": "V2023",
+      "gap": 0,
+      "train_desde": "2020-01",
+      "train_hasta": "2022-12",
+      "val_desde": "2023-01",
+      "val_hasta": "2023-12",
+      "ultimo_observable": "2022-12",
+      "filas_train": 1728,
+      "filas_val": 576,
+      "prevalencia_top10_val": 0.208
+    },
+    {
+      "fold": "V2024",
+      "gap": 0,
+      "train_desde": "2020-01",
+      "train_hasta": "2023-12",
+      "val_desde": "2024-01",
+      "val_hasta": "2024-12",
+      "ultimo_observable": "2023-12",
+      "filas_train": 2304,
+      "filas_val": 576,
+      "prevalencia_top10_val": 0.208
+    },
+    {
+      "fold": "FINAL",
+      "gap": 0,
+      "train_desde": "2020-01",
+      "train_hasta": "2024-12",
+      "val_desde": "2025-01",
+      "val_hasta": "2025-12",
+      "ultimo_observable": "2024-12",
+      "filas_train": 2880,
+      "filas_val": 576,
+      "prevalencia_top10_val": null
+    },
+    {
+      "fold": "V2022",
+      "gap": 1,
+      "train_desde": "2020-02",
+      "train_hasta": "2021-11",
+      "val_desde": "2022-01",
+      "val_hasta": "2022-12",
+      "ultimo_observable": "2021-11",
+      "filas_train": 1056,
+      "filas_val": 576,
+      "prevalencia_top10_val": 0.208
+    },
+    {
+      "fold": "V2023",
+      "gap": 1,
+      "train_desde": "2020-02",
+      "train_hasta": "2022-11",
+      "val_desde": "2023-01",
+      "val_hasta": "2023-12",
+      "ultimo_observable": "2022-11",
+      "filas_train": 1632,
+      "filas_val": 576,
+      "prevalencia_top10_val": 0.208
+    },
+    {
+      "fold": "V2024",
+      "gap": 1,
+      "train_desde": "2020-02",
+      "train_hasta": "2023-11",
+      "val_desde": "2024-01",
+      "val_hasta": "2024-12",
+      "ultimo_observable": "2023-11",
+      "filas_train": 2208,
+      "filas_val": 576,
+      "prevalencia_top10_val": 0.208
+    },
+    {
+      "fold": "FINAL",
+      "gap": 1,
+      "train_desde": "2020-02",
+      "train_hasta": "2024-11",
+      "val_desde": "2025-01",
+      "val_hasta": "2025-12",
+      "ultimo_observable": "2024-11",
+      "filas_train": 2784,
+      "filas_val": 576,
+      "prevalencia_top10_val": null
+    }
+  ],
+  "controles": [
+    {
+      "control": "C1 Panel único y completo (48 barrios × 84 meses)",
+      "resultado": "SUPERADO",
+      "detalle": ""
+    },
+    {
+      "control": "C2 Variables completas desde 2020-01 en el desarrollo",
+      "resultado": "SUPERADO",
+      "detalle": ""
+    },
+    {
+      "control": "C3 Cambiar datos posteriores al corte no altera las variables previas (gap 0 y 1; 4 cortes)",
+      "resultado": "SUPERADO",
+      "detalle": "17760 filas comparadas"
+    },
+    {
+      "control": "C4 Variables independientes del orden de las filas",
+      "resultado": "SUPERADO",
+      "detalle": ""
+    },
+    {
+      "control": "C5 Los rezagos no cruzan barrios (y_lag1 manual = calculado)",
+      "resultado": "SUPERADO",
+      "detalle": ""
+    },
+    {
+      "control": "C6 y_target = hechos del panel en T; exactamente 10 positivos por mes",
+      "resultado": "SUPERADO",
+      "detalle": ""
+    },
+    {
+      "control": "C7 Entrenamiento estrictamente anterior a la validación; test nunca usado en desarrollo",
+      "resultado": "SUPERADO",
+      "detalle": ""
+    },
+    {
+      "control": "C8 Variables del entrenamiento observadas antes del inicio de la validación",
+      "resultado": "SUPERADO",
+      "detalle": ""
+    },
+    {
+      "control": "C9 Escalado e imputación ajustados solo con el entrenamiento del fold",
+      "resultado": "SUPERADO",
+      "detalle": ""
+    },
+    {
+      "control": "C10 Sin variables excluidas (infraestructura, exposición, gravedad, anomalía del objetivo)",
+      "resultado": "SUPERADO",
+      "detalle": ""
+    },
+    {
+      "control": "C11 Con gap = 1, el último mes observable es T−2",
+      "resultado": "SUPERADO",
+      "detalle": ""
+    },
+    {
+      "control": "C12 Regresión y clasificación comparten filas y fechas de partición",
+      "resultado": "SUPERADO",
+      "detalle": ""
+    },
+    {
+      "control": "C13 Etiquetas disponibles al inicio de la evaluación",
+      "resultado": "SUPERADO",
+      "detalle": "8 particiones auditadas con gap 0 y 1"
+    }
+  ],
+  "exploracion": {
+    "spearman_con_y_target_top8": {
+      "y_ma6": 0.839,
+      "y_ma3": 0.833,
+      "y_ma12": 0.828,
+      "share_ma12": 0.81,
+      "y_lag1": 0.786,
+      "y_lag2": 0.763,
+      "y_lag3": 0.758,
+      "share_lag1": 0.737
+    },
+    "pares_spearman_mayor_0_95": 6,
+    "top_pares_colineales": {
+      "y_ma6~y_ma12": 0.973,
+      "y_ma3~y_ma6": 0.97,
+      "y_ma12~share_ma12": 0.957,
+      "y_ma3~y_ma12": 0.934,
+      "y_ma6~share_ma12": 0.932,
+      "y_lag2~y_ma3": 0.926
+    }
+  },
+  "sha256_features_g0": "77df3f304c9f4bc50eae1a1043ac12d84fa1c97b4d2eb530ed8c3429d0505116",
+  "sha256_features_g1": "b5011a85ad6eb98027f74a6e45f590699d40d9e33f5112ae7b2bdaa6ad82d884"
+}

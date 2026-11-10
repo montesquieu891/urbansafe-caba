@@ -1,0 +1,438 @@
+{
+  "n": {
+    "hechos": 54066,
+    "victimas": 62078,
+    "hechos_en_panel_barrio": 51688
+  },
+  "temporal": {
+    "anual": [
+      {
+        "fecha": 2019,
+        "hechos": 10155,
+        "ksi": 476,
+        "mortales": 103,
+        "var_interanual_pct": NaN,
+        "ksi_pct": 4.69
+      },
+      {
+        "fecha": 2020,
+        "hechos": 6061,
+        "ksi": 222,
+        "mortales": 79,
+        "var_interanual_pct": -40.3,
+        "ksi_pct": 3.66
+      },
+      {
+        "fecha": 2021,
+        "hechos": 7818,
+        "ksi": 454,
+        "mortales": 96,
+        "var_interanual_pct": 29.0,
+        "ksi_pct": 5.81
+      },
+      {
+        "fecha": 2022,
+        "hechos": 9536,
+        "ksi": 629,
+        "mortales": 107,
+        "var_interanual_pct": 22.0,
+        "ksi_pct": 6.6
+      },
+      {
+        "fecha": 2023,
+        "hechos": 9927,
+        "ksi": 460,
+        "mortales": 104,
+        "var_interanual_pct": 4.1,
+        "ksi_pct": 4.63
+      },
+      {
+        "fecha": 2024,
+        "hechos": 10569,
+        "ksi": 626,
+        "mortales": 110,
+        "var_interanual_pct": 6.5,
+        "ksi_pct": 5.92
+      }
+    ],
+    "tendencia_2022_01": 738.3,
+    "tendencia_2024_12": 894.4,
+    "tendencia_2019_06": 891.4,
+    "indice_estacional_min_max": {
+      "mes_min": 1,
+      "min": 0.75,
+      "mes_max": 10,
+      "max": 1.101
+    },
+    "dia_semana_min_max": {
+      "min": "dom",
+      "min_v": 17.3,
+      "max": "vie",
+      "max_v": 32.3
+    },
+    "var_resid_sobre_var_total": 0.492
+  },
+  "territorial": {
+    "top5_conteo": [
+      {
+        "barrio": "Palermo",
+        "hechos": 4059,
+        "participacion_pct": 7.85
+      },
+      {
+        "barrio": "Balvanera",
+        "hechos": 2767,
+        "participacion_pct": 5.35
+      },
+      {
+        "barrio": "Flores",
+        "hechos": 2477,
+        "participacion_pct": 4.79
+      },
+      {
+        "barrio": "Caballito",
+        "hechos": 2252,
+        "participacion_pct": 4.36
+      },
+      {
+        "barrio": "Recoleta",
+        "hechos": 1996,
+        "participacion_pct": 3.86
+      }
+    ],
+    "top5_densidad": [
+      {
+        "barrio": "Constitucion",
+        "hechos_km2_anio": 118.5
+      },
+      {
+        "barrio": "Balvanera",
+        "hechos_km2_anio": 106.2
+      },
+      {
+        "barrio": "Monserrat",
+        "hechos_km2_anio": 101.6
+      },
+      {
+        "barrio": "San Nicolas",
+        "hechos_km2_anio": 90.7
+      },
+      {
+        "barrio": "San Cristobal",
+        "hechos_km2_anio": 87.8
+      }
+    ],
+    "spearman_conteo_densidad": 0.522,
+    "spearman_conteo_area": 0.664,
+    "min_conteo": [
+      {
+        "barrio": "Coghlan",
+        "hechos": 209
+      }
+    ]
+  },
+  "actores": {
+    "participacion_sin_sd_total": {
+      "MOTO": 44.5,
+      "PEATON": 17.3,
+      "AUTO": 13.1,
+      "BICICLETA": 13.1,
+      "TRANSPORTE PUBLICO": 6.3,
+      "OTROS": 5.7
+    },
+    "sd_pct_total": 17.7,
+    "severidad": [
+      {
+        "modo5": "MOTO",
+        "hechos": 19810,
+        "ksi_pct": 7.2,
+        "mortal_pct": 1.28
+      },
+      {
+        "modo5": "PEATON",
+        "hechos": 7680,
+        "ksi_pct": 10.68,
+        "mortal_pct": 3.02
+      },
+      {
+        "modo5": "BICICLETA",
+        "hechos": 5818,
+        "ksi_pct": 3.83,
+        "mortal_pct": 0.76
+      },
+      {
+        "modo5": "AUTO",
+        "hechos": 5826,
+        "ksi_pct": 4.21,
+        "mortal_pct": 0.84
+      },
+      {
+        "modo5": "TRANSPORTE PUBLICO",
+        "hechos": 2813,
+        "ksi_pct": 1.99,
+        "mortal_pct": 0.21
+      },
+      {
+        "modo5": "OTROS",
+        "hechos": 2555,
+        "ksi_pct": 3.17,
+        "mortal_pct": 0.59
+      },
+      {
+        "modo5": "SD",
+        "hechos": 9564,
+        "ksi_pct": 0.17,
+        "mortal_pct": 0.0
+      }
+    ],
+    "participacion_en_hechos_mortales": {
+      "MOTO": 42.2,
+      "PEATON": 38.7,
+      "AUTO": 8.2,
+      "BICICLETA": 7.3,
+      "OTROS": 2.5,
+      "TRANSPORTE PUBLICO": 1.0
+    },
+    "participacion_en_victimas_mortales": {
+      "MOTO": 42.0,
+      "PEATON": 38.7,
+      "AUTO": 8.7,
+      "BICICLETA": 7.2,
+      "OTROS": 2.5,
+      "TRANSPORTE PUBLICO": 1.0
+    }
+  },
+  "horario": {
+    "pico_hora": 17,
+    "pct_hechos_0_6h": 7.9,
+    "ksi_pct_0_6h": 10.5,
+    "ksi_pct_7_23h": 4.9,
+    "ksi_pct_finde_madrugada": 10.64,
+    "sin_hora": 77
+  },
+  "concentracion": {
+    "gini_anual": {
+      "2019": 0.362,
+      "2020": 0.352,
+      "2021": 0.362,
+      "2022": 0.37,
+      "2023": 0.345,
+      "2024": 0.365
+    },
+    "moran_densidad": {
+      "I": 0.47,
+      "p_perm": 0.0001,
+      "E_I_perm": -0.0197
+    },
+    "moran_conteo": {
+      "I": 0.207,
+      "p_perm": 0.0079
+    },
+    "islas": 0,
+    "vecinos_media": 5.21,
+    "jaccard_top10_anual": {
+      "2019-2020": 0.818,
+      "2020-2021": 0.818,
+      "2021-2022": 0.538,
+      "2022-2023": 0.818,
+      "2023-2024": 0.818
+    },
+    "nucleo_top10_todos_los_anios": [
+      "Almagro",
+      "Balvanera",
+      "Belgrano",
+      "Caballito",
+      "Flores",
+      "Palermo",
+      "Recoleta"
+    ],
+    "top10_mensual_repite_mes_siguiente": {
+      "media": 0.682,
+      "min": 0.4,
+      "max": 0.9
+    },
+    "barrios_top10_mas_de_80pct_meses": {
+      "Balvanera": 1.0,
+      "Palermo": 0.986,
+      "Flores": 0.972,
+      "Caballito": 0.903,
+      "Recoleta": 0.861
+    },
+    "barrios_nunca_top10": 21
+  },
+  "microescala_250m": {
+    "celdas": 3473,
+    "celdas_sin_hechos_pct": 14.7,
+    "share_top1pct_celdas": 6.9,
+    "share_top5pct_celdas": 23.1,
+    "jaccard_top5pct_2022_2024": 0.328,
+    "spearman_celdas_2022_2024": 0.718
+  },
+  "periodos": {
+    "tabla": [
+      {
+        "periodo": "pre",
+        "meses": 10,
+        "hechos_por_mes": 905.8,
+        "ksi_pct": 4.63,
+        "madrugada_0_6_pct": 7.9,
+        "sd_modo_pct": 7.9,
+        "MOTO": 43.6,
+        "PEATON": 18.2,
+        "BICICLETA": 10.8,
+        "AUTO": 13.4,
+        "TRANSPORTE PUBLICO": 6.5
+      },
+      {
+        "periodo": "pandemia",
+        "meses": 15,
+        "hechos_por_mes": 486.7,
+        "ksi_pct": 4.83,
+        "madrugada_0_6_pct": 8.7,
+        "sd_modo_pct": 23.3,
+        "MOTO": 44.8,
+        "PEATON": 16.0,
+        "BICICLETA": 17.9,
+        "AUTO": 12.3,
+        "TRANSPORTE PUBLICO": 3.7
+      },
+      {
+        "periodo": "post",
+        "meses": 43,
+        "hechos_por_mes": 818.7,
+        "ksi_pct": 5.65,
+        "madrugada_0_6_pct": 7.9,
+        "sd_modo_pct": 19.2,
+        "MOTO": 44.9,
+        "PEATON": 17.2,
+        "BICICLETA": 12.7,
+        "AUTO": 13.2,
+        "TRANSPORTE PUBLICO": 6.7
+      }
+    ],
+    "spearman_participacion": {
+      "pre-pandemia": 0.941,
+      "pandemia-post": 0.954,
+      "pre-post": 0.964
+    },
+    "mayores_caidas_participacion_pandemia_pp": {
+      "Colegiales": -0.77,
+      "Retiro": -0.55,
+      "Recoleta": -0.45
+    },
+    "mayores_subas_participacion_pandemia_pp": {
+      "Constitucion": 0.61,
+      "Parque Chacabuco": 0.62,
+      "Mataderos": 0.67
+    },
+    "chi2_modo_pre_vs_pandemia_p": 5.057999706275487e-45
+  },
+  "infraestructura_descriptiva": {
+    "spearman_con_densidad_hechos": {
+      "km_vias_por_km2": 0.365,
+      "pct_km_avenida": -0.01,
+      "semaforos_por_km2": 0.767
+    },
+    "pct_hechos_en_avenidas_2020_2024": 64.3,
+    "pct_km_avenidas_ciudad": 23.5,
+    "km_total_red": 3437.0,
+    "cruces_sin_barrio_asignable": 106,
+    "hechos_tipo_via_sd_2020_2024_pct": 5.9
+  },
+  "faltantes": {
+    "tabla": [
+      {
+        "anio": 2019,
+        "sin_coord_pct_total": 5.2,
+        "sin_coord_pct_GRAVE": 5.9,
+        "modo_SD_pct": 9.7,
+        "discrepancia_plana_n": 4,
+        "nov_dic_sobre_sep_oct": 0.61,
+        "graves_pct": 3.67
+      },
+      {
+        "anio": 2020,
+        "sin_coord_pct_total": 3.3,
+        "sin_coord_pct_GRAVE": 9.1,
+        "modo_SD_pct": 21.7,
+        "discrepancia_plana_n": 1,
+        "nov_dic_sobre_sep_oct": 1.32,
+        "graves_pct": 2.36
+      },
+      {
+        "anio": 2021,
+        "sin_coord_pct_total": 6.6,
+        "sin_coord_pct_GRAVE": 27.7,
+        "modo_SD_pct": 29.5,
+        "discrepancia_plana_n": 0,
+        "nov_dic_sobre_sep_oct": 1.0,
+        "graves_pct": 4.58
+      },
+      {
+        "anio": 2022,
+        "sin_coord_pct_total": 4.2,
+        "sin_coord_pct_GRAVE": 19.2,
+        "modo_SD_pct": 10.4,
+        "discrepancia_plana_n": 427,
+        "nov_dic_sobre_sep_oct": 0.93,
+        "graves_pct": 5.47
+      },
+      {
+        "anio": 2023,
+        "sin_coord_pct_total": 2.9,
+        "sin_coord_pct_GRAVE": 12.6,
+        "modo_SD_pct": 11.8,
+        "discrepancia_plana_n": 21,
+        "nov_dic_sobre_sep_oct": 0.98,
+        "graves_pct": 3.59
+      },
+      {
+        "anio": 2024,
+        "sin_coord_pct_total": 4.3,
+        "sin_coord_pct_GRAVE": 17.4,
+        "modo_SD_pct": 26.5,
+        "discrepancia_plana_n": 15,
+        "nov_dic_sobre_sep_oct": 1.08,
+        "graves_pct": 4.88
+      }
+    ],
+    "sin_coord_por_comuna_rango_pct": [
+      0.0,
+      1.2
+    ],
+    "comuna_mayor_faltante": 8,
+    "spearman_graves_pct_vs_sin_coord_grave": 0.657,
+    "sin_coord_por_anio_ubicabilidad": [
+      {
+        "anio": 2019,
+        "solo comuna": 88,
+        "sin ubicación": 442
+      },
+      {
+        "anio": 2020,
+        "solo comuna": 2,
+        "sin ubicación": 199
+      },
+      {
+        "anio": 2021,
+        "solo comuna": 3,
+        "sin ubicación": 513
+      },
+      {
+        "anio": 2022,
+        "solo comuna": 50,
+        "sin ubicación": 348
+      },
+      {
+        "anio": 2023,
+        "solo comuna": 2,
+        "sin ubicación": 281
+      },
+      {
+        "anio": 2024,
+        "solo comuna": 67,
+        "sin ubicación": 383
+      }
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+familia,modelo,P10e_media,delta_vs_mejor_baseline,folds_con_delta_>=0.02
+logit,"logit|C=0.01,class_weight=None,excluir_pandemia=True",0.7949074074074073,0.0157407407407405,1
+rf,"rf|max_depth=8,min_samples_leaf=20,class_weight=balanced_subsample,excluir_pandemia=True",0.789351851851852,0.010185185185185186,1
+hgb,"hgb|max_leaf_nodes=7,min_samples_leaf=20,class_weight=balanced,excluir_pandemia=False",0.7761574074074075,-0.0030092592592593226,0

@@ -1,0 +1,215 @@
+{
+  "configs_probadas": 38,
+  "mejor_baseline": "baseline:media12",
+  "tiempo_grilla_s": 20.1,
+  "seleccion": {
+    "modelo_seleccionado": "poisson|conjunto=compacto,alpha=0.1,excluir_pandemia=True",
+    "familia": "poisson",
+    "params": {
+      "conjunto": "compacto",
+      "alpha": 0.1,
+      "excluir_pandemia": true
+    },
+    "MAE_validacion_media": 3.863037904163764,
+    "mejor_baseline": "baseline:media12",
+    "MAE_baseline_validacion_media": 3.8495852623456788,
+    "ratio": 1.0034945691292179,
+    "folds_ganados": 2,
+    "cumple_criterio_validacion": false,
+    "mejores_por_familia": {
+      "hgb": "hgb|learning_rate=0.03,max_leaf_nodes=7,min_samples_leaf=20,max_iter=300,excluir_pandemia=True",
+      "negbin": "negbin|conjunto=compacto,excluir_pandemia=False",
+      "poisson": "poisson|conjunto=compacto,alpha=0.1,excluir_pandemia=True"
+    },
+    "congelado_utc": "2026-11-10T18:30:07+00:00",
+    "configs_probadas": 38
+  },
+  "alpha_nb_por_fold": {
+    "negbin|conjunto=compacto,excluir_pandemia=False": [
+      0.08067698651529699,
+      0.07854645365017139,
+      0.06376347867619497
+    ],
+    "negbin|conjunto=compacto,excluir_pandemia=True": [
+      0.02355141899253089,
+      0.03151380230623567,
+      0.02744631691684694
+    ]
+  },
+  "test": [
+    {
+      "MAE": 4.062210648148148,
+      "RMSE": 5.469608618663498,
+      "devianza_poisson": 1.431806782895447,
+      "sesgo": -0.8709490740740742,
+      "n": 576,
+      "modelo": "baseline:media12",
+      "seleccionado": false
+    },
+    {
+      "MAE": 4.066241184915443,
+      "RMSE": 5.363641770443368,
+      "devianza_poisson": 1.382680655168813,
+      "sesgo": 0.9477927269155207,
+      "n": 576,
+      "modelo": "hgb|learning_rate=0.03,max_leaf_nodes=7,min_samples_leaf=20,max_iter=300,excluir_pandemia=True",
+      "seleccionado": false
+    },
+    {
+      "MAE": 4.0708294830035125,
+      "RMSE": 5.549683007033309,
+      "devianza_poisson": 1.478453806505648,
+      "sesgo": -1.2207506245951842,
+      "n": 576,
+      "modelo": "poisson|conjunto=compacto,alpha=0.1,excluir_pandemia=True",
+      "seleccionado": true
+    },
+    {
+      "MAE": 4.119634536478036,
+      "RMSE": 5.655774294239481,
+      "devianza_poisson": 1.5383499978335717,
+      "sesgo": -1.4564903446730086,
+      "n": 576,
+      "modelo": "negbin|conjunto=compacto,excluir_pandemia=False",
+      "seleccionado": false
+    },
+    {
+      "MAE": 5.0677083333315975,
+      "RMSE": 6.87651498459183,
+      "devianza_poisson": 2.6571052386020595,
+      "sesgo": -0.022569444439236117,
+      "n": 576,
+      "modelo": "baseline:persistencia",
+      "seleccionado": false
+    },
+    {
+      "MAE": 5.486111111107639,
+      "RMSE": 7.320300919739684,
+      "devianza_poisson": 3.2349894266072754,
+      "sesgo": -1.7013888888854167,
+      "n": 576,
+      "modelo": "baseline:estacional",
+      "seleccionado": false
+    }
+  ],
+  "bootstrap_test": [
+    {
+      "index": "poisson − baseline:persistencia",
+      "media": -0.9969,
+      "ic_inf": -1.4407,
+      "ic_sup": -0.5788,
+      "bloque": 3.0,
+      "reps": 2000.0,
+      "meses": 12.0,
+      "IC_excluye_0_a_favor_del_modelo": true
+    },
+    {
+      "index": "poisson − baseline:estacional",
+      "media": -1.4153,
+      "ic_inf": -1.7962,
+      "ic_sup": -1.093,
+      "bloque": 3.0,
+      "reps": 2000.0,
+      "meses": 12.0,
+      "IC_excluye_0_a_favor_del_modelo": true
+    },
+    {
+      "index": "poisson − baseline:media12",
+      "media": 0.0086,
+      "ic_inf": -0.1272,
+      "ic_sup": 0.1422,
+      "bloque": 3.0,
+      "reps": 2000.0,
+      "meses": 12.0,
+      "IC_excluye_0_a_favor_del_modelo": false
+    },
+    {
+      "index": "hgb − baseline:media12",
+      "media": 0.004,
+      "ic_inf": -0.2047,
+      "ic_sup": 0.1902,
+      "bloque": 3.0,
+      "reps": 2000.0,
+      "meses": 12.0,
+      "IC_excluye_0_a_favor_del_modelo": false
+    },
+    {
+      "index": "negbin − baseline:media12",
+      "media": 0.0574,
+      "ic_inf": -0.0516,
+      "ic_sup": 0.2848,
+      "bloque": 3.0,
+      "reps": 2000.0,
+      "meses": 12.0,
+      "IC_excluye_0_a_favor_del_modelo": false
+    }
+  ],
+  "cumple_criterio_test": false,
+  "intervalos_nb_test": {
+    "cobertura_80": 0.858,
+    "cobertura_95": 0.983,
+    "alpha_nb_final": 0.0531
+  },
+  "por_barrio_test": {
+    "barrios_mejora_vs_baseline": 20,
+    "barrios": 48,
+    "spearman_MAE_vs_nivel": 0.905,
+    "peores_MAE": {
+      "Balvanera": 9.99,
+      "Caballito": 7.97,
+      "Saavedra": 7.19
+    }
+  },
+  "posthoc_negbin_reg": {
+    "mejor_validacion": "negbin_reg|conjunto=compacto,lam=0.1,excluir_pandemia=True",
+    "MAE_validacion_media": 3.864,
+    "ratio_vs_mejor_baseline_validacion": 1.0037,
+    "habria_ganado_la_seleccion": false,
+    "test": {
+      "MAE": 4.088475119852524,
+      "RMSE": 5.577608370024561,
+      "devianza_poisson": 1.493219770215551,
+      "sesgo": -1.3102492058256996,
+      "n": 576
+    },
+    "alpha": 0.022,
+    "cobertura_test": {
+      "cobertura_80": 0.818,
+      "cobertura_95": 0.962
+    },
+    "bootstrap_vs_mejor_baseline": {
+      "media": 0.026264471704375427,
+      "ic_inf": -0.12847285881691872,
+      "ic_sup": 0.17838055664635322,
+      "bloque": 3,
+      "reps": 2000,
+      "meses": 12
+    }
+  },
+  "gap1": [
+    {
+      "conjunto": "validación V2022",
+      "MAE_modelo": 4.926,
+      "MAE_baseline": 4.0234,
+      "ratio": 1.2243
+    },
+    {
+      "conjunto": "validación V2023",
+      "MAE_modelo": 3.6749,
+      "MAE_baseline": 3.7496,
+      "ratio": 0.9801
+    },
+    {
+      "conjunto": "validación V2024",
+      "MAE_modelo": 3.9531,
+      "MAE_baseline": 3.93,
+      "ratio": 1.0059
+    },
+    {
+      "conjunto": "test 2025",
+      "MAE_modelo": 4.2781,
+      "MAE_baseline": 4.1674,
+      "ratio": 1.0266
+    }
+  ]
+}

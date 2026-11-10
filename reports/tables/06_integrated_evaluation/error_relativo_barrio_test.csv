@@ -1,0 +1,49 @@
+barrio,y_media,MAE_reg,MAE_base,sesgo_reg,perfil,tercil,MAE_rel_reg,MAE_rel_base
+Agronomia,5.5,1.6402,1.6736,0.1785,Interior residencial,bajo,0.2982,0.3043
+Almagro,36.25,5.3056,4.7292,-5.1028,Interior residencial,alto,0.1464,0.1305
+Balvanera,51.25,9.9892,10.6875,-4.2901,Interior central-denso,alto,0.1949,0.2085
+Barracas,22.25,4.7342,4.1528,-3.7275,Interior central-denso,medio,0.2128,0.1866
+Belgrano,33.75,5.2256,4.7361,-1.8115,Interior residencial,alto,0.1548,0.1403
+Boedo,20.1667,3.6139,3.4792,-1.5251,Interior residencial,medio,0.1792,0.1725
+Caballito,42.5833,7.9698,7.4028,-2.3137,Interior residencial,alto,0.1872,0.1738
+Chacarita,15.75,3.1867,3.2153,-0.7549,Interior residencial,medio,0.2023,0.2041
+Coghlan,3.0833,1.8424,1.8611,0.3344,Interior residencial,bajo,0.5976,0.6036
+Colegiales,9.25,2.6313,2.5625,-1.0579,Interior residencial,bajo,0.2845,0.277
+Constitucion,27.8333,5.992,5.8889,-5.5894,Interior central-denso,alto,0.2153,0.2116
+Flores,48.1667,6.9586,6.5486,-4.2094,Interior central-denso,alto,0.1445,0.136
+Floresta,13.3333,2.0245,1.9236,-1.5749,Interior central-denso,medio,0.1518,0.1443
+La Boca,10.1667,1.8864,1.8403,-0.8272,Interior central-denso,medio,0.1855,0.181
+Liniers,22.6667,4.3501,4.1528,-1.8092,Borde (Gral. Paz/autopistas),alto,0.1919,0.1832
+Mataderos,23.5833,4.5578,4.9375,-1.4064,Borde (Gral. Paz/autopistas),alto,0.1933,0.2094
+Monserrat,26.1667,5.7143,5.4306,-4.2567,Interior central-denso,alto,0.2184,0.2075
+Monte Castro,6.9167,1.7562,1.6667,0.0138,Interior residencial,bajo,0.2539,0.241
+Nueva Pompeya,25.5833,6.5957,6.3403,-6.2771,Interior central-denso,medio,0.2578,0.2478
+Nuñez,16.8333,4.4085,4.7639,0.595,Interior residencial,medio,0.2619,0.283
+Palermo,69.25,5.8688,6.4931,0.7071,Interior central-denso,alto,0.0847,0.0938
+Parque Avellaneda,16.6667,3.8133,3.7431,-1.5544,Interior central-denso,medio,0.2288,0.2246
+Parque Chacabuco,20.25,4.034,3.9306,-2.501,Interior residencial,medio,0.1992,0.1941
+Parque Chas,2.25,1.6638,1.5903,1.1076,Interior residencial,bajo,0.7395,0.7068
+Parque Patricios,13.0,3.0167,3.1875,-0.5607,Interior central-denso,medio,0.2321,0.2452
+Paternal,7.6667,2.7158,2.7014,0.3798,Interior residencial,bajo,0.3542,0.3524
+Puerto Madero,9.0833,2.0004,2.1597,-1.1044,Interior residencial,bajo,0.2202,0.2378
+Recoleta,33.5,5.5254,5.6806,0.5189,Interior central-denso,alto,0.1649,0.1696
+Retiro,19.0833,6.5005,6.4583,-0.7395,Interior central-denso,medio,0.3406,0.3384
+Saavedra,22.4167,7.1902,7.7778,4.5224,Borde (Gral. Paz/autopistas),alto,0.3208,0.347
+San Cristobal,20.1667,3.6525,3.9583,-0.4839,Interior residencial,medio,0.1811,0.1963
+San Nicolas,23.25,6.4264,6.3819,-3.7024,Interior central-denso,medio,0.2764,0.2745
+San Telmo,10.6667,3.7801,3.7222,-1.4698,Interior central-denso,bajo,0.3544,0.349
+Velez Sarsfield,8.0833,2.7255,2.7361,0.8252,Interior central-denso,bajo,0.3372,0.3385
+Versalles,6.6667,2.5271,2.4931,0.2239,Borde (Gral. Paz/autopistas),bajo,0.3791,0.374
+Villa Crespo,31.8333,6.4872,6.2569,-4.0193,Interior residencial,alto,0.2038,0.1966
+Villa Del Parque,9.25,3.1629,3.3819,-1.2218,Interior residencial,bajo,0.3419,0.3656
+Villa Devoto,19.0833,4.9166,5.2708,2.1747,Borde (Gral. Paz/autopistas),alto,0.2576,0.2762
+Villa Gral. Mitre,8.6667,1.8741,1.8611,0.2981,Interior residencial,bajo,0.2162,0.2147
+Villa Lugano,26.5,5.8449,5.4236,-4.9951,Borde (Gral. Paz/autopistas),alto,0.2206,0.2047
+Villa Luro,10.1667,2.9822,2.8611,-0.2957,Interior residencial,medio,0.2933,0.2814
+Villa Ortuzar,7.6667,2.4243,2.4653,-1.3942,Interior residencial,bajo,0.3162,0.3216
+Villa Pueyrredon,10.75,2.6272,2.7847,-0.4786,Borde (Gral. Paz/autopistas),medio,0.2444,0.259
+Villa Real,8.5833,2.7146,2.6597,-0.4423,Borde (Gral. Paz/autopistas),bajo,0.3163,0.3099
+Villa Riachuelo,9.5,1.8149,1.8889,-0.7086,Borde (Gral. Paz/autopistas),bajo,0.191,0.1988
+Villa Santa Rita,6.6667,1.6696,1.7778,0.1299,Interior residencial,bajo,0.2504,0.2667
+Villa Soldati,13.8333,3.4929,3.3056,-0.8385,Interior central-denso,medio,0.2525,0.239
+Villa Urquiza,19.3333,3.5653,4.0417,2.4385,Interior residencial,alto,0.1844,0.2091

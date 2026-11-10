@@ -1,0 +1,31 @@
+{
+  "modelo_seleccionado": "logit|C=0.01,class_weight=None,excluir_pandemia=True",
+  "familia": "logit",
+  "params": {
+    "C": 0.01,
+    "class_weight": null,
+    "excluir_pandemia": true
+  },
+  "P10e_validacion_media": 0.7949074074074073,
+  "mejor_baseline": "baseline:media12",
+  "P10e_baseline_validacion_media": 0.7791666666666668,
+  "delta": 0.0157407407407405,
+  "folds_con_delta_>=0.02": 1,
+  "intervalo_pareado_validacion": {
+    "mediana": 0.016666666666666663,
+    "p2.5": 0.013888888888888886,
+    "p97.5": 0.019444444444444445,
+    "excluye_0": true,
+    "semillas": 500
+  },
+  "cumple_criterio_validacion": false,
+  "umbral_F1": 0.4599999999999999,
+  "F1_validacion_en_umbral": 0.7982583454281568,
+  "mejores_por_familia": {
+    "logit": "logit|C=0.01,class_weight=None,excluir_pandemia=True",
+    "rf": "rf|max_depth=8,min_samples_leaf=20,class_weight=balanced_subsample,excluir_pandemia=True",
+    "hgb": "hgb|max_leaf_nodes=7,min_samples_leaf=20,class_weight=balanced,excluir_pandemia=False"
+  },
+  "congelado_utc": "2026-11-10T18:29:10+00:00",
+  "configs_probadas": 56
+}

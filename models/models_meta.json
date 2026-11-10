@@ -1,0 +1,24 @@
+{
+  "sklearn": "1.9.1",
+  "entrenamiento": [
+    "2020-01",
+    "2024-12"
+  ],
+  "filas_entrenamiento": 2880,
+  "modelos": {
+    "regresion": {
+      "configuracion": "poisson|conjunto=compacto,alpha=0.1,excluir_pandemia=True",
+      "archivo": "regresion_final.joblib",
+      "sha256": "80860d3382f33c1a3922fe781d26e422794f4155548f2110c18c2a508d7f6ca9",
+      "predicciones_2025_coinciden_con_notebook": true,
+      "objetivo": "y_target"
+    },
+    "clasificacion": {
+      "configuracion": "logit|C=0.01,class_weight=None,excluir_pandemia=True",
+      "archivo": "clasificacion_final.joblib",
+      "sha256": "157d2f467eb6fc497b13ba320e62a77b4b7c358ed1db826204ba5b723785d5c9",
+      "predicciones_2025_coinciden_con_notebook": true,
+      "objetivo": "top10_target"
+    }
+  }
+}

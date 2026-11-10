@@ -1,0 +1,103 @@
+{
+  "enlaces_total": 122,
+  "enlaces_rotos": [],
+  "cifras": [
+    {
+      "cifra": "Hechos en la fuente",
+      "informada": 65818,
+      "artefacto": 65818.0,
+      "coincide": true
+    },
+    {
+      "cifra": "Víctimas en la fuente",
+      "informada": 75197,
+      "artefacto": 75197.0,
+      "coincide": true
+    },
+    {
+      "cifra": "% de hechos mortales con víctima moto o peatón",
+      "informada": 81,
+      "artefacto": 80.9,
+      "coincide": true
+    },
+    {
+      "cifra": "% del top 10 mensual que se repite",
+      "informada": 68,
+      "artefacto": 68.2,
+      "coincide": true
+    },
+    {
+      "cifra": "Cobertura top 10, media de 12 meses (2025, %)",
+      "informada": 42.7,
+      "artefacto": 42.7346,
+      "coincide": true
+    },
+    {
+      "cifra": "Cobertura top 10, clasificador (2025, %)",
+      "informada": 43.1,
+      "artefacto": 43.0542,
+      "coincide": true
+    },
+    {
+      "cifra": "Cobertura top 10, oráculo (2025, %)",
+      "informada": 44.6,
+      "artefacto": 44.622,
+      "coincide": true
+    },
+    {
+      "cifra": "% de la ganancia posible captada por el historial",
+      "informada": 92,
+      "artefacto": 92.066,
+      "coincide": true
+    },
+    {
+      "cifra": "MAE regresión seleccionada (2025)",
+      "informada": 4.07,
+      "artefacto": 4.0708,
+      "coincide": true
+    },
+    {
+      "cifra": "MAE media de 12 meses (2025)",
+      "informada": 4.06,
+      "artefacto": 4.0622,
+      "coincide": true
+    },
+    {
+      "cifra": "P@10 clasificador (2025)",
+      "informada": 0.808,
+      "artefacto": 0.8083,
+      "coincide": true
+    },
+    {
+      "cifra": "P@10 media de 12 meses (2025)",
+      "informada": 0.792,
+      "artefacto": 0.7917,
+      "coincide": true
+    },
+    {
+      "cifra": "Silhouette del clustering seleccionado",
+      "informada": 0.33,
+      "artefacto": 0.33,
+      "coincide": true
+    },
+    {
+      "cifra": "% de corredores que cambia de cuartil",
+      "informada": 43,
+      "artefacto": 43.2,
+      "coincide": true
+    },
+    {
+      "cifra": "% de hechos en barrios de borde (2025)",
+      "informada": 16.2,
+      "artefacto": 16.191,
+      "coincide": true
+    },
+    {
+      "cifra": "% de selecciones top 10 del clasificador en el borde",
+      "informada": 8.3,
+      "artefacto": 8.333,
+      "coincide": true
+    }
+  ],
+  "cifras_que_no_coinciden": []
+}

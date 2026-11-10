@@ -1,0 +1,4 @@
+familia,modelo,MAE_media,ratio_vs_mejor_baseline,folds_ganados,cumple_criterio
+poisson,"poisson|conjunto=compacto,alpha=0.1,excluir_pandemia=True",3.863037904163764,1.0034945691292179,2,False
+hgb,"hgb|learning_rate=0.03,max_leaf_nodes=7,min_samples_leaf=20,max_iter=300,excluir_pandemia=True",4.043411796000104,1.0503499781003214,1,False
+negbin,"negbin|conjunto=compacto,excluir_pandemia=False",5.058664400664941,1.3140803634473939,1,False

@@ -1,0 +1,37 @@
+variable,familia,definición,ventana,en FEATURES_MAIN
+y_lag1,Histórica,Hechos en L,L,sí
+y_lag2,Histórica,Hechos en L−1,L−1,sí
+y_lag3,Histórica,Hechos en L−2,L−2,sí
+y_lag12,Histórica,Hechos en T−12 (mismo mes del año anterior),T−12 ≤ L,sí
+y_ma3,Histórica,"Media de hechos, 3 meses",L−2..L,sí
+y_ma6,Histórica,"Media, 6 meses",L−5..L,sí
+y_ma12,Histórica,"Media, 12 meses",L−11..L,sí
+tendencia_ma3_ma12,Histórica,Cociente ma3 / ma12,L−11..L,sí
+share_lag1,Histórica relativa,Participación del barrio en el total de la ciudad en L,L,sí
+share_ma12,Histórica relativa,"Participación acumulada, 12 meses",L−11..L,sí
+rank_lag1,Histórica relativa,Puesto del barrio en L (1 = mayor),L,sí
+rank_ma12,Histórica relativa,"Puesto medio, 12 meses",L−11..L,sí
+top10_freq12,Histórica relativa,"Proporción de meses en el top 10 (R0), 12 meses",L−11..L,sí
+densidad_ma12,Territorial,ma12 / superficie (km²),L−11..L,sí
+ciudad_lag1,Nivel ciudad,Total de la ciudad en L,L,sí
+ciudad_ma12,Nivel ciudad,"Media de la ciudad, 12 meses",L−11..L,sí
+ciudad_lag12,Nivel ciudad,Total de la ciudad en T−12,T−12,sí
+mes_sin,Temporal,Seno del mes calendario de T,conocido,sí
+mes_cos,Temporal,Coseno del mes calendario de T,conocido,sí
+n_pandemia_ventana12,Temporal,Meses de pandemia en la ventana L−11..L,L−11..L,sí
+area_km2,Territorial,Superficie oficial del barrio,estático,sí
+comuna,Territorial,"Comuna (categórica, one-hot)",estático,sí
+vecinos_ma3,Vecindad,Media de ma3 de los vecinos queen,L−2..L,sí
+vecinos_share_ma12,Vecindad,Media de share_ma12 de los vecinos queen,L−11..L,sí
+comp_moto_12m,Composición,"Proporción de hechos con víctima moto (SD explícito), 12 meses",L−11..L,sí
+comp_peaton_12m,Composición,"Proporción de hechos con víctima peaton (SD explícito), 12 meses",L−11..L,sí
+comp_bicicleta_12m,Composición,"Proporción de hechos con víctima bicicleta (SD explícito), 12 meses",L−11..L,sí
+comp_auto_12m,Composición,"Proporción de hechos con víctima auto (SD explícito), 12 meses",L−11..L,sí
+comp_transporte_publico_12m,Composición,"Proporción de hechos con víctima transporte publico (SD explícito), 12 meses",L−11..L,sí
+comp_otros_12m,Composición,"Proporción de hechos con víctima otros (SD explícito), 12 meses",L−11..L,sí
+comp_sd_12m,Composición,"Proporción de hechos con víctima sd (SD explícito), 12 meses",L−11..L,sí
+"infraestructura (callejero, semáforos)",Excluida,estado vigente sin fechas de vigencia; D11,—,no
+exposición (conteos vehiculares),Excluida,solo 2024 y en corredores; D8,—,no
+KSI / gravedad rezagada,Excluida,registro cambiante entre años (E9) y gravedad mortal definida a 30 días,—,no
+anomalía del mes objetivo,Excluida,"no se conoce en el corte (p. ej., el inicio de la pandemia)",—,no
+marca 'registro' 2019-11/12,Excluida,anotación ex post de la auditoría; no disponible en tiempo real,—,no
