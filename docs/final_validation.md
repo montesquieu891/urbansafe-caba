@@ -1,7 +1,7 @@
 # UrbanSafe CABA — Validación final y entrega
 
 **Hito:** Paso 12  
-**Estado:** borrador para revisión, no cerrado  
+**Estado:** aprobado por el responsable el 2026-11-10. Cerrado, con las condiciones P1, P2 y P4 pendientes de la sección 5  
 **Fecha:** 2026-11-10  
 **Skills aplicadas:** `validate-data`, `ml-scientific-reviewer` y `colab-reproducibility-audit`  
 **Evidencia:** [docs/evidence/paso12/](evidence/paso12/), [`scripts/check_traceability.py`](../scripts/check_traceability.py) y [`scripts/export_models.py`](../scripts/export_models.py)
@@ -92,7 +92,7 @@ Todas las salidas de `reports/` se compararon. Los CSV se compararon con toleran
 | P3 | 2025 posiblemente provisorio | Medio para el test | V2024 retrospectiva da la misma conclusión |
 | P4 | La presentación es un artifact **privado** | Bajo | Compartirla o exportarla a PPTX o PDF desde *Share* para la entrega |
 | P5 | El archivo del plan tiene finales de línea solo CR (cambio externo) | Bajo: dificulta los diffs | Volver a guardarlo con LF |
-| P6 | Los cambios de los Pasos 05 a 12 **no están commiteados** | Alto para la entrega | Commit y *push* al repo privado |
+| P6 | ~~Los cambios de los Pasos 05 a 12 no estaban commiteados~~ | — | **Resuelto:** PR #1 fusionado en `main` (commit `36d4078`) |
 
 ## 6. Dictamen final
 
