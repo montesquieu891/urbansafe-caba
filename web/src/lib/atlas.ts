@@ -1,9 +1,7 @@
 import { createFeatures, parseFeatures, type ExplorerState, type Forecast, type Profile, type Coverage } from './explorer-features';
-import * as maplibregl from 'maplibre-gl';
-import type { GeoJSONSource } from 'maplibre-gl';
-import 'maplibre-gl/dist/maplibre-gl.css';
+// MapLibre (~1 MB) se carga de forma diferida: filtros, ficha y lista quedan operativos antes que el mapa.
+import type { GeoJSONSource, Map as MapLibreMap } from 'maplibre-gl';
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
-maplibregl.setWorkerUrl(workerUrl);
 import type { FeatureCollection, Geometry } from 'geojson';
 
 type Observation = { valor: number | null; estado: 'observado' | 'sin_datos' };
@@ -33,7 +31,7 @@ async function start() {
  if (byKey.size !== panel.length) throw new Error('El panel tiene claves duplicadas.');
  let state: ExplorerState;
  const features = createFeatures(forecasts, profiles, coverage, ()=>state, update);
- let map: maplibregl.Map | undefined;
+ let map: MapLibreMap | undefined;
  let ready = false;
  function fromURL() {
   const q = new URLSearchParams(location.search), rawMonth = q.get('mes');
@@ -95,7 +93,7 @@ async function start() {
  }
  function renderList() {
   const visible=neighborhoods.filter(n=>norm(n.nombre).includes(norm(state.query))).map(n=>({...n,value:readValue(byKey.get(`${n.id_barrio}:${state.month}`),state.metric)})).sort((a,b)=>(b.value??-1)-(a.value??-1)||a.nombre.localeCompare(b.nombre,'es'));
-  $('neighborhood-list').innerHTML=visible.map(n=>`<button type="button" data-id="${n.id_barrio}" aria-pressed="${n.id_barrio===state.id}" aria-label="Seleccionar ${esc(n.nombre)}"><span>${esc(n.nombre)}</span><b>${format(n.value)}</b></button>`).join('');
+  $('neighborhood-list').innerHTML=visible.map(n=>`<button type="button" data-id="${n.id_barrio}" aria-pressed="${n.id_barrio===state.id}"><span><span class="sr-only">Seleccionar </span>${esc(n.nombre)}</span> <b>${format(n.value)}</b></button>`).join('');
   $('ranking-info').textContent=`${visible.length} de 48 barrios · ${monthName(state.month)} · ${unit(state.metric)} · mayor a menor`;
   $('empty-search').hidden=visible.length>0;
  }
@@ -108,6 +106,10 @@ async function start() {
  window.addEventListener('popstate',()=>{fromURL();render();});
  $('version').textContent=`Corte: ${manifest.fecha_corte} · Versión: ${manifest.data_version}`;
  try {
+  $('map').dataset.loading='true';
+  const [maplibregl] = await Promise.all([import('maplibre-gl'), import('maplibre-gl/dist/maplibre-gl.css')]);
+  maplibregl.setWorkerUrl(workerUrl);
+  delete $('map').dataset.loading;
   map=new maplibregl.Map({container:'map',style:{version:8,sources:{},layers:[{id:'background',type:'background',paint:{'background-color':'#e9ede3'}}]},bounds:[[-58.54,-34.71],[-58.32,-34.52]],fitBoundsOptions:{padding:25},attributionControl:false,dragRotate:false,pitchWithRotate:false});
   map.addControl(new maplibregl.NavigationControl({showCompass:false}),'bottom-right');
   map.addControl(new maplibregl.AttributionControl({compact:true,customAttribution:'Buenos Aires Data · CC-BY-2.5-AR'}));
@@ -117,7 +119,7 @@ async function start() {
   map.on('mouseenter','fills',()=>{map!.getCanvas().style.cursor='pointer';});map.on('mouseleave','fills',()=>{map!.getCanvas().style.cursor='';});
   map.on('error',()=>{$('map-fallback').hidden=false;});
   $('reset-map').addEventListener('click',()=>map!.fitBounds([[-58.54,-34.71],[-58.32,-34.52]],{padding:25,duration:0}));
- } catch { $('map-fallback').hidden=false;$<HTMLButtonElement>('reset-map').disabled=true; }
+ } catch { delete $('map').dataset.loading;$('map-fallback').hidden=false;$<HTMLButtonElement>('reset-map').disabled=true; }
 }
 start().catch(error=>{$('status').textContent=`No pudimos cargar el atlas. ${error.message}. Recargá la página para volver a intentar.`; $('status').setAttribute('role','alert');});
 
