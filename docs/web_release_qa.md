@@ -25,7 +25,7 @@ Revisa `web/dist/` tal como se serviría y falla ante cualquiera de estos casos:
 
 Se comprobó que falla de verdad: con un CSV agregado, un script de un CDN y una ruta local, los tres casos se reportaron y el comando terminó con código 1.
 
-Resultado: 14 archivos; 7,18 MB sin comprimir, unos 823 kB con gzip. La geometría completa sin simplificar (decisión del contrato) es el archivo comprimido más pesado, con unos 261 kB. Hashes por archivo, commit y versión de datos: [dist-audit.json](evidence/web_phase4/dist-audit.json). Se generó antes de confirmar los cambios de esta fase, así que registra el commit base `02680c6` con `arbol_con_cambios: true`. Para la fase 5 debe regenerarse sobre el commit que se publique.
+Resultado: 14 archivos; 7,18 MB sin comprimir, unos 823 kB con gzip. La geometría completa sin simplificar (decisión del contrato) es el archivo comprimido más pesado, con unos 261 kB. Hashes por archivo, commit y versión de datos: [dist-audit.json](evidence/web_phase4/dist-audit.json). Registra el commit `7174f45` con árbol limpio (`arbol_con_cambios: false`), sobre el que `npm run test:release` terminó con código 0 (36/36 E2E). Para la fase 5 debe regenerarse sobre el commit que se publique.
 
 ## Cambios de la fase
 

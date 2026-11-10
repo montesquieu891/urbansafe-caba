@@ -1,7 +1,7 @@
 {
   "resultado": "aprobado",
-  "commit": "02680c69721030880ba62bcc2c22295760e59f79",
-  "arbol_con_cambios": true,
+  "commit": "7174f45e3cf4474be829a5baafe66d15fb514bd0",
+  "arbol_con_cambios": false,
   "schema_version": "1.0.0",
   "data_version": "2019-2025-5685c2f9c0a0",
   "fecha_corte": "2025-12-31",
