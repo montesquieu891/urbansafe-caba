@@ -74,6 +74,20 @@ test('si MapLibre no carga, la lista y la ficha siguen operativas', async ({ pag
  await expect(page.locator('#neighborhood')).toHaveText('Flores');
 });
 
+test('la CSP de public/_headers no bloquea el sitio', async ({ page, request }) => {
+ // `astro preview` no aplica _headers; se inyecta la política de dist/_headers que servirá Cloudflare Pages.
+ const csp = (await (await request.get('/_headers')).text()).match(/Content-Security-Policy: (.+)/)![1].trim();
+ await page.route(url => url.pathname === '/', async route => { const response = await route.fetch(); await route.fulfill({ response, headers: { ...response.headers(), 'content-security-policy': csp } }); });
+ const { issues } = watch(page);
+ await page.goto('/?vista=simulador&mes=2025-03&barrio=21&k=10');
+ await expect(page.locator('#map')).toHaveAttribute('data-ready', 'true');
+ await expect(page.locator('#annual-strategy')).toHaveText('43,05 %');
+ await expect(page.locator('#legend-items .swatch').first()).toHaveCSS('background-color', 'rgb(65, 109, 101)');
+ await page.getByRole('button', { name: 'Perfiles barriales', exact: true }).click();
+ await expect(page.locator('#map')).toHaveAttribute('data-view', 'perfiles');
+ expect(issues).toEqual([]);
+});
+
 test('sin JavaScript se ofrecen los datos', async ({ browser, baseURL }) => {
  const context = await browser.newContext({ javaScriptEnabled: false, baseURL });
  const page = await context.newPage();
