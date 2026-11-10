@@ -1,0 +1,46 @@
+variable,mean_abs_shap,familia
+top10_freq12,0.3363727715850466,"Historial relativo (participación, puesto, top 10)"
+rank_ma12,0.2637803368550518,"Historial relativo (participación, puesto, top 10)"
+share_ma12,0.23488491400305664,"Historial relativo (participación, puesto, top 10)"
+log_y_ma12,0.21883451847697355,Historial del barrio
+log_y_ma6,0.21630546639940182,Historial del barrio
+log_y_ma3,0.1757415794090685,Historial del barrio
+log_y_lag3,0.16477509140443983,Historial del barrio
+log_area_km2,0.16117489499633011,"Territorio (superficie, comuna)"
+log_y_lag2,0.1592823371105671,Historial del barrio
+share_lag1,0.13332852219601168,"Historial relativo (participación, puesto, top 10)"
+rank_lag1,0.12850573562287748,"Historial relativo (participación, puesto, top 10)"
+log_y_lag12,0.09900261231444597,Historial del barrio
+log_y_lag1,0.09824906541836903,Historial del barrio
+log_ciudad_ma12,0.0972991899742938,Nivel de la ciudad
+log_densidad_ma12,0.09218682353080007,Historial del barrio
+tendencia_ma3_ma12,0.07675106397155,Historial del barrio
+comp_otros_12m,0.07194999430353952,Composición modal
+vecinos_share_ma12,0.07126587550049131,Vecindad
+comp_auto_12m,0.0644611788784006,Composición modal
+comp_bicicleta_12m,0.06286405309336479,Composición modal
+log_ciudad_lag12,0.04403442965911619,Nivel de la ciudad
+log_ciudad_lag1,0.03277067303357301,Nivel de la ciudad
+n_pandemia_ventana12,0.03244628950901988,Calendario y pandemia
+comp_transporte_publico_12m,0.028046605505497337,Composición modal
+comp_peaton_12m,0.02415106391686975,Composición modal
+log_vecinos_ma3,0.021739684601296456,Vecindad
+mes_cos,0.013323724715326415,Calendario y pandemia
+mes_sin,0.011125939587839582,Calendario y pandemia
+comuna_4,0.008987102142433874,"Territorio (superficie, comuna)"
+comuna_12,0.007149479258935574,"Territorio (superficie, comuna)"
+comuna_10,0.006581149910639622,"Territorio (superficie, comuna)"
+comuna_9,0.004261422150734489,"Territorio (superficie, comuna)"
+comp_sd_12m,0.0038121544069562815,Composición modal
+comuna_1,0.003139807740593374,"Territorio (superficie, comuna)"
+comuna_8,0.003073386138062352,"Territorio (superficie, comuna)"
+comuna_13,0.0024286480625073854,"Territorio (superficie, comuna)"
+comuna_11,0.002316277616662395,"Territorio (superficie, comuna)"
+comuna_3,0.0021195745090871075,"Territorio (superficie, comuna)"
+comp_moto_12m,0.0019295899155436671,Composición modal
+comuna_2,0.0014739213608448841,"Territorio (superficie, comuna)"
+comuna_6,0.001106486663232184,"Territorio (superficie, comuna)"
+comuna_5,0.0008533708679634947,"Territorio (superficie, comuna)"
+comuna_15,0.000762762840416925,"Territorio (superficie, comuna)"
+comuna_14,0.00019228189070709736,"Territorio (superficie, comuna)"
+comuna_7,8.720584402604756e-05,"Territorio (superficie, comuna)"

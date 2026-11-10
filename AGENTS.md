@@ -20,6 +20,10 @@ Abre los `SKILL.md` pertinentes en [las skills del proyecto](.agents/skills). Us
 
 `build-dashboard` corresponde a una extensión posterior a la entrega académica, si se solicita. Para mantener las skills usa `$skill-creator`, disponible en Codex.
 
+### Auditoría de Colabs
+
+Para una revisión integral de un notebook abre primero [colab-reproducibility-audit](.agents/skills/colab-reproducibility-audit/SKILL.md). Añade [colab-data-audit](.agents/skills/colab-data-audit/SKILL.md) si el notebook transforma o explora datos y [colab-ml-validation](.agents/skills/colab-ml-validation/SKILL.md) si genera variables predictoras, entrena modelos, evalúa rankings o produce clusters. En Claude puedes abrir esos archivos explícitamente desde la raíz del proyecto.
+
 ## Coordinación y cierre
 
 El agente principal mantiene el alcance y el estado del plan. La investigación entrega fuentes y limitaciones al responsable del análisis. El análisis entrega código, datos derivados, decisiones y métricas reproducibles a la revisión. Cuando se autorice y esté disponible la delegación, encarga la revisión de modelado a un agente distinto. Si revisa quien implementó, registra la revisión como autoauditoría.

@@ -1,0 +1,29 @@
+{
+  "csv_ok": 68,
+  "csv_dif": [
+    "reports\\tables\\03_regression\\bootstrap_test.csv: DataFrame.iloc[:, 0] (column name=\"Unnamed: 0\") are different\n\nDataFrame.iloc[:, 0] (column name=\"Unnamed: 0\") values ar",
+    "reports\\tables\\03_regression\\predicciones_test.csv: DataFrame.columns are different\n\nDataFrame.columns values are different (25.0 %)\n[left]:  Index(['barrio', 'mes_objetivo",
+    "reports\\tables\\04_classification\\metricas_test.csv: DataFrame.iloc[:, 0] (column name=\"modelo\") are different\n\nDataFrame.iloc[:, 0] (column name=\"modelo\") values are differ",
+    "reports\\tables\\04_classification\\predicciones_test.csv: DataFrame.columns are different\n\nDataFrame.columns values are different (33.33333 %)\n[left]:  Index(['barrio', 'mes_obje"
+  ],
+  "json_ok": 7,
+  "json_dif": {
+    "reports\\tables\\03_regression\\regression_metrics.json": [
+      "/bootstrap_test[3]/ic_inf: -0.2047 vs -0.0516",
+      "/bootstrap_test[3]/ic_sup: 0.1902 vs 0.2848",
+      "/bootstrap_test[3]/index: hgb − baseline:media12 vs negbin − baseline:media12",
+      "/bootstrap_test[3]/media: 0.004 vs 0.0574",
+      "/bootstrap_test[4]/ic_inf: -0.0516 vs -0.2047"
+    ],
+    "reports\\tables\\04_classification\\classification_metrics.json": [
+      "/test[0]/PR_AUC: 0.9093932069383017 vs 0.9083480148617039",
+      "/test[0]/ROC_AUC: 0.9655701754385966 vs 0.9656067251461988",
+      "/test[0]/seleccionado: True vs False",
+      "/test[0]/Brier: 0.054876285693443605 vs 0.07741920542009684",
+      "/test[0]/modelo: logit|C=0.01,class_weight=None,excluir_p vs rf|max_depth=8,min_samples_leaf=20,class"
+    ]
+  },
+  "png_ok": 31,
+  "png_dif": [],
+  "faltan": []
+}

@@ -51,7 +51,7 @@ Los datos abiertos de CABA **permiten responder el núcleo de la propuesta** a e
 
 **D2. Agregación mensual.** Ofrece 72 períodos de desarrollo y 12 de test, frente a 24 y 4 trimestrales. Con el mes ya hay pocos ceros, así que el trimestre no aporta estabilidad relevante y reduce la evaluación fuera de muestra. El trimestre queda como sensibilidad.
 
-**D3. Período y particiones.** El estudio abarca 2019-01 a 2025-12, con 2025 como test provisorio. Los meses de 2019-11/12 y de la pandemia se **marcan** y no se eliminan, para conservar la continuidad de los rezagos. El Paso 06 fijará los *folds* de validación expansiva en 2022–2024 (posteriores a la pandemia) y el tratamiento de los rezagos contaminados. *Riesgo:* 2025 podría ser provisorio. Se lo preguntamos al organismo y, si se confirma, el Paso 10 usará 2024 como test alternativo.
+**D3. Período y particiones.** El estudio abarca 2019-01 a 2025-12, con 2025 como test provisorio. Los meses de 2019-11/12 y de la pandemia se **marcan** y no se eliminan, para conservar la continuidad de los rezagos. El Paso 06 fijará los *folds* de validación expansiva en 2022–2024 (posteriores a la pandemia) y el tratamiento de los rezagos contaminados. *Riesgo:* 2025 podría ser provisorio. Se lo preguntamos al organismo. *(Actualización del Paso 06: como 2024 es un fold de validación usado para seleccionar, no puede servir de test. Si se confirma la provisionalidad, el Paso 10 informará V2024 como validación retrospectiva.)*
 
 **D4. Horizonte t+1 mes.** Corresponde a una decisión de priorización mensual. La persistencia anual (0,97) es mucho mayor que la mensual (0,82): el ruido mes a mes deja espacio para que un modelo mejore al historial, pero no lo garantiza.
 

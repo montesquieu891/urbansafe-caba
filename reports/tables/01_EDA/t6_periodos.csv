@@ -1,0 +1,4 @@
+periodo,meses,hechos_por_mes,ksi_pct,madrugada_0_6_pct,sd_modo_pct,MOTO,PEATON,BICICLETA,AUTO,TRANSPORTE PUBLICO
+pre,10,905.8,4.63,7.9,7.9,43.6,18.2,10.8,13.4,6.5
+pandemia,15,486.7,4.83,8.7,23.3,44.8,16.0,17.9,12.3,3.7
+post,43,818.7,5.65,7.9,19.2,44.9,17.2,12.7,13.2,6.7

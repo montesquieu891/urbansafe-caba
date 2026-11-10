@@ -1,0 +1,23 @@
+<section id="metodo" data-transition="fade" style="background:#F1F0EB;color:#1F2A3D;font-family:'IBM Plex Sans', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<p style="font-size:28px;letter-spacing:3px;text-transform:uppercase;color:#2A78D6">Modelos · Cómo evaluamos</p>
+<h2 style="font-family:'Source Serif 4', Georgia, serif;font-size:72px;font-weight:600;line-height:1.1;color:#14213D">Reglas fijadas antes de mirar los resultados</h2>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px">
+<div style="display:flex;flex-direction:column;gap:12px;background:#FBFBF8;padding:36px;border-radius:16px;border:1px solid #E1DED5">
+<h3 style="font-size:32px;font-weight:600;color:#14213D">Solo información disponible</h3>
+<p style="font-size:28px;line-height:1.4;color:#4A5568">Cada pronóstico usa datos hasta el mes anterior. 13 controles automáticos de fuga temporal</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FBFBF8;padding:36px;border-radius:16px;border:1px solid #E1DED5">
+<h3 style="font-size:32px;font-weight:600;color:#14213D">Validación en el tiempo</h3>
+<p style="font-size:28px;line-height:1.4;color:#4A5568">Entrenar con el pasado, validar en 2022, 2023 y 2024; prueba final en 2025, usada una sola vez</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FBFBF8;padding:36px;border-radius:16px;border:1px solid #E1DED5">
+<h3 style="font-size:32px;font-weight:600;color:#14213D">Contra el historial</h3>
+<p style="font-size:28px;line-height:1.4;color:#4A5568">Rival: el promedio de los últimos 12 meses y el mes anterior. Umbrales de mejora fijados de antemano</p>
+</div>
+<div style="display:flex;flex-direction:column;gap:12px;background:#FBFBF8;padding:36px;border-radius:16px;border:1px solid #E1DED5">
+<h3 style="font-size:32px;font-weight:600;color:#14213D">Modelos comparados</h3>
+<p style="font-size:28px;line-height:1.4;color:#4A5568">Poisson, binomial negativa, regresión logística, random forest y gradient boosting: 94 configuraciones</p>
+</div>
+</div>
+<aside>Dos tareas: regresión (cuántos siniestros tendrá cada barrio el mes siguiente) y clasificación (qué barrios estarán en el top 10). Las particiones, las métricas y los criterios de mejora quedaron escritos en el protocolo antes de entrenar. Una revisión externa detectó una fuga de etiquetas en un análisis de sensibilidad; se corrigió, se agregó un control y se documentó.</aside>
+</section>

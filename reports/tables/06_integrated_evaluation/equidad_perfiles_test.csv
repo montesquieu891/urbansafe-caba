@@ -1,0 +1,4 @@
+perfil,pct_hechos,pct_selecciones_clf,pct_selecciones_base,prob_media,tasa_top10_obs
+Borde (Gral. Paz/autopistas),16.191,8.333,10.0,0.146,0.102
+Interior central-denso,46.716,48.333,45.0,0.302,0.319
+Interior residencial,37.093,43.333,45.0,0.184,0.167

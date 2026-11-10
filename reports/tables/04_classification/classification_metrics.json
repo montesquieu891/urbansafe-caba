@@ -1,0 +1,216 @@
+{
+  "configs_probadas": 56,
+  "mejor_baseline": "baseline:media12",
+  "tiempo_grilla_s": 127.5,
+  "seleccion": {
+    "modelo_seleccionado": "logit|C=0.01,class_weight=None,excluir_pandemia=True",
+    "familia": "logit",
+    "params": {
+      "C": 0.01,
+      "class_weight": null,
+      "excluir_pandemia": true
+    },
+    "P10e_validacion_media": 0.7949074074074073,
+    "mejor_baseline": "baseline:media12",
+    "P10e_baseline_validacion_media": 0.7791666666666668,
+    "delta": 0.0157407407407405,
+    "folds_con_delta_>=0.02": 1,
+    "intervalo_pareado_validacion": {
+      "mediana": 0.016666666666666663,
+      "p2.5": 0.013888888888888886,
+      "p97.5": 0.019444444444444445,
+      "excluye_0": true,
+      "semillas": 500
+    },
+    "cumple_criterio_validacion": false,
+    "umbral_F1": 0.4599999999999999,
+    "F1_validacion_en_umbral": 0.7982583454281568,
+    "mejores_por_familia": {
+      "logit": "logit|C=0.01,class_weight=None,excluir_pandemia=True",
+      "rf": "rf|max_depth=8,min_samples_leaf=20,class_weight=balanced_subsample,excluir_pandemia=True",
+      "hgb": "hgb|max_leaf_nodes=7,min_samples_leaf=20,class_weight=balanced,excluir_pandemia=False"
+    },
+    "congelado_utc": "2026-11-10T18:29:10+00:00",
+    "configs_probadas": 56
+  },
+  "plazas_inciertas_validacion": [
+    {
+      "fold": "V2022",
+      "nucleo": 3,
+      "precision_modelo": 0.6786,
+      "precision_baseline": 0.6429,
+      "sel_fuera_nucleo_modelo": 84,
+      "sel_fuera_nucleo_baseline": 84
+    },
+    {
+      "fold": "V2023",
+      "nucleo": 5,
+      "precision_modelo": 0.7,
+      "precision_baseline": 0.6833,
+      "sel_fuera_nucleo_modelo": 60,
+      "sel_fuera_nucleo_baseline": 60
+    },
+    {
+      "fold": "V2024",
+      "nucleo": 5,
+      "precision_modelo": 0.6167,
+      "precision_baseline": 0.5833,
+      "sel_fuera_nucleo_modelo": 60,
+      "sel_fuera_nucleo_baseline": 60
+    }
+  ],
+  "test": [
+    {
+      "modelo": "logit|C=0.01,class_weight=None,excluir_pandemia=True",
+      "seleccionado": true,
+      "P@10_esperada": 0.8083333333333336,
+      "P@10_R0": 0.8083333333333336,
+      "PR_AUC": 0.9093932069383017,
+      "ROC_AUC": 0.9655701754385966,
+      "Brier": 0.054876285693443605
+    },
+    {
+      "modelo": "rf|max_depth=8,min_samples_leaf=20,class_weight=balanced_subsample,excluir_pandemia=True",
+      "seleccionado": false,
+      "P@10_esperada": 0.8083333333333336,
+      "P@10_R0": 0.8083333333333336,
+      "PR_AUC": 0.9083480148617039,
+      "ROC_AUC": 0.9656067251461988,
+      "Brier": 0.07741920542009684
+    },
+    {
+      "modelo": "hgb|max_leaf_nodes=7,min_samples_leaf=20,class_weight=balanced,excluir_pandemia=False",
+      "seleccionado": false,
+      "P@10_esperada": 0.8000000000000002,
+      "P@10_R0": 0.8000000000000002,
+      "PR_AUC": 0.8995972620926226,
+      "ROC_AUC": 0.9599597953216374,
+      "Brier": 0.0737233401658241
+    },
+    {
+      "modelo": "baseline:media12",
+      "seleccionado": false,
+      "P@10_esperada": 0.7916666666666666,
+      "P@10_R0": 0.7916666666666669,
+      "PR_AUC": 0.8996325152028923,
+      "ROC_AUC": 0.9631304824561402,
+      "Brier": NaN
+    },
+    {
+      "modelo": "baseline:persistencia",
+      "seleccionado": false,
+      "P@10_esperada": 0.7458333333333332,
+      "P@10_R0": 0.7333333333333333,
+      "PR_AUC": 0.8310751457804326,
+      "ROC_AUC": 0.9343019005847953,
+      "Brier": NaN
+    }
+  ],
+  "test_umbral": {
+    "umbral": 0.4599999999999999,
+    "precision": 0.8932038834951457,
+    "recall": 0.7666666666666667,
+    "F1": 0.8251121076233184,
+    "matriz_confusion": [
+      [
+        445,
+        11
+      ],
+      [
+        28,
+        92
+      ]
+    ]
+  },
+  "test_pareado_desempate": {
+    "mediana": 0.016666666666666673,
+    "p2.5": 0.016666666666666673,
+    "p97.5": 0.016666666666666673,
+    "excluye_0": true,
+    "semillas": 500
+  },
+  "test_bootstrap_dP10_R0": {
+    "media": 0.016666666666666673,
+    "ic_inf": -0.016666666666666653,
+    "ic_sup": 0.05833333333333333,
+    "bloque": 3,
+    "reps": 2000,
+    "meses": 12
+  },
+  "test_bootstrap_dP10_esperada": {
+    "media": 0.016666666666666673,
+    "ic_inf": -0.016666666666666653,
+    "ic_sup": 0.05833333333333333,
+    "bloque": 3,
+    "reps": 2000,
+    "meses": 12
+  },
+  "cumple_criterio_test": false,
+  "plazas_inciertas_test": {
+    "nucleo": [
+      "Balvanera",
+      "Caballito",
+      "Flores",
+      "Palermo",
+      "Recoleta"
+    ],
+    "modelo": {
+      "seleccionados_fuera_del_nucleo": 60,
+      "aciertos": 39,
+      "precision": 0.65
+    },
+    "baseline": {
+      "seleccionados_fuera_del_nucleo": 60,
+      "aciertos": 37,
+      "precision": 0.6166666666666667
+    }
+  },
+  "shap": {
+    "metodo": "SHAP lineal exacto (log-odds), sobre variables estandarizadas",
+    "familias_pct": {
+      "Historial del barrio": 40.9,
+      "Historial relativo (participación, puesto, top 10)": 34.4,
+      "Composición modal": 8.1,
+      "Territorio (superficie, comuna)": 6.5,
+      "Nivel de la ciudad": 5.5,
+      "Vecindad": 2.9,
+      "Calendario y pandemia": 1.8
+    },
+    "top8_variables": {
+      "top10_freq12": 0.3364,
+      "rank_ma12": 0.2638,
+      "share_ma12": 0.2349,
+      "log_y_ma12": 0.2188,
+      "log_y_ma6": 0.2163,
+      "log_y_ma3": 0.1757,
+      "log_y_lag3": 0.1648,
+      "log_area_km2": 0.1612
+    }
+  },
+  "gap1": [
+    {
+      "conjunto": "V2022",
+      "P10e_modelo": 0.7694,
+      "P10e_baseline": 0.7194,
+      "delta": 0.05
+    },
+    {
+      "conjunto": "V2023",
+      "P10e_modelo": 0.8208,
+      "P10e_baseline": 0.8083,
+      "delta": 0.0125
+    },
+    {
+      "conjunto": "V2024",
+      "P10e_modelo": 0.7861,
+      "P10e_baseline": 0.7917,
+      "delta": -0.0056
+    },
+    {
+      "conjunto": "test 2025",
+      "P10e_modelo": 0.8167,
+      "P10e_baseline": 0.8083,
+      "delta": 0.0083
+    }
+  ]
+}

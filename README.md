@@ -6,6 +6,7 @@ Proyecto académico de ciencia de datos sobre siniestralidad vial en la Ciudad A
 - Fuentes: [docs/data_inventory.md](docs/data_inventory.md) y [docs/source_register.csv](docs/source_register.csv)
 - Viabilidad y decisiones D1–D11: [docs/feasibility_report.md](docs/feasibility_report.md)
 - Diccionario de datos procesados: [docs/data_dictionary.md](docs/data_dictionary.md)
+- **Informe final:** [docs/final_report.md](docs/final_report.md)
 - Plan y estado de los hitos: [UrbanSafe_CABA_Implementation_Plan.md](UrbanSafe_CABA_Implementation_Plan.md)
 
 ## Estructura
@@ -14,10 +15,12 @@ Proyecto académico de ciencia de datos sobre siniestralidad vial en la Ciudad A
 data/raw/            Fuentes oficiales tal como se descargan (no versionado)
 data/processed/      Salidas del ETL (no versionado; se reconstruye)
 docs/                Propuesta, inventario, viabilidad, diccionario y evidencia por paso
-notebooks/           00_data_audit.ipynb (Paso 03); siguientes: 01_EDA … 07_storytelling
+notebooks/           00_data_audit (03), 01_EDA (05), 02_feature_engineering (06), 03_regression (07), 04_classification (08), 05_clustering (09), 06_integrated_evaluation (10), 07_storytelling (11)
 reports/             Tablas y figuras generadas por los notebooks
-scripts/             Relevamiento de fuentes (Paso 02)
-src/                 data_processing.py (ETL)
+models/              Modelos finales congelados (.joblib) y metadatos (Paso 12)
+presentation/        Fuentes de la presentación (Paso 11)
+scripts/             Relevamiento (Paso 02), exportación de modelos y trazabilidad (Paso 12)
+src/                 data_processing.py (ETL), labels.py (etiquetado top-K, regla R0), features.py (variables y particiones), regression.py y evaluation.py (Paso 07), classification.py (Paso 08), profiles.py (Paso 09)
 tests/               Invariantes del ETL (pytest)
 ```
 
@@ -47,13 +50,19 @@ python -m src.data_processing --download
 
 El comando descarga en `data/raw/` los archivos oficiales de BA Data y verifica su **SHA-256** frente a la versión auditada. Después escribe en `data/processed/` las tablas limpias, los paneles barrio × mes y comuna × mes, el registro de exclusiones y `qa_report.json`. La ejecución tarda unos segundos, sin contar la descarga, que ronda los 71 MB.
 
+**2b. Construir las variables del modelado** (Paso 06; protocolo en [docs/experimental_protocol.md](docs/experimental_protocol.md)):
+
+```bash
+python -m src.features
+```
+
 **3. Verificar las invariantes.**
 
 ```bash
 python -m pytest -q tests
 ```
 
-Son 18 pruebas: clave única, sin huérfanos, conciliación entre hechos y víctimas, paneles completos, totales conciliados, exclusiones con motivo y valores de la auditoría.
+Son 55 pruebas. Las del ETL verifican clave única, ausencia de huérfanos, conciliación entre hechos y víctimas, paneles completos, totales conciliados, exclusiones con motivo y valores de la auditoría. Las de etiquetado verifican la regla R0. Las de variables son controles de fuga temporal.
 
 **4. Comprobar que las salidas son idénticas a las de referencia.** Compare los hashes de `data/processed/` con [docs/evidence/paso04/processed_sha256.txt](docs/evidence/paso04/processed_sha256.txt):
 
@@ -63,7 +72,25 @@ cd data/processed && sha256sum -c ../../docs/evidence/paso04/processed_sha256.tx
 
 **Si la fuente se actualizó.** El portal publica actualizaciones anuales. Si un hash no coincide, el ETL se detiene e informa el cambio. Para procesar la nueva versión de todos modos, use `--accept-new-version`. El cambio queda registrado en `qa_report.json`, pero los resultados ya no serán comparables con los de referencia.
 
-**Notebook de auditoría (opcional).**
+**5. Reproducir todos los notebooks en orden** (unos 15 minutos):
+
+```bash
+cd notebooks && for nb in 00_data_audit 01_EDA 02_feature_engineering 03_regression 04_classification 05_clustering 06_integrated_evaluation 07_storytelling; do python -m nbconvert --to notebook --execute --inplace $nb.ipynb; done
+```
+
+**6. Exportar los modelos finales y verificar la trazabilidad:**
+
+```bash
+python scripts/export_models.py
+```
+
+```bash
+python scripts/check_traceability.py
+```
+
+El primer comando reajusta las configuraciones congeladas y comprueba que sus predicciones de 2025 coincidan con las de los notebooks. El segundo verifica los enlaces de los documentos y las cifras clave del informe final.
+
+**Notebook de auditoría por separado (opcional).**
 
 ```bash
 cd notebooks && python -m nbconvert --to notebook --execute --inplace 00_data_audit.ipynb
@@ -93,4 +120,12 @@ Las URL exactas, los hashes y las limitaciones de cada fuente están en el [regi
 | 01 Delimitación científica | Completado |
 | 02 Relevamiento de fuentes | Completado (consulta institucional en borrador, no enviada) |
 | 03 Auditoría de viabilidad | Completado |
-| 04 Repositorio, entorno y ETL | En revisión |
+| 04 Repositorio, entorno y ETL | Completado |
+| 05 AED y análisis territorial | Completado |
+| 06 Feature engineering y diseño experimental | Completado |
+| 07 Regresión supervisada | Completado |
+| 08 Clasificación supervisada | Completado |
+| 09 Clustering no supervisado | Completado |
+| 10 Integración y robustez | Completado |
+| 11 Storytelling y presentación | Completado |
+| 12 Validación final y entrega | En revisión: [docs/final_validation.md](docs/final_validation.md) |

@@ -1,0 +1,560 @@
+{
+  "cobertura": [
+    {
+      "K": 5,
+      "estrategia": "azar_esperado",
+      "TEST2025": 0.1042,
+      "V2022": 0.1042,
+      "V2023": 0.1042,
+      "V2024": 0.1042,
+      "val_media": 0.1042
+    },
+    {
+      "K": 5,
+      "estrategia": "clasificador",
+      "TEST2025": 0.2646,
+      "V2022": 0.2733,
+      "V2023": 0.2501,
+      "V2024": 0.2691,
+      "val_media": 0.2642
+    },
+    {
+      "K": 5,
+      "estrategia": "historial_media12",
+      "TEST2025": 0.2644,
+      "V2022": 0.2733,
+      "V2023": 0.2535,
+      "V2024": 0.2691,
+      "val_media": 0.2653
+    },
+    {
+      "K": 5,
+      "estrategia": "historial_persistencia",
+      "TEST2025": 0.256,
+      "V2022": 0.2692,
+      "V2023": 0.2397,
+      "V2024": 0.2665,
+      "val_media": 0.2585
+    },
+    {
+      "K": 5,
+      "estrategia": "oraculo",
+      "TEST2025": 0.2733,
+      "V2022": 0.2819,
+      "V2023": 0.2622,
+      "V2024": 0.2777,
+      "val_media": 0.2739
+    },
+    {
+      "K": 5,
+      "estrategia": "regresion",
+      "TEST2025": 0.2647,
+      "V2022": 0.2733,
+      "V2023": 0.2527,
+      "V2024": 0.2691,
+      "val_media": 0.265
+    },
+    {
+      "K": 10,
+      "estrategia": "azar_esperado",
+      "TEST2025": 0.2083,
+      "V2022": 0.2083,
+      "V2023": 0.2083,
+      "V2024": 0.2083,
+      "val_media": 0.2083
+    },
+    {
+      "K": 10,
+      "estrategia": "clasificador",
+      "TEST2025": 0.4305,
+      "V2022": 0.4323,
+      "V2023": 0.4197,
+      "V2024": 0.4333,
+      "val_media": 0.4284
+    },
+    {
+      "K": 10,
+      "estrategia": "historial_media12",
+      "TEST2025": 0.4273,
+      "V2022": 0.4307,
+      "V2023": 0.4174,
+      "V2024": 0.4319,
+      "val_media": 0.4267
+    },
+    {
+      "K": 10,
+      "estrategia": "historial_persistencia",
+      "TEST2025": 0.4217,
+      "V2022": 0.4312,
+      "V2023": 0.4021,
+      "V2024": 0.4262,
+      "val_media": 0.4198
+    },
+    {
+      "K": 10,
+      "estrategia": "oraculo",
+      "TEST2025": 0.4462,
+      "V2022": 0.4565,
+      "V2023": 0.4308,
+      "V2024": 0.4477,
+      "val_media": 0.445
+    },
+    {
+      "K": 10,
+      "estrategia": "regresion",
+      "TEST2025": 0.4284,
+      "V2022": 0.4313,
+      "V2023": 0.4163,
+      "V2024": 0.4326,
+      "val_media": 0.4267
+    },
+    {
+      "K": 15,
+      "estrategia": "azar_esperado",
+      "TEST2025": 0.3125,
+      "V2022": 0.3125,
+      "V2023": 0.3125,
+      "V2024": 0.3125,
+      "val_media": 0.3125
+    },
+    {
+      "K": 15,
+      "estrategia": "clasificador",
+      "TEST2025": 0.5523,
+      "V2022": 0.5698,
+      "V2023": 0.546,
+      "V2024": 0.5599,
+      "val_media": 0.5586
+    },
+    {
+      "K": 15,
+      "estrategia": "historial_media12",
+      "TEST2025": 0.5566,
+      "V2022": 0.5692,
+      "V2023": 0.5468,
+      "V2024": 0.5605,
+      "val_media": 0.5588
+    },
+    {
+      "K": 15,
+      "estrategia": "historial_persistencia",
+      "TEST2025": 0.5555,
+      "V2022": 0.5523,
+      "V2023": 0.5363,
+      "V2024": 0.5502,
+      "val_media": 0.5463
+    },
+    {
+      "K": 15,
+      "estrategia": "oraculo",
+      "TEST2025": 0.5837,
+      "V2022": 0.5924,
+      "V2023": 0.5685,
+      "V2024": 0.5829,
+      "val_media": 0.5813
+    },
+    {
+      "K": 15,
+      "estrategia": "regresion",
+      "TEST2025": 0.5575,
+      "V2022": 0.5708,
+      "V2023": 0.5478,
+      "V2024": 0.5607,
+      "val_media": 0.5598
+    }
+  ],
+  "cobertura_diferencias": [
+    {
+      "K": 5,
+      "estrategia": "clasificador",
+      "d_V2022": 0.0,
+      "d_V2023": -0.0034,
+      "d_V2024": 0.0,
+      "d_val_media": -0.0011,
+      "folds_positivos": 0,
+      "d_test": 0.0002,
+      "ic_bloques_inf": -0.0005,
+      "ic_bloques_sup": 0.001,
+      "desempate_p2.5": 0.0002,
+      "desempate_p97.5": 0.0002
+    },
+    {
+      "K": 5,
+      "estrategia": "regresion",
+      "d_V2022": 0.0,
+      "d_V2023": -0.0008,
+      "d_V2024": 0.0,
+      "d_val_media": -0.0003,
+      "folds_positivos": 0,
+      "d_test": 0.0003,
+      "ic_bloques_inf": 0.0,
+      "ic_bloques_sup": 0.001,
+      "desempate_p2.5": 0.0003,
+      "desempate_p97.5": 0.0003
+    },
+    {
+      "K": 10,
+      "estrategia": "clasificador",
+      "d_V2022": 0.0016,
+      "d_V2023": 0.0023,
+      "d_V2024": 0.0013,
+      "d_val_media": 0.0017,
+      "folds_positivos": 3,
+      "d_test": 0.0032,
+      "ic_bloques_inf": -0.0007,
+      "ic_bloques_sup": 0.008,
+      "desempate_p2.5": 0.0032,
+      "desempate_p97.5": 0.0037
+    },
+    {
+      "K": 10,
+      "estrategia": "regresion",
+      "d_V2022": 0.0006,
+      "d_V2023": -0.0011,
+      "d_V2024": 0.0006,
+      "d_val_media": 0.0,
+      "folds_positivos": 2,
+      "d_test": 0.0011,
+      "ic_bloques_inf": -0.0003,
+      "ic_bloques_sup": 0.0043,
+      "desempate_p2.5": 0.0011,
+      "desempate_p97.5": 0.0016
+    },
+    {
+      "K": 15,
+      "estrategia": "clasificador",
+      "d_V2022": 0.0007,
+      "d_V2023": -0.0008,
+      "d_V2024": -0.0006,
+      "d_val_media": -0.0002,
+      "folds_positivos": 1,
+      "d_test": -0.0043,
+      "ic_bloques_inf": -0.0084,
+      "ic_bloques_sup": -0.0015,
+      "desempate_p2.5": -0.0043,
+      "desempate_p97.5": -0.0038
+    },
+    {
+      "K": 15,
+      "estrategia": "regresion",
+      "d_V2022": 0.0016,
+      "d_V2023": 0.001,
+      "d_V2024": 0.0002,
+      "d_val_media": 0.0009,
+      "folds_positivos": 3,
+      "d_test": 0.0009,
+      "ic_bloques_inf": -0.0031,
+      "ic_bloques_sup": 0.0037,
+      "desempate_p2.5": 0.0009,
+      "desempate_p97.5": 0.0014
+    }
+  ],
+  "precision_k_validacion": [
+    {
+      "K": 5,
+      "estrategia": "clasificador",
+      "V2022": 0.8167,
+      "V2023": 0.75,
+      "V2024": 0.8333,
+      "media": 0.8
+    },
+    {
+      "K": 5,
+      "estrategia": "regresion",
+      "V2022": 0.8167,
+      "V2023": 0.7833,
+      "V2024": 0.8333,
+      "media": 0.8111
+    },
+    {
+      "K": 5,
+      "estrategia": "y_ma12",
+      "V2022": 0.8167,
+      "V2023": 0.8,
+      "V2024": 0.8333,
+      "media": 0.8167
+    },
+    {
+      "K": 10,
+      "estrategia": "clasificador",
+      "V2022": 0.775,
+      "V2023": 0.825,
+      "V2024": 0.7917,
+      "media": 0.7972
+    },
+    {
+      "K": 10,
+      "estrategia": "regresion",
+      "V2022": 0.7583,
+      "V2023": 0.8083,
+      "V2024": 0.7833,
+      "media": 0.7833
+    },
+    {
+      "K": 10,
+      "estrategia": "y_ma12",
+      "V2022": 0.75,
+      "V2023": 0.8167,
+      "V2024": 0.775,
+      "media": 0.7806
+    },
+    {
+      "K": 15,
+      "estrategia": "clasificador",
+      "V2022": 0.8,
+      "V2023": 0.8056,
+      "V2024": 0.8111,
+      "media": 0.8056
+    },
+    {
+      "K": 15,
+      "estrategia": "regresion",
+      "V2022": 0.7944,
+      "V2023": 0.8,
+      "V2024": 0.8111,
+      "media": 0.8019
+    },
+    {
+      "K": 15,
+      "estrategia": "y_ma12",
+      "V2022": 0.8056,
+      "V2023": 0.7889,
+      "V2024": 0.8111,
+      "media": 0.8019
+    }
+  ],
+  "sensibilidades": {
+    "empates_delta_medio": {
+      "R-excl-empates": 0.0167,
+      "R-incl": 0.0167,
+      "R0": 0.0167
+    },
+    "sin_composicion": [
+      {
+        "fold": "V2022",
+        "P10e_con_comp": 0.7694,
+        "P10e_sin_comp": 0.7444,
+        "P10e_media12": 0.7444
+      },
+      {
+        "fold": "V2023",
+        "P10e_con_comp": 0.8292,
+        "P10e_sin_comp": 0.8292,
+        "P10e_media12": 0.8167
+      },
+      {
+        "fold": "V2024",
+        "P10e_con_comp": 0.7861,
+        "P10e_sin_comp": 0.7861,
+        "P10e_media12": 0.7764
+      }
+    ],
+    "pandemia": {
+      "regresion_MAE_excluye": 3.863037904163764,
+      "regresion_MAE_incluye": 4.942252044444476,
+      "clasif_P10e_excluye": 0.7949074074074073,
+      "clasif_P10e_incluye": 0.7893518518518517
+    },
+    "gap1_regresion": [
+      {
+        "conjunto": "validación V2022",
+        "MAE_modelo": 4.926,
+        "MAE_baseline": 4.0234,
+        "ratio": 1.2243
+      },
+      {
+        "conjunto": "validación V2023",
+        "MAE_modelo": 3.6749,
+        "MAE_baseline": 3.7496,
+        "ratio": 0.9801
+      },
+      {
+        "conjunto": "validación V2024",
+        "MAE_modelo": 3.9531,
+        "MAE_baseline": 3.93,
+        "ratio": 1.0059
+      },
+      {
+        "conjunto": "test 2025",
+        "MAE_modelo": 4.2781,
+        "MAE_baseline": 4.1674,
+        "ratio": 1.0266
+      }
+    ],
+    "gap1_clasificacion": [
+      {
+        "conjunto": "V2022",
+        "P10e_modelo": 0.7694,
+        "P10e_baseline": 0.7194,
+        "delta": 0.05
+      },
+      {
+        "conjunto": "V2023",
+        "P10e_modelo": 0.8208,
+        "P10e_baseline": 0.8083,
+        "delta": 0.0125
+      },
+      {
+        "conjunto": "V2024",
+        "P10e_modelo": 0.7861,
+        "P10e_baseline": 0.7917,
+        "delta": -0.0056
+      },
+      {
+        "conjunto": "test 2025",
+        "P10e_modelo": 0.8167,
+        "P10e_baseline": 0.8083,
+        "delta": 0.0083
+      }
+    ],
+    "V2024_retrospectiva": {
+      "regresion_MAE_modelo": 3.8995,
+      "regresion_MAE_media12": 3.9012,
+      "clasif_P10e_modelo": 0.7861,
+      "clasif_P10e_media12": 0.7764
+    }
+  },
+  "escala": [
+    {
+      "escala": "comuna × mes",
+      "unidades": 15,
+      "K_20pct": 3,
+      "prop_ceros": 0.0,
+      "media_por_celda": 48.0556,
+      "spearman_consecutivo_mediana": 0.6592,
+      "P@K_esperada_hist": 0.5833,
+      "cobertura_topK_hist": 0.2733,
+      "cobertura_azar": 0.2,
+      "periodos_evaluados": 60
+    },
+    {
+      "escala": "barrio × mes",
+      "unidades": 48,
+      "K_20pct": 10,
+      "prop_ceros": 0.0122,
+      "media_por_celda": 14.956,
+      "spearman_consecutivo_mediana": 0.824,
+      "P@K_esperada_hist": 0.7501,
+      "cobertura_topK_hist": 0.4221,
+      "cobertura_azar": 0.2083,
+      "periodos_evaluados": 60
+    },
+    {
+      "escala": "barrio × trimestre",
+      "unidades": 48,
+      "K_20pct": 10,
+      "prop_ceros": 0.0,
+      "media_por_celda": 44.8681,
+      "spearman_consecutivo_mediana": 0.9225,
+      "P@K_esperada_hist": 0.835,
+      "cobertura_topK_hist": 0.4217,
+      "cobertura_azar": 0.2083,
+      "periodos_evaluados": 20
+    },
+    {
+      "escala": "grilla 1 km × mes",
+      "unidades": 251,
+      "K_20pct": 51,
+      "prop_ceros": 0.2632,
+      "media_por_celda": 2.8601,
+      "spearman_consecutivo_mediana": 0.6561,
+      "P@K_esperada_hist": 0.6557,
+      "cobertura_topK_hist": 0.4666,
+      "cobertura_azar": 0.2032,
+      "periodos_evaluados": 60
+    }
+  ],
+  "sesgos": {
+    "error_por_perfil": [
+      {
+        "perfil": "Borde (Gral. Paz/autopistas)",
+        "barrios": 9,
+        "y_media": 16.6389,
+        "MAE_rel_reg": 0.2572,
+        "MAE_rel_base": 0.2625,
+        "sesgo_reg": -0.3244
+      },
+      {
+        "perfil": "Interior central-denso",
+        "barrios": 17,
+        "y_media": 25.4167,
+        "MAE_rel_reg": 0.2266,
+        "MAE_rel_base": 0.2233,
+        "sesgo_reg": -2.2098
+      },
+      {
+        "perfil": "Interior residencial",
+        "barrios": 22,
+        "y_media": 15.5947,
+        "MAE_rel_reg": 0.2758,
+        "MAE_rel_base": 0.276,
+        "sesgo_reg": -0.8232
+      }
+    ],
+    "error_por_tercil": [
+      {
+        "tercil": "bajo",
+        "barrios": 16,
+        "y_media": 7.4688,
+        "MAE_rel_reg": 0.3407,
+        "MAE_rel_base": 0.3413,
+        "sesgo_reg": -0.2442
+      },
+      {
+        "tercil": "medio",
+        "barrios": 16,
+        "y_media": 16.9531,
+        "MAE_rel_reg": 0.2312,
+        "MAE_rel_base": 0.2295,
+        "sesgo_reg": -1.5779
+      },
+      {
+        "tercil": "alto",
+        "barrios": 16,
+        "y_media": 33.3854,
+        "MAE_rel_reg": 0.1927,
+        "MAE_rel_base": 0.1936,
+        "sesgo_reg": -1.8401
+      }
+    ],
+    "selecciones_por_perfil": [
+      {
+        "perfil": "Borde (Gral. Paz/autopistas)",
+        "pct_hechos": 16.191,
+        "pct_selecciones_clf": 8.333,
+        "pct_selecciones_base": 10.0,
+        "prob_media": 0.146,
+        "tasa_top10_obs": 0.102
+      },
+      {
+        "perfil": "Interior central-denso",
+        "pct_hechos": 46.716,
+        "pct_selecciones_clf": 48.333,
+        "pct_selecciones_base": 45.0,
+        "prob_media": 0.302,
+        "tasa_top10_obs": 0.319
+      },
+      {
+        "perfil": "Interior residencial",
+        "pct_hechos": 37.093,
+        "pct_selecciones_clf": 43.333,
+        "pct_selecciones_base": 45.0,
+        "prob_media": 0.184,
+        "tasa_top10_obs": 0.167
+      }
+    ],
+    "spearman_MAE_rel_vs_nivel": -0.67
+  },
+  "exposicion_h8": {
+    "sensores": 95,
+    "spearman_conteo_vs_tasa": 0.676,
+    "pct_cambia_cuartil": 43.2,
+    "top10_coinciden": 4,
+    "spearman_hechos_vs_volumen": 0.032,
+    "tasa_por_tipo_via": {
+      "Autopista": 1.272,
+      "Carriles Exclusivos": 5.429,
+      "calle_avenida": 1.878
+    }
+  }
+}

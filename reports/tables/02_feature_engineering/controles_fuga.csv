@@ -1,0 +1,14 @@
+control,resultado,detalle
+C1 Panel único y completo (48 barrios × 84 meses),SUPERADO,
+C2 Variables completas desde 2020-01 en el desarrollo,SUPERADO,
+C3 Cambiar datos posteriores al corte no altera las variables previas (gap 0 y 1; 4 cortes),SUPERADO,17760 filas comparadas
+C4 Variables independientes del orden de las filas,SUPERADO,
+C5 Los rezagos no cruzan barrios (y_lag1 manual = calculado),SUPERADO,
+C6 y_target = hechos del panel en T; exactamente 10 positivos por mes,SUPERADO,
+C7 Entrenamiento estrictamente anterior a la validación; test nunca usado en desarrollo,SUPERADO,
+C8 Variables del entrenamiento observadas antes del inicio de la validación,SUPERADO,
+C9 Escalado e imputación ajustados solo con el entrenamiento del fold,SUPERADO,
+"C10 Sin variables excluidas (infraestructura, exposición, gravedad, anomalía del objetivo)",SUPERADO,
+"C11 Con gap = 1, el último mes observable es T−2",SUPERADO,
+C12 Regresión y clasificación comparten filas y fechas de partición,SUPERADO,
+C13 Etiquetas disponibles al inicio de la evaluación,SUPERADO,8 particiones auditadas con gap 0 y 1
