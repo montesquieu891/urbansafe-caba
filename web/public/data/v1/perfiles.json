@@ -1,0 +1,290 @@
+[
+  {
+    "grupo": 0,
+    "id_barrio": 1,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 2,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 3,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 4,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 5,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 6,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 7,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 8,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 9,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 10,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 11,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 12,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 13,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 14,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 1,
+    "id_barrio": 15,
+    "k3": 1,
+    "perfil_k3": "Borde (Gral. Paz/autopistas)"
+  },
+  {
+    "grupo": 1,
+    "id_barrio": 16,
+    "k3": 1,
+    "perfil_k3": "Borde (Gral. Paz/autopistas)"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 17,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 18,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 19,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 20,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 21,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 22,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 23,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 24,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 25,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 26,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 27,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 28,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 29,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 1,
+    "id_barrio": 30,
+    "k3": 1,
+    "perfil_k3": "Borde (Gral. Paz/autopistas)"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 31,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 32,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 33,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 34,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 1,
+    "id_barrio": 35,
+    "k3": 1,
+    "perfil_k3": "Borde (Gral. Paz/autopistas)"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 36,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 37,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 1,
+    "id_barrio": 38,
+    "k3": 1,
+    "perfil_k3": "Borde (Gral. Paz/autopistas)"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 39,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 1,
+    "id_barrio": 40,
+    "k3": 1,
+    "perfil_k3": "Borde (Gral. Paz/autopistas)"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 41,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 42,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 1,
+    "id_barrio": 43,
+    "k3": 1,
+    "perfil_k3": "Borde (Gral. Paz/autopistas)"
+  },
+  {
+    "grupo": 1,
+    "id_barrio": 44,
+    "k3": 1,
+    "perfil_k3": "Borde (Gral. Paz/autopistas)"
+  },
+  {
+    "grupo": 1,
+    "id_barrio": 45,
+    "k3": 1,
+    "perfil_k3": "Borde (Gral. Paz/autopistas)"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 46,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 47,
+    "k3": 2,
+    "perfil_k3": "Interior central-denso"
+  },
+  {
+    "grupo": 0,
+    "id_barrio": 48,
+    "k3": 0,
+    "perfil_k3": "Interior residencial"
+  }
+]

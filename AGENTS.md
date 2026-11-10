@@ -18,7 +18,7 @@ Abre los `SKILL.md` pertinentes en [las skills del proyecto](.agents/skills). Us
 | 10 | `geospatial-analysis`, `jupyter-notebooks` y `ml-scientific-reviewer` | Robustez y comparación de priorización |
 | 11–12 | `visualize-data` en el 11, `validate-data` y `ml-scientific-reviewer` en la validación final de resultados de modelado | Presentación y entrega reproducible |
 
-`build-dashboard` corresponde a una extensión posterior a la entrega académica, si se solicita. Para mantener las skills usa `$skill-creator`, disponible en Codex.
+`build-dashboard` corresponde a una extensión posterior a la entrega académica, si se solicita. Para mantener las skills usa `$skill-creator`, disponible en Codex. El [plan web](docs/web_implementation_plan.md) coordina `web-data-export`, `interactive-map-ux`, `dashboard-e2e` y `static-web-release`.
 
 ### Auditoría de Colabs
 

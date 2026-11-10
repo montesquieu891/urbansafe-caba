@@ -1,0 +1,209 @@
+{
+  "archivos": {
+    "barrios.geojson": {
+      "bytes": 1599753,
+      "sha256": "cce35f0765e5488937d3a1fdc379a913043ae7f2603d0c63c09437607fdc9a01"
+    },
+    "cobertura.json": {
+      "bytes": 68445,
+      "sha256": "fb2e7adad15c4b720eaff538b4b9cc371991b6f1f493d7694a68dd09381c10f9"
+    },
+    "panel-mensual.json": {
+      "bytes": 3201587,
+      "sha256": "8f444f23c668d2f6a23e11d99caa68d95b8c11ffd85c2991bde7365a1c2c4b34"
+    },
+    "perfiles.json": {
+      "bytes": 4852,
+      "sha256": "f8e610767d7ceb572029ecddbb5eaf02746ce32f45ae1fd0867969a486736549"
+    },
+    "priorizacion-2025.json": {
+      "bytes": 556582,
+      "sha256": "cc8ea0e2329c4951be0631e46e2b712644b07c1412ca86d487162daa853778d1"
+    }
+  },
+  "data_version": "2019-2025-5685c2f9c0a0",
+  "definiciones": {
+    "ausencia": {
+      "estado": "sin_datos",
+      "valor": null
+    },
+    "azar_esperado": "K/48; esperanza analítica, sin selección aleatoria concreta",
+    "cero": {
+      "estado": "observado",
+      "valor": 0
+    },
+    "cobertura_agregada": "Suma de hechos cubiertos / suma de hechos del año; no es el indicador principal",
+    "cobertura_anual": "Media de 12 coberturas mensuales, igual peso por mes",
+    "densidad": "Hechos registrados por km²; no mide riesgo por exposición",
+    "grupo": "K-Means k=2: 0 interior, 1 borde; desarrollo 2019–2024 sin meses anómalos",
+    "k3": "Subdivisión exploratoria anidada; separación interior débil",
+    "mes_observable": "Mes objetivo menos un mes; supuesto retrospectivo gap=0, no disponibilidad operativa acreditada",
+    "modo_sd": "Hechos con modo sin informar; no equivale a celda sin datos",
+    "oraculo": "Referencia retrospectiva que conoce el resultado posterior; no es pronóstico"
+  },
+  "desempate": {
+    "implementacion": "src.labels.top_k_labels",
+    "orden_unidades": "barrio ascendente",
+    "regla": "R0",
+    "semilla": 20261111
+  },
+  "entorno": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "python": "3.13.7"
+  },
+  "fecha_corte": "2025-12-31",
+  "fecha_extraccion_fuentes": "2026-11-10",
+  "fuentes": [
+    {
+      "dataset_url": "https://data.buenosaires.gob.ar/dataset/victimas-siniestros-viales",
+      "fecha_extraccion": "2026-11-10T14:41:42Z",
+      "id_fuente": "F01",
+      "licencia": "Creative Commons Attribution (CKAN: cc-by; versión no indicada)",
+      "limitaciones": "Solo siniestros con víctimas (excluye daños materiales); fuente policial con posible subregistro; 2025 posiblemente provisorio; el diccionario que mencionan las notas no está publicado; los metadatos CKAN del recurso indican 2024-08-27",
+      "nombre": "Siniestros viales - hechos",
+      "organismo_responsable": "Observatorio de Movilidad y Seguridad Vial (OMSV), Secretaría de Transporte",
+      "recurso_url": "https://cdn.buenosaires.gob.ar/datosabiertos/datasets/transporte-y-obras-publicas/victimas-siniestros-viales/siniestros_viales_hechos.csv",
+      "sha256": "e1d232514458c110b5daee5350042e2d8d4b666f6caf4bce4d8675a1b8b93be5"
+    },
+    {
+      "dataset_url": "https://data.buenosaires.gob.ar/dataset/victimas-siniestros-viales",
+      "fecha_extraccion": "2026-11-10T14:41:42Z",
+      "id_fuente": "F03",
+      "licencia": "cc-by (del dataset)",
+      "limitaciones": "No detalla cambios de cobertura entre años ni el proceso de geocodificación",
+      "nombre": "Notas metodológicas de las bases de siniestros viales 2019-2025",
+      "organismo_responsable": "OMSV / Dirección General de Seguridad Vial",
+      "recurso_url": "https://cdn.buenosaires.gob.ar/datosabiertos/datasets/transporte-y-obras-publicas/victimas-siniestros-viales/NOTAS_SINIESTROS_VIALES_2019-2025.pdf",
+      "sha256": "47b6e32bf27bf92b071445a02dfcc4ec11294ee5a95d36acd343c5b174bac424"
+    },
+    {
+      "dataset_url": "https://data.buenosaires.gob.ar/dataset/barrios",
+      "fecha_extraccion": "2026-11-10T14:41:42Z",
+      "id_fuente": "F04",
+      "licencia": "CC-BY-2.5-AR",
+      "limitaciones": "Límites vigentes; no se verificó si cambiaron entre 2019 y 2025",
+      "nombre": "Barrios",
+      "organismo_responsable": "DG Gobernanza de Datos Abiertos (Secretaría de Innovación y Transformación Digital)",
+      "recurso_url": "https://cdn.buenosaires.gob.ar/datosabiertos/datasets/innovacion-transformacion-digital/barrios/barrios.geojson",
+      "sha256": "c24fabd01c61b889388f0a8cfd9ca4757c1f57583c0ffd1b4ed3b96d768bb655"
+    }
+  ],
+  "insumos": [
+    {
+      "rol": "panel",
+      "ruta": "data/processed/panel_barrio_mes.csv",
+      "sha256": "00459280f49b68cda83481ae2c6489a22ce126793128dd909112300ba7496776"
+    },
+    {
+      "rol": "geometria",
+      "ruta": "data/raw/limites/barrios.geojson",
+      "sha256": "c24fabd01c61b889388f0a8cfd9ca4757c1f57583c0ffd1b4ed3b96d768bb655"
+    },
+    {
+      "rol": "regresion",
+      "ruta": "reports/tables/03_regression/predicciones_test.csv",
+      "sha256": "bc37260a81d8ca08083527b5030777613bf751ed4497b03fb13623c13cdc600d"
+    },
+    {
+      "rol": "clasificacion",
+      "ruta": "reports/tables/04_classification/predicciones_test.csv",
+      "sha256": "a54b78d3fa5cc908ce652b24364d827be72187d8dd3d73680d6660709334303f"
+    },
+    {
+      "rol": "seleccion_reg",
+      "ruta": "reports/tables/03_regression/seleccion_congelada.json",
+      "sha256": "32263c7f398a7d0dfc5067ece1504712af231f5947e46f8685896a495fae5d73"
+    },
+    {
+      "rol": "seleccion_clf",
+      "ruta": "reports/tables/04_classification/seleccion_congelada.json",
+      "sha256": "8bf3c4c5265b99b600012bc7f0db283a047ea6db79ebf44df30ebbbf1e1e4890"
+    },
+    {
+      "rol": "perfiles",
+      "ruta": "reports/tables/05_clustering/asignacion_barrios.csv",
+      "sha256": "aa5898c06e877854b81d5972f6eec01fa0017cb5f54a7aa9dcc8fb35d9b19df1"
+    },
+    {
+      "rol": "cobertura",
+      "ruta": "reports/tables/06_integrated_evaluation/cobertura_topk.csv",
+      "sha256": "4bfdeadf46c45f82a50aec1d274139db6835bdd0bd8267bf74eb84b41d5510f0"
+    },
+    {
+      "rol": "diferencias",
+      "ruta": "reports/tables/06_integrated_evaluation/cobertura_diferencias_vs_historial.csv",
+      "sha256": "c68e4bb977a8a7aadb4ca083ad6ccefc25b781ed929ad10c5146e442fe9877d1"
+    },
+    {
+      "rol": "fuentes",
+      "ruta": "docs/source_register.csv",
+      "sha256": "9aae3dce78bd3996c2b085ce42a96b74fd25f8df767c34a7182f7e2c44adeeed"
+    },
+    {
+      "rol": "diccionario",
+      "ruta": "docs/data_dictionary.md",
+      "sha256": "f969b4a28003a599cdd8053bae733e1c281de3982145de52faa78aac9d004d39"
+    },
+    {
+      "rol": "protocolo",
+      "ruta": "docs/experimental_protocol.md",
+      "sha256": "d612d7629fb47cbb8a25e7af71caf5353c9189984f8ac93140f4ed40fd8016d8"
+    },
+    {
+      "rol": "informe_perfiles",
+      "ruta": "docs/clustering_report.md",
+      "sha256": "b83bd4cc81cd4caa0a452b8a8e9578bfae74756567fe97e071953ba59c249c12"
+    },
+    {
+      "rol": "etiquetado",
+      "ruta": "src/labels.py",
+      "sha256": "5c02c69f31c425c304060ba0550b16c0ad2ab6b691c8d4e7039a58c2e15c7a6b"
+    },
+    {
+      "rol": "evaluacion",
+      "ruta": "src/evaluation.py",
+      "sha256": "a62bac9fdf7b9cfeaf53ab0372cfe9dae4f1b1da8ca09185738fb4162e3848bd"
+    },
+    {
+      "rol": "exportador",
+      "ruta": "scripts/export_web_data.py",
+      "sha256": "554c5d610b99b6f2a030e3619351d79de77cd8d11cc2cc1cfa19edf9a3bec2ad"
+    }
+  ],
+  "limitaciones": [
+    "Solo hechos con víctimas asignados a barrio; excluye hechos no georreferenciables.",
+    "2025 posiblemente provisorio; límites vigentes sin historial verificado.",
+    "Concentración registrada, sin ajuste por exposición ni interpretación causal.",
+    "CC-BY de hechos: versión no indicada por la fuente; se conserva atribución."
+  ],
+  "modelos_congelados": {
+    "clasificador": "logit|C=0.01,class_weight=None,excluir_pandemia=True",
+    "regresion": "poisson|conjunto=compacto,alpha=0.1,excluir_pandemia=True"
+  },
+  "periodo_atlas": [
+    "2019-01",
+    "2025-12"
+  ],
+  "periodo_evaluacion": [
+    "2025-01",
+    "2025-12"
+  ],
+  "schema_version": "1.0.0",
+  "validacion": {
+    "barrios": 48,
+    "casos_corte_con_empates": 36,
+    "ceros_observados": 45,
+    "claves_panel": 4032,
+    "cobertura_clasificador_K10": 0.43054248057869504,
+    "cobertura_historial_K10": 0.42734630326215245,
+    "discrepancias_pendientes": [],
+    "estado": "validado",
+    "filas_evaluacion": 576,
+    "geometrias_unidas": 48,
+    "hechos_ausentes": 0,
+    "intervalos_reconciliados": 6,
+    "meses_panel": 84,
+    "selecciones_mensuales_validadas": 180
+  }
+}

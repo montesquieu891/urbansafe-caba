@@ -1,0 +1,3797 @@
+{
+  "anual": [
+    {
+      "K": 5,
+      "cobertura_agregada": 0.2647986305072529,
+      "estrategia": "historial_media12",
+      "media_coberturas_mensuales": 0.26438779302234255,
+      "periodo": "2025"
+    },
+    {
+      "K": 5,
+      "cobertura_agregada": 0.2558789080097306,
+      "estrategia": "historial_persistencia",
+      "media_coberturas_mensuales": 0.25601887692670283,
+      "periodo": "2025"
+    },
+    {
+      "K": 5,
+      "cobertura_agregada": 0.2649788269213443,
+      "estrategia": "clasificador",
+      "media_coberturas_mensuales": 0.26455597293406585,
+      "periodo": "2025"
+    },
+    {
+      "K": 5,
+      "cobertura_agregada": 0.2651590233354356,
+      "estrategia": "regresion",
+      "media_coberturas_mensuales": 0.2647353773115327,
+      "periodo": "2025"
+    },
+    {
+      "K": 5,
+      "cobertura_agregada": 0.27353815659068387,
+      "estrategia": "oraculo",
+      "media_coberturas_mensuales": 0.27331947849128574,
+      "periodo": "2025"
+    },
+    {
+      "K": 5,
+      "cobertura_agregada": 0.10416666666666667,
+      "estrategia": "azar_esperado",
+      "media_coberturas_mensuales": 0.10416666666666667,
+      "periodo": "2025"
+    },
+    {
+      "K": 10,
+      "cobertura_agregada": 0.42724569781061356,
+      "estrategia": "historial_media12",
+      "media_coberturas_mensuales": 0.42734630326215245,
+      "periodo": "2025"
+    },
+    {
+      "K": 10,
+      "cobertura_agregada": 0.4222902964231012,
+      "estrategia": "historial_persistencia",
+      "media_coberturas_mensuales": 0.4217380561522646,
+      "periodo": "2025"
+    },
+    {
+      "K": 10,
+      "cobertura_agregada": 0.43084962609244076,
+      "estrategia": "clasificador",
+      "media_coberturas_mensuales": 0.43054248057869504,
+      "periodo": "2025"
+    },
+    {
+      "K": 10,
+      "cobertura_agregada": 0.4285070727092531,
+      "estrategia": "regresion",
+      "media_coberturas_mensuales": 0.4284390849128066,
+      "periodo": "2025"
+    },
+    {
+      "K": 10,
+      "cobertura_agregada": 0.44652671411838907,
+      "estrategia": "oraculo",
+      "media_coberturas_mensuales": 0.44622020337734547,
+      "periodo": "2025"
+    },
+    {
+      "K": 10,
+      "cobertura_agregada": 0.20833333333333334,
+      "estrategia": "azar_esperado",
+      "media_coberturas_mensuales": 0.20833333333333334,
+      "periodo": "2025"
+    },
+    {
+      "K": 15,
+      "cobertura_agregada": 0.5566267231282097,
+      "estrategia": "historial_media12",
+      "media_coberturas_mensuales": 0.5566433690230207,
+      "periodo": "2025"
+    },
+    {
+      "K": 15,
+      "cobertura_agregada": 0.5555455446436616,
+      "estrategia": "historial_persistencia",
+      "media_coberturas_mensuales": 0.5555111146364625,
+      "periodo": "2025"
+    },
+    {
+      "K": 15,
+      "cobertura_agregada": 0.5520317145688801,
+      "estrategia": "clasificador",
+      "media_coberturas_mensuales": 0.5523459008183801,
+      "periodo": "2025"
+    },
+    {
+      "K": 15,
+      "cobertura_agregada": 0.5575277051986666,
+      "estrategia": "regresion",
+      "media_coberturas_mensuales": 0.5574961083167805,
+      "periodo": "2025"
+    },
+    {
+      "K": 15,
+      "cobertura_agregada": 0.5841967744841877,
+      "estrategia": "oraculo",
+      "media_coberturas_mensuales": 0.5836922316199102,
+      "periodo": "2025"
+    },
+    {
+      "K": 15,
+      "cobertura_agregada": 0.3125,
+      "estrategia": "azar_esperado",
+      "media_coberturas_mensuales": 0.3125,
+      "periodo": "2025"
+    }
+  ],
+  "diferencias_vs_historial": [
+    {
+      "K": 5,
+      "d_test": 0.000168179911723,
+      "desempate_p2.5": 0.000168179911723,
+      "desempate_p97.5": 0.000168179911723,
+      "estrategia": "clasificador",
+      "ic_bloques_inf": -0.0005382131324,
+      "ic_bloques_sup": 0.00104275286757
+    },
+    {
+      "K": 5,
+      "d_test": 0.00034758428919,
+      "desempate_p2.5": 0.00034758428919,
+      "desempate_p97.5": 0.00034758428919,
+      "estrategia": "regresion",
+      "ic_bloques_inf": 0.0,
+      "ic_bloques_sup": 0.00104275286757
+    },
+    {
+      "K": 10,
+      "d_test": 0.003196177316543,
+      "desempate_p2.5": 0.003196177316543,
+      "desempate_p97.5": 0.003687679569564,
+      "estrategia": "clasificador",
+      "ic_bloques_inf": -0.000696542485901,
+      "ic_bloques_sup": 0.008038517579722
+    },
+    {
+      "K": 10,
+      "d_test": 0.001092781650654,
+      "desempate_p2.5": 0.001092781650654,
+      "desempate_p97.5": 0.001584283903676,
+      "estrategia": "regresion",
+      "ic_bloques_inf": -0.0002691065662,
+      "ic_bloques_sup": 0.004261349458005
+    },
+    {
+      "K": 15,
+      "d_test": -0.004297468204641,
+      "desempate_p2.5": -0.004297468204641,
+      "desempate_p97.5": -0.003791646949227,
+      "estrategia": "clasificador",
+      "ic_bloques_inf": -0.008350235580862,
+      "ic_bloques_sup": -0.001520316031561
+    },
+    {
+      "K": 15,
+      "d_test": 0.00085273929376,
+      "desempate_p2.5": 0.00085273929376,
+      "desempate_p97.5": 0.001358560549174,
+      "estrategia": "regresion",
+      "ic_bloques_inf": -0.003108480819337,
+      "ic_bloques_sup": 0.003709761945201
+    }
+  ],
+  "fraccion_ganancia_sobre_azar_K10": 0.9206601856096509,
+  "intervalos": {
+    "bloque_meses": 3,
+    "metodo": "bootstrap por bloques móviles",
+    "nivel": 0.95,
+    "replicas": 2000,
+    "semilla": 20261110,
+    "sensibilidad_desempate": "Percentiles entre 200 semillas; no es IC temporal"
+  },
+  "mensual": [
+    {
+      "K": 5,
+      "cobertura": 0.2668428005284016,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 202,
+      "hechos_totales": 757,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-01"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.23783031988873435,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 171,
+      "hechos_totales": 719,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-02"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.25510204081632654,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 225,
+      "hechos_totales": 882,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-03"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.28154327424400416,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 270,
+      "hechos_totales": 959,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-04"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.29518716577540105,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 276,
+      "hechos_totales": 935,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-05"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.25848849945235486,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 236,
+      "hechos_totales": 913,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-06"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.27879440258342303,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 259,
+      "hechos_totales": 929,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-07"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.27615062761506276,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 264,
+      "hechos_totales": 956,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-08"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.24944567627494457,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 225,
+      "hechos_totales": 902,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-09"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.24809885931558937,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 261,
+      "hechos_totales": 1052,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-10"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.26808100289296044,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 278,
+      "hechos_totales": 1037,
+      "ids_seleccionados": [
+        2,
+        3,
+        8,
+        13,
+        21
+      ],
+      "mes_objetivo": "2025-11"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2570888468809074,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 272,
+      "hechos_totales": 1058,
+      "ids_seleccionados": [
+        2,
+        3,
+        8,
+        13,
+        21
+      ],
+      "mes_objetivo": "2025-12"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2668428005284016,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 202,
+      "hechos_totales": 757,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-01"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.24061196105702365,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 173,
+      "hechos_totales": 719,
+      "ids_seleccionados": [
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "mes_objetivo": "2025-02"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2675736961451247,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 236,
+      "hechos_totales": 882,
+      "ids_seleccionados": [
+        2,
+        3,
+        13,
+        21,
+        30
+      ],
+      "mes_objetivo": "2025-03"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2492179353493222,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 239,
+      "hechos_totales": 959,
+      "ids_seleccionados": [
+        3,
+        5,
+        13,
+        21,
+        30
+      ],
+      "mes_objetivo": "2025-04"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.28342245989304815,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 265,
+      "hechos_totales": 935,
+      "ids_seleccionados": [
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "mes_objetivo": "2025-05"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.25848849945235486,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 236,
+      "hechos_totales": 913,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-06"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.25618945102260493,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 238,
+      "hechos_totales": 929,
+      "ids_seleccionados": [
+        3,
+        5,
+        13,
+        21,
+        36
+      ],
+      "mes_objetivo": "2025-07"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2730125523012552,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 261,
+      "hechos_totales": 956,
+      "ids_seleccionados": [
+        3,
+        8,
+        12,
+        13,
+        21
+      ],
+      "mes_objetivo": "2025-08"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2361419068736142,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 213,
+      "hechos_totales": 902,
+      "ids_seleccionados": [
+        2,
+        3,
+        13,
+        21,
+        36
+      ],
+      "mes_objetivo": "2025-09"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.24714828897338403,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 260,
+      "hechos_totales": 1052,
+      "ids_seleccionados": [
+        2,
+        3,
+        8,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-10"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.24783027965284474,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 257,
+      "hechos_totales": 1037,
+      "ids_seleccionados": [
+        2,
+        8,
+        13,
+        21,
+        36
+      ],
+      "mes_objetivo": "2025-11"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.24574669187145556,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 260,
+      "hechos_totales": 1058,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        17,
+        21
+      ],
+      "mes_objetivo": "2025-12"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2668428005284016,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 202,
+      "hechos_totales": 757,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-01"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.23783031988873435,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 171,
+      "hechos_totales": 719,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-02"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.25510204081632654,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 225,
+      "hechos_totales": 882,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-03"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2857142857142857,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 274,
+      "hechos_totales": 959,
+      "ids_seleccionados": [
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "mes_objetivo": "2025-04"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.29518716577540105,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 276,
+      "hechos_totales": 935,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-05"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.25848849945235486,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 236,
+      "hechos_totales": 913,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-06"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2766415500538213,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 257,
+      "hechos_totales": 929,
+      "ids_seleccionados": [
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "mes_objetivo": "2025-07"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.27615062761506276,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 264,
+      "hechos_totales": 956,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-08"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.24944567627494457,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 225,
+      "hechos_totales": 902,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-09"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.24809885931558937,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 261,
+      "hechos_totales": 1052,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-10"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.26808100289296044,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 278,
+      "hechos_totales": 1037,
+      "ids_seleccionados": [
+        2,
+        3,
+        8,
+        13,
+        21
+      ],
+      "mes_objetivo": "2025-11"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2570888468809074,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 272,
+      "hechos_totales": 1058,
+      "ids_seleccionados": [
+        2,
+        3,
+        8,
+        13,
+        21
+      ],
+      "mes_objetivo": "2025-12"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2668428005284016,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 202,
+      "hechos_totales": 757,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-01"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.23783031988873435,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 171,
+      "hechos_totales": 719,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-02"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.25510204081632654,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 225,
+      "hechos_totales": 882,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-03"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2857142857142857,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 274,
+      "hechos_totales": 959,
+      "ids_seleccionados": [
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "mes_objetivo": "2025-04"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.29518716577540105,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 276,
+      "hechos_totales": 935,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-05"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.25848849945235486,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 236,
+      "hechos_totales": 913,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-06"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.27879440258342303,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 259,
+      "hechos_totales": 929,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-07"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.27615062761506276,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 264,
+      "hechos_totales": 956,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-08"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.24944567627494457,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 225,
+      "hechos_totales": 902,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-09"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.24809885931558937,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 261,
+      "hechos_totales": 1052,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-10"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.26808100289296044,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 278,
+      "hechos_totales": 1037,
+      "ids_seleccionados": [
+        2,
+        3,
+        8,
+        13,
+        21
+      ],
+      "mes_objetivo": "2025-11"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2570888468809074,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 272,
+      "hechos_totales": 1058,
+      "ids_seleccionados": [
+        2,
+        3,
+        8,
+        13,
+        21
+      ],
+      "mes_objetivo": "2025-12"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2747688243064729,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 208,
+      "hechos_totales": 757,
+      "ids_seleccionados": [
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "mes_objetivo": "2025-01"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.25591098748261476,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 184,
+      "hechos_totales": 719,
+      "ids_seleccionados": [
+        2,
+        3,
+        13,
+        21,
+        30
+      ],
+      "mes_objetivo": "2025-02"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2698412698412698,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 238,
+      "hechos_totales": 882,
+      "ids_seleccionados": [
+        3,
+        5,
+        13,
+        21,
+        30
+      ],
+      "mes_objetivo": "2025-03"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2857142857142857,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 274,
+      "hechos_totales": 959,
+      "ids_seleccionados": [
+        3,
+        5,
+        8,
+        13,
+        21
+      ],
+      "mes_objetivo": "2025-04"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.29518716577540105,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 276,
+      "hechos_totales": 935,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-05"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.27163198247535597,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 248,
+      "hechos_totales": 913,
+      "ids_seleccionados": [
+        3,
+        5,
+        13,
+        21,
+        36
+      ],
+      "mes_objetivo": "2025-06"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2852529601722282,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 265,
+      "hechos_totales": 929,
+      "ids_seleccionados": [
+        3,
+        8,
+        12,
+        13,
+        21
+      ],
+      "mes_objetivo": "2025-07"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.28661087866108786,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 274,
+      "hechos_totales": 956,
+      "ids_seleccionados": [
+        2,
+        3,
+        13,
+        21,
+        36
+      ],
+      "mes_objetivo": "2025-08"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2549889135254989,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 230,
+      "hechos_totales": 902,
+      "ids_seleccionados": [
+        2,
+        3,
+        8,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-09"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2652091254752852,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 279,
+      "hechos_totales": 1052,
+      "ids_seleccionados": [
+        2,
+        8,
+        13,
+        21,
+        36
+      ],
+      "mes_objetivo": "2025-10"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2729026036644166,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 283,
+      "hechos_totales": 1037,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        17,
+        21
+      ],
+      "mes_objetivo": "2025-11"
+    },
+    {
+      "K": 5,
+      "cobertura": 0.2618147448015123,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 277,
+      "hechos_totales": 1058,
+      "ids_seleccionados": [
+        3,
+        8,
+        13,
+        21,
+        28
+      ],
+      "mes_objetivo": "2025-12"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4385733157199472,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 332,
+      "hechos_totales": 757,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "mes_objetivo": "2025-01"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4283727399165508,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 308,
+      "hechos_totales": 719,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "mes_objetivo": "2025-02"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.43197278911564624,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 381,
+      "hechos_totales": 882,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "mes_objetivo": "2025-03"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4254431699687174,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 408,
+      "hechos_totales": 959,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "mes_objetivo": "2025-04"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4470588235294118,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 418,
+      "hechos_totales": 935,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "mes_objetivo": "2025-05"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.411829134720701,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 376,
+      "hechos_totales": 913,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "mes_objetivo": "2025-06"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.41657696447793324,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 387,
+      "hechos_totales": 929,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        16,
+        21,
+        28,
+        30,
+        36
+      ],
+      "mes_objetivo": "2025-07"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4320083682008368,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 413,
+      "hechos_totales": 956,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        30,
+        36
+      ],
+      "mes_objetivo": "2025-08"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4090909090909091,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 369,
+      "hechos_totales": 902,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        30,
+        36
+      ],
+      "mes_objetivo": "2025-09"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.41539923954372626,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 437,
+      "hechos_totales": 1052,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        30,
+        36
+      ],
+      "mes_objetivo": "2025-10"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4474445515911283,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 464,
+      "hechos_totales": 1037,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        28,
+        36
+      ],
+      "mes_objetivo": "2025-11"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.42438563327032136,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 449,
+      "hechos_totales": 1058,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-12"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.43064729194187584,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 326,
+      "hechos_totales": 757,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        30,
+        31
+      ],
+      "mes_objetivo": "2025-01"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.39777468706536856,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 286,
+      "hechos_totales": 719,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        36,
+        38
+      ],
+      "mes_objetivo": "2025-02"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.42403628117913833,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 374,
+      "hechos_totales": 882,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        30,
+        48
+      ],
+      "mes_objetivo": "2025-03"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4254431699687174,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 408,
+      "hechos_totales": 959,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        15,
+        21,
+        28,
+        30,
+        38
+      ],
+      "mes_objetivo": "2025-04"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4320855614973262,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 404,
+      "hechos_totales": 935,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        15,
+        19,
+        21,
+        28,
+        29
+      ],
+      "mes_objetivo": "2025-05"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4194961664841183,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 383,
+      "hechos_totales": 913,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        19,
+        21,
+        28,
+        30,
+        36
+      ],
+      "mes_objetivo": "2025-06"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.418729817007535,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 389,
+      "hechos_totales": 929,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        15,
+        21,
+        28,
+        31,
+        36
+      ],
+      "mes_objetivo": "2025-07"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.42887029288702927,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 410,
+      "hechos_totales": 956,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        19,
+        21,
+        28,
+        32
+      ],
+      "mes_objetivo": "2025-08"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.40022172949002216,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 361,
+      "hechos_totales": 902,
+      "ids_seleccionados": [
+        2,
+        3,
+        8,
+        13,
+        16,
+        17,
+        21,
+        28,
+        29,
+        36
+      ],
+      "mes_objetivo": "2025-09"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4268060836501901,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 449,
+      "hechos_totales": 1052,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        19,
+        21,
+        28,
+        36
+      ],
+      "mes_objetivo": "2025-10"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4493731918997107,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 466,
+      "hechos_totales": 1037,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        32,
+        36
+      ],
+      "mes_objetivo": "2025-11"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.40737240075614367,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 431,
+      "hechos_totales": 1058,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        32,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-12"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4385733157199472,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 332,
+      "hechos_totales": 757,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "mes_objetivo": "2025-01"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4200278164116829,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 302,
+      "hechos_totales": 719,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        38
+      ],
+      "mes_objetivo": "2025-02"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.43197278911564624,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 381,
+      "hechos_totales": 882,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "mes_objetivo": "2025-03"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4254431699687174,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 408,
+      "hechos_totales": 959,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        38
+      ],
+      "mes_objetivo": "2025-04"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4470588235294118,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 418,
+      "hechos_totales": 935,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "mes_objetivo": "2025-05"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.411829134720701,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 376,
+      "hechos_totales": 913,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "mes_objetivo": "2025-06"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4327233584499462,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 402,
+      "hechos_totales": 929,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        30,
+        36
+      ],
+      "mes_objetivo": "2025-07"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4320083682008368,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 413,
+      "hechos_totales": 956,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        30,
+        36
+      ],
+      "mes_objetivo": "2025-08"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.41685144124168516,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 376,
+      "hechos_totales": 902,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        28,
+        36
+      ],
+      "mes_objetivo": "2025-09"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4344106463878327,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 457,
+      "hechos_totales": 1052,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        28,
+        36
+      ],
+      "mes_objetivo": "2025-10"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4474445515911283,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 464,
+      "hechos_totales": 1037,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        28,
+        36
+      ],
+      "mes_objetivo": "2025-11"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4281663516068053,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 453,
+      "hechos_totales": 1058,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        28,
+        36
+      ],
+      "mes_objetivo": "2025-12"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4385733157199472,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 332,
+      "hechos_totales": 757,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "mes_objetivo": "2025-01"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4283727399165508,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 308,
+      "hechos_totales": 719,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "mes_objetivo": "2025-02"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.43197278911564624,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 381,
+      "hechos_totales": 882,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "mes_objetivo": "2025-03"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4254431699687174,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 408,
+      "hechos_totales": 959,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        38
+      ],
+      "mes_objetivo": "2025-04"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4470588235294118,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 418,
+      "hechos_totales": 935,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "mes_objetivo": "2025-05"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.411829134720701,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 376,
+      "hechos_totales": 913,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        28,
+        30,
+        36,
+        48
+      ],
+      "mes_objetivo": "2025-06"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4155005382131324,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 386,
+      "hechos_totales": 929,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        15,
+        21,
+        28,
+        30,
+        36
+      ],
+      "mes_objetivo": "2025-07"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4320083682008368,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 413,
+      "hechos_totales": 956,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        30,
+        36
+      ],
+      "mes_objetivo": "2025-08"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4090909090909091,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 369,
+      "hechos_totales": 902,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        30,
+        36
+      ],
+      "mes_objetivo": "2025-09"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4344106463878327,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 457,
+      "hechos_totales": 1052,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        28,
+        36
+      ],
+      "mes_objetivo": "2025-10"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4426229508196721,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 459,
+      "hechos_totales": 1037,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-11"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.42438563327032136,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 449,
+      "hechos_totales": 1058,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-12"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.45442536327608984,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 344,
+      "hechos_totales": 757,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        21,
+        28,
+        36,
+        38
+      ],
+      "mes_objetivo": "2025-01"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4297635605006954,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 309,
+      "hechos_totales": 719,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        30,
+        48
+      ],
+      "mes_objetivo": "2025-02"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4421768707482993,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 390,
+      "hechos_totales": 882,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        15,
+        21,
+        28,
+        30,
+        38
+      ],
+      "mes_objetivo": "2025-03"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.45985401459854014,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 441,
+      "hechos_totales": 959,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        19,
+        21,
+        28,
+        29,
+        36
+      ],
+      "mes_objetivo": "2025-04"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4556149732620321,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 426,
+      "hechos_totales": 935,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        19,
+        21,
+        28,
+        30,
+        36
+      ],
+      "mes_objetivo": "2025-05"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4403066812705367,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 402,
+      "hechos_totales": 913,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        21,
+        28,
+        36
+      ],
+      "mes_objetivo": "2025-06"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4520990312163617,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 420,
+      "hechos_totales": 929,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        19,
+        21,
+        28,
+        32
+      ],
+      "mes_objetivo": "2025-07"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4581589958158996,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 438,
+      "hechos_totales": 956,
+      "ids_seleccionados": [
+        2,
+        3,
+        8,
+        13,
+        16,
+        17,
+        21,
+        28,
+        29,
+        36
+      ],
+      "mes_objetivo": "2025-08"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4246119733924612,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 383,
+      "hechos_totales": 902,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        19,
+        21,
+        28,
+        36
+      ],
+      "mes_objetivo": "2025-09"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4391634980988593,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 462,
+      "hechos_totales": 1052,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        28,
+        32,
+        36
+      ],
+      "mes_objetivo": "2025-10"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.4561234329797493,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 473,
+      "hechos_totales": 1037,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        17,
+        21,
+        32,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-11"
+    },
+    {
+      "K": 10,
+      "cobertura": 0.44234404536862004,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 468,
+      "hechos_totales": 1058,
+      "ids_seleccionados": [
+        2,
+        3,
+        8,
+        12,
+        13,
+        16,
+        21,
+        28,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-12"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5812417437252312,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 440,
+      "hechos_totales": 757,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-01"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5493741307371349,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 395,
+      "hechos_totales": 719,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-02"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5600907029478458,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 494,
+      "hechos_totales": 882,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-03"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5380604796663191,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 516,
+      "hechos_totales": 959,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-04"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5593582887700534,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 523,
+      "hechos_totales": 935,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40,
+        48
+      ],
+      "mes_objetivo": "2025-05"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5443592552026287,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 497,
+      "hechos_totales": 913,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40,
+        48
+      ],
+      "mes_objetivo": "2025-06"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5468245425188375,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 508,
+      "hechos_totales": 929,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-07"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5648535564853556,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 540,
+      "hechos_totales": 956,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40
+      ],
+      "mes_objetivo": "2025-08"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5443458980044346,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 491,
+      "hechos_totales": 902,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        31,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-09"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5522813688212928,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 581,
+      "hechos_totales": 1052,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        19,
+        21,
+        28,
+        30,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-10"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.570877531340405,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 592,
+      "hechos_totales": 1037,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        19,
+        21,
+        28,
+        30,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-11"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5680529300567108,
+      "estrategia": "historial_media12",
+      "hechos_cubiertos": 601,
+      "hechos_totales": 1058,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        19,
+        21,
+        28,
+        30,
+        32,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-12"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5759577278731837,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 436,
+      "hechos_totales": 757,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        31,
+        36,
+        38,
+        40,
+        48
+      ],
+      "mes_objetivo": "2025-01"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5479833101529903,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 394,
+      "hechos_totales": 719,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        7,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40
+      ],
+      "mes_objetivo": "2025-02"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5396825396825397,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 476,
+      "hechos_totales": 882,
+      "ids_seleccionados": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        23,
+        28,
+        30,
+        36,
+        40,
+        48
+      ],
+      "mes_objetivo": "2025-03"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5422314911366006,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 520,
+      "hechos_totales": 959,
+      "ids_seleccionados": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        12,
+        13,
+        15,
+        16,
+        21,
+        28,
+        30,
+        36,
+        38
+      ],
+      "mes_objetivo": "2025-04"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5593582887700534,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 523,
+      "hechos_totales": 935,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        7,
+        8,
+        13,
+        15,
+        17,
+        19,
+        21,
+        28,
+        29,
+        32,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-05"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5542168674698795,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 506,
+      "hechos_totales": 913,
+      "ids_seleccionados": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        15,
+        19,
+        20,
+        21,
+        28,
+        30,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-06"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5457481162540366,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 507,
+      "hechos_totales": 929,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        22,
+        28,
+        31,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-07"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5721757322175732,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 547,
+      "hechos_totales": 956,
+      "ids_seleccionados": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        31,
+        32,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-08"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5487804878048781,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 495,
+      "hechos_totales": 902,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        19,
+        21,
+        28,
+        29,
+        31,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-09"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5446768060836502,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 573,
+      "hechos_totales": 1052,
+      "ids_seleccionados": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        16,
+        19,
+        21,
+        23,
+        28,
+        36,
+        38,
+        40
+      ],
+      "mes_objetivo": "2025-10"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.579556412729026,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 601,
+      "hechos_totales": 1037,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        19,
+        20,
+        21,
+        28,
+        32,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-11"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.555765595463138,
+      "estrategia": "historial_persistencia",
+      "hechos_cubiertos": 588,
+      "hechos_totales": 1058,
+      "ids_seleccionados": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        31,
+        32,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-12"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.582562747688243,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 441,
+      "hechos_totales": 757,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        31,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-01"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5507649513212796,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 396,
+      "hechos_totales": 719,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        31,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-02"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5521541950113379,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 487,
+      "hechos_totales": 882,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        31,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-03"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5380604796663191,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 516,
+      "hechos_totales": 959,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-04"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5540106951871657,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 518,
+      "hechos_totales": 935,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        17,
+        21,
+        28,
+        29,
+        30,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-05"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5465498357064622,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 499,
+      "hechos_totales": 913,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        17,
+        19,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-06"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.55005382131324,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 511,
+      "hechos_totales": 929,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        17,
+        21,
+        28,
+        30,
+        31,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-07"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5502092050209205,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 526,
+      "hechos_totales": 956,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        30,
+        32,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-08"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5332594235033259,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 481,
+      "hechos_totales": 902,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        17,
+        19,
+        21,
+        28,
+        30,
+        31,
+        32,
+        36
+      ],
+      "mes_objetivo": "2025-09"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5408745247148289,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 569,
+      "hechos_totales": 1052,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40,
+        48
+      ],
+      "mes_objetivo": "2025-10"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.579556412729026,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 601,
+      "hechos_totales": 1037,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        30,
+        32,
+        36,
+        40,
+        48
+      ],
+      "mes_objetivo": "2025-11"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5500945179584121,
+      "estrategia": "clasificador",
+      "hechos_cubiertos": 582,
+      "hechos_totales": 1058,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        30,
+        31,
+        32,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-12"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5759577278731837,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 436,
+      "hechos_totales": 757,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        29,
+        30,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-01"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5605006954102921,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 403,
+      "hechos_totales": 719,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40,
+        48
+      ],
+      "mes_objetivo": "2025-02"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5487528344671202,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 484,
+      "hechos_totales": 882,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40,
+        48
+      ],
+      "mes_objetivo": "2025-03"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5380604796663191,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 516,
+      "hechos_totales": 959,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-04"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5518716577540107,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 516,
+      "hechos_totales": 935,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-05"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5443592552026287,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 497,
+      "hechos_totales": 913,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40,
+        48
+      ],
+      "mes_objetivo": "2025-06"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5468245425188375,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 508,
+      "hechos_totales": 929,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        48
+      ],
+      "mes_objetivo": "2025-07"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5774058577405857,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 552,
+      "hechos_totales": 956,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        32,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-08"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5443458980044346,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 491,
+      "hechos_totales": 902,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        28,
+        30,
+        31,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-09"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5484790874524715,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 577,
+      "hechos_totales": 1052,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        19,
+        21,
+        28,
+        30,
+        31,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-10"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5853423336547734,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 607,
+      "hechos_totales": 1037,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        19,
+        21,
+        28,
+        30,
+        32,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-11"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5680529300567108,
+      "estrategia": "regresion",
+      "hechos_cubiertos": 601,
+      "hechos_totales": 1058,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        19,
+        21,
+        28,
+        30,
+        32,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-12"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5904887714663144,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 447,
+      "hechos_totales": 757,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        7,
+        8,
+        12,
+        13,
+        16,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40
+      ],
+      "mes_objetivo": "2025-01"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.564673157162726,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 406,
+      "hechos_totales": 719,
+      "ids_seleccionados": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        17,
+        21,
+        28,
+        30,
+        36,
+        38,
+        40,
+        48
+      ],
+      "mes_objetivo": "2025-02"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5702947845804989,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 503,
+      "hechos_totales": 882,
+      "ids_seleccionados": [
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        12,
+        13,
+        15,
+        16,
+        21,
+        28,
+        30,
+        36,
+        38
+      ],
+      "mes_objetivo": "2025-03"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.59436913451512,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 570,
+      "hechos_totales": 959,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        7,
+        8,
+        13,
+        15,
+        17,
+        19,
+        21,
+        28,
+        29,
+        32,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-04"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5839572192513369,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 546,
+      "hechos_totales": 935,
+      "ids_seleccionados": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        15,
+        19,
+        20,
+        21,
+        28,
+        30,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-05"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5783132530120482,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 528,
+      "hechos_totales": 913,
+      "ids_seleccionados": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        21,
+        22,
+        28,
+        31,
+        36
+      ],
+      "mes_objetivo": "2025-06"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5844994617868676,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 543,
+      "hechos_totales": 929,
+      "ids_seleccionados": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        31,
+        32,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-07"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.6014644351464435,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 575,
+      "hechos_totales": 956,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        16,
+        17,
+        19,
+        21,
+        28,
+        29,
+        31,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-08"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5753880266075388,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 519,
+      "hechos_totales": 902,
+      "ids_seleccionados": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        16,
+        19,
+        21,
+        23,
+        28,
+        36,
+        38,
+        40
+      ],
+      "mes_objetivo": "2025-09"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5788973384030418,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 609,
+      "hechos_totales": 1052,
+      "ids_seleccionados": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        20,
+        21,
+        28,
+        32,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-10"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5959498553519769,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 618,
+      "hechos_totales": 1037,
+      "ids_seleccionados": [
+        2,
+        3,
+        4,
+        5,
+        8,
+        12,
+        13,
+        17,
+        19,
+        21,
+        28,
+        31,
+        32,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-11"
+    },
+    {
+      "K": 15,
+      "cobertura": 0.5860113421550095,
+      "estrategia": "oraculo",
+      "hechos_cubiertos": 620,
+      "hechos_totales": 1058,
+      "ids_seleccionados": [
+        2,
+        3,
+        5,
+        8,
+        12,
+        13,
+        15,
+        16,
+        17,
+        19,
+        21,
+        28,
+        29,
+        36,
+        40
+      ],
+      "mes_objetivo": "2025-12"
+    }
+  ]
+}
