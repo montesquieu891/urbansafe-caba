@@ -77,7 +77,7 @@ Contactar al organismo responsable para consultar: series anteriores comparables
 
 ### Paso 03. Auditoría de viabilidad empírica
 
-**Propósito:** determinar qué preguntas pueden responderse con los datos disponibles. **Es el hito decisivo antes del modelado.**
+**Propósito:** determinar qué preguntas pueden responderse con los datos disponibles.
 
 **Controles:**
 
@@ -277,9 +277,3 @@ Implementar después de la entrega académica como una vista del Centro de monit
 - [x] 12. Validación final y entrega. Ver `docs/final_validation.md` (reproducción en sala limpia; dictamen apto con condiciones), `models/` y PR #1 fusionado en `main`. Aprobado por el responsable el 2026-11-10.
 
 Para marcar un hito como completado deben estar disponibles sus entregables y haberse satisfecho sus criterios de aceptación.
-
-## 8. Primera ejecución
-
-Comenzar por el **Paso 01**, seguido del relevamiento de fuentes y la auditoría de viabilidad. La elección definitiva de escala geográfica, horizonte predictivo y umbral de clasificación depende de la evidencia del **Paso 03**.
-
-**Resultado final esperado:** cumplir íntegramente la consigna y determinar con evaluación fuera de muestra si los datos históricos de CABA permiten mejorar la priorización territorial frente a métodos sencillos.
