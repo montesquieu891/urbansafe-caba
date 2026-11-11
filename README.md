@@ -1,5 +1,9 @@
 # UrbanSafe CABA
 
+> **🌐 Sitio web interactivo: [urbansafe-caba.urbansafe-atlas.workers.dev](https://urbansafe-caba.urbansafe-atlas.workers.dev)**
+>
+> Atlas de siniestralidad por barrio, simulador de priorización 2025 y perfiles territoriales, construidos con los resultados de este repositorio. No requiere instalar nada.
+
 Proyecto académico de ciencia de datos sobre siniestralidad vial en la Ciudad Autónoma de Buenos Aires. Analiza la frecuencia y la concentración territorial de los siniestros con víctimas, evalúa fuera de muestra si se puede anticipar su concentración por barrio en el mes siguiente y compara esa priorización con una estrategia basada solo en el historial.
 
 - Propuesta y preguntas: [docs/research_proposal.md](docs/research_proposal.md)
