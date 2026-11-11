@@ -18,14 +18,8 @@ Abre los `SKILL.md` pertinentes en [las skills del proyecto](.agents/skills). Us
 | 10 | `geospatial-analysis`, `jupyter-notebooks` y `ml-scientific-reviewer` | Robustez y comparación de priorización |
 | 11–12 | `visualize-data` en el 11, `validate-data` y `ml-scientific-reviewer` en la validación final de resultados de modelado | Presentación y entrega reproducible |
 
-`build-dashboard` corresponde a una extensión posterior a la entrega académica, si se solicita. Para mantener las skills usa `$skill-creator`, disponible en Codex. El [plan web](docs/web_implementation_plan.md) coordina `web-data-export`, `interactive-map-ux`, `dashboard-e2e` y `static-web-release`.
+`build-dashboard` corresponde a una extensión posterior a la entrega académica, si se solicita. Para mantener las skills usa `$skill-creator`.
 
 ### Auditoría de Colabs
 
-Para una revisión integral de un notebook abre primero [colab-reproducibility-audit](.agents/skills/colab-reproducibility-audit/SKILL.md). Añade [colab-data-audit](.agents/skills/colab-data-audit/SKILL.md) si el notebook transforma o explora datos y [colab-ml-validation](.agents/skills/colab-ml-validation/SKILL.md) si genera variables predictoras, entrena modelos, evalúa rankings o produce clusters. En Claude puedes abrir esos archivos explícitamente desde la raíz del proyecto.
-
-## Coordinación y cierre
-
-El agente principal mantiene el alcance y el estado del plan. La investigación entrega fuentes y limitaciones al responsable del análisis. El análisis entrega código, datos derivados, decisiones y métricas reproducibles a la revisión. Cuando se autorice y esté disponible la delegación, encarga la revisión de modelado a un agente distinto. Si revisa quien implementó, registra la revisión como autoauditoría.
-
-Antes de cerrar un hito, comprueba sus criterios en el plan y corrige los hallazgos que invaliden los resultados. Para los pasos 06–10, registra el dictamen científico con los artefactos del hito.
+Para una revisión integral de un notebook abre primero [colab-reproducibility-audit](.agents/skills/colab-reproducibility-audit/SKILL.md). Añade [colab-data-audit](.agents/skills/colab-data-audit/SKILL.md) si el notebook transforma o explora datos y [colab-ml-validation](.agents/skills/colab-ml-validation/SKILL.md) si genera variables predictoras, entrena modelos, evalúa rankings o produce clusters. 
