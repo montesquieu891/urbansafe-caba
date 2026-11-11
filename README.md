@@ -24,6 +24,8 @@ src/                 data_processing.py (ETL), labels.py (etiquetado top-K, regl
 tests/               Invariantes del ETL (pytest)
 ```
 
+**Cómo leer los notebooks.** Cada notebook empieza con una **Guía para el lector** que plantea la pregunta en lenguaje llano, explica dónde encaja en el proyecto y resume las decisiones principales, con sus motivos, y el resultado. Le siguen un glosario de los términos técnicos (y, donde corresponde, un diccionario de variables), notas **«Qué hace la celda siguiente»** antes de las celdas de código densas y una sección final de conclusiones. Son celdas de texto con la etiqueta `guia-docente`: no modifican el código ni sus resultados. El orden de lectura sugerido es 00 → 07.
+
 ## Reproducir los datos procesados
 
 Se requiere Python 3.13 (verificado con 3.13.7) y acceso a internet para la descarga.
