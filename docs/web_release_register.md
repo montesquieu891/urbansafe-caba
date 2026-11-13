@@ -4,11 +4,16 @@
 
 | # | Fecha (UTC) | Versión de producción | Vista previa | Commit | Datos | Cambio |
 |---|---|---|---|---|---|---|
-| 3 | 2026-11-10 | `accbb506-085d-44b1-9b67-f61eb322d2cb` (vigente) | `e60d73da-f516-4206-bf02-ba75874014c3` | `60d04ba` (PR #8) | `2019-2025-692728914e40` | Simulador centrado en la propuesta (problema, pregunta, respuesta) y sin jerga estadística visible. Datos idénticos. |
+| 4 | 2026-11-13 | `af4dfcc6-0e29-445d-900a-ae5e4093c82d` (vigente) | `ef6e1573-417d-4ad3-b4b5-19bb6f1a7a1a` | `d605668` (PR #12) | `2019-2025-692728914e40` | Perfil de borde descrito como partición geográfica (regla de más del 20 % de hechos en autopista o General Paz), según la revisión independiente (R2). Datos idénticos. |
+| 3 | 2026-11-10 | `accbb506-085d-44b1-9b67-f61eb322d2cb` | `e60d73da-f516-4206-bf02-ba75874014c3` | `60d04ba` (PR #8) | `2019-2025-692728914e40` | Simulador centrado en la propuesta (problema, pregunta, respuesta) y sin jerga estadística visible. Datos idénticos. |
 | 2 | 2026-11-10 | `247ce276-3066-4add-8da2-c4ac73963a73` | `8e1686f7-9446-4d63-9938-b8bb6262f6d0` | `8dc8184` (PR #6) | `2019-2025-692728914e40` | Revisión pedagógica del simulador y los perfiles; procedencia con finales de línea normalizados. Datos idénticos. |
 | 1 | 2026-11-10 21:21 | `f6889653-5182-4034-acf7-749742da76e2` | `640eef13-6d22-4b3b-a315-f78639326928` | `75393cf` | `2019-2025-5685c2f9c0a0` | Primera publicación (fases 0–4). |
 
-Para volver a una versión anterior, desde `web/`: `npx wrangler rollback 247ce276-3066-4add-8da2-c4ac73963a73` (versión 2) o `npx wrangler rollback f6889653-5182-4034-acf7-749742da76e2` (versión 1).
+Para volver a una versión anterior, desde `web/`: `npx wrangler rollback accbb506-085d-44b1-9b67-f61eb322d2cb` (versión 3), `npx wrangler rollback 247ce276-3066-4add-8da2-c4ac73963a73` (versión 2) o `npx wrangler rollback f6889653-5182-4034-acf7-749742da76e2` (versión 1).
+
+### Versión 4 — perfil de borde tras la revisión independiente
+
+Autorizada expresamente por el usuario. Antes de publicar se registró la versión vigente (`accbb506`, versión 3). Compilada desde `d605668` (fusión del PR #12), con el árbol limpio. Cambian solo dos textos de la vista de perfiles (`web/src/lib/explorer-features.ts`); los datos no cambian. `release:preview` y `release:production` ejecutaron `test:release` (40/40 E2E y auditoría aprobada, JS inicial 28,9 kB) antes de subir. En la vista previa y en producción: **14/14 archivos servidos idénticos a `dist/`** por SHA-256 (todo lo servido salvo `_headers`) y **40/40 E2E remotas**. Los informes de `docs/evidence/web_phase5/` corresponden a esta versión.
 
 ### Versión 3 — simulador centrado en la propuesta
 
