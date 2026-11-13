@@ -1,0 +1,22 @@
+Sentidos registrados por ubicación: {1: 95}
+
+Tipo de vía por tipo de circulación (sensores):
+tipo_circulacion_via_conteos  doble  única
+especificacion_via_conteos                
+Autopista                         4      0
+Carriles Exclusivos               9     14
+calle_avenida                    34     34
+
+Medianas por tipo de vía:
+                            veh_dia  hechos_150m  tasa_por_millon_veh
+especificacion_via_conteos                                           
+Autopista                   20344.0          7.0                  1.3
+Carriles Exclusivos          5938.0         11.0                  5.4
+calle_avenida               12630.5         10.0                  1.9
+
+| Subgrupo | Sensores | Cambia de cuartil | Spearman conteo-tasa | Spearman conteo-volumen |
+|---|---|---|---|---|
+| Todos los sensores | 95 | 43.2 % | 0.68 | 0.03 |
+| Calles y avenidas | 68 | 42.6 % | 0.70 | 0.15 |
+| Sensores en vías de mano única | 48 | 43.8 % | 0.68 | 0.02 |
+| Calles y avenidas de mano única | 34 | 44.1 % | 0.77 | 0.17 |
