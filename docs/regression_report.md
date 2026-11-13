@@ -37,7 +37,7 @@ Se probaron 38 configuraciones, fijadas en el protocolo, más 8 post hoc. Todas 
 | *NB2 con L2 (post hoc, §5)* | *8* | *λ = 0,1, sin pandemia* | *3,864* | — | *4,088* |
 | Baselines: media de 12 meses / persistencia / estacional | — | — | 3,850 / 4,823 / 5,157 | — | 4,062 / 5,068 / 5,486 |
 
-**Justificación de la selección.** El protocolo fija la regla de antemano: gana el menor MAE medio en validación. El Poisson compacto regularizado gana esa comparación, tiene la menor devianza (1,59) y un sesgo moderado. Además, es el más simple e interpretable de los candidatos. Excluir de la pérdida los meses de pandemia fue decisivo en las tres familias.
+**Justificación de la selección.** El protocolo fija la regla de antemano: gana el menor MAE medio en validación. El Poisson compacto regularizado gana esa comparación, tiene la menor devianza (1,59) y un sesgo moderado. Además, es el más simple e interpretable de los candidatos. Excluir de la pérdida los meses de pandemia fue decisivo para el Poisson y el HGB. Para la NB2 sin regularizar del protocolo ocurre lo contrario: excluirlos empeora el MAE medio (22,57 frente a 5,06) por la inestabilidad de V2022 (corregido tras la revisión independiente, R4). Con la exclusión, V2022 entrena con solo 9 meses objetivo (enero y febrero de 2020 y junio a diciembre de 2021) y sin meses de marzo a mayo; eso explica su inestabilidad, y ese *fold* pesa un tercio en la selección (R14).
 
 **Recomendación de uso.**
 - **Pronóstico puntual.** La media de 12 meses es la referencia operativa porque el Poisson no cumplió el criterio de mejora.
@@ -46,7 +46,7 @@ Se probaron 38 configuraciones, fijadas en el protocolo, más 8 post hoc. Todas 
 
 ## 3. Evaluación principal en el test 2025 (gap = 0)
 
-- **Sesgo.** Todos los GLM subestiman (−0,87 a −1,46 hechos por barrio-mes). 2025 es el año con más hechos de la serie, y el salto de octubre a diciembre (más de 1.030 por mes) no se anticipa con información hasta el mes anterior.
+- **Sesgo.** Todos los GLM subestiman (de −1,22 a −1,46 hechos por barrio-mes), igual que la media de 12 meses (−0,87); el HGB, en cambio, sobreestima (+0,95) (corregido tras la revisión independiente, R4). 2025 es el año con más hechos de la serie, y el salto de octubre a diciembre (más de 1.030 por mes) no se anticipa con información hasta el mes anterior.
 - **Por barrio.** El modelo mejora al baseline en 20 de los 48 barrios. El error absoluto crece con el nivel del barrio (Spearman 0,91); los mayores MAE están en Balvanera (10,0), Caballito (8,0) y Saavedra (7,2). Ver [errores_por_barrio_test.csv](../reports/tables/03_regression/errores_por_barrio_test.csv).
 - **Gráficos.** [test_ciudad_y_barrios.png](../reports/figures/03_regression/test_ciudad_y_barrios.png) muestra el total de la ciudad y el mapa de la diferencia de error por barrio.
 
@@ -101,7 +101,7 @@ La grilla completa tarda alrededor de 20 s. Hay 38 pruebas automatizadas y todas
 | R1 | La NB2 del protocolo, sin regularizar, es inestable en V2022 y la comparación entre familias quedaba sesgada | `grilla_validacion.csv` (MAE de V2022 hasta 60) | Media | NB2 con L2 agregada como desviación post hoc, no confirmatoria (§5) | ✔ Registrada; la conclusión no cambia |
 | R2 | Riesgo de decidir mirando el test | La selección se congela en un JSON antes de la celda de test; la regla está automatizada | — | La NB2 con L2 y la sensibilidad con gap = 1 reutilizan 2025 como análisis exploratorios y conservan la selección congelada | ✔ |
 | R3 | Baja potencia del test (12 meses) | IC de ΔMAE ±0,14 | Media, inherente | Se informa "no hay mejora demostrable", no "equivalencia" | ✔ Redacción ajustada |
-| R4 | Subestimación sistemática en 2025 (cambio de nivel) | Sesgo de −0,87 a −1,46 | Media | Se informa; 2025 puede ser provisorio (consulta). En el Paso 10 se informará V2024 como validación retrospectiva (no es un test, porque participó en la selección) | Paso 10 |
+| R4 | Subestimación sistemática en 2025 (cambio de nivel) | Sesgo de los GLM de −1,22 a −1,46 (media de 12 meses: −0,87) | Media | Se informa; 2025 puede ser provisorio (consulta). En el Paso 10 se informará V2024 como validación retrospectiva (no es un test, porque participó en la selección) | Paso 10 |
 | R5 | Número de configuraciones | 38 + 8 post hoc | Baja | Registrado; grillas ≤ 30 por familia | ✔ |
 | R6 | Supuesto de disponibilidad (gap = 0) | §6 | Media | La sensibilidad gap = 1 se recalculó con las particiones corregidas (C13); el modelo resulta peor que el baseline (1,03 en test) | ✔ Condición R2 del Paso 06 cumplida; resultado actualizado |
 | R7 | Sin intervalos en el modelo seleccionado | §4 | Baja | La NB2 con L2 queda como candidata exploratoria | Confirmar cobertura en un período independiente |

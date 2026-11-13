@@ -1,7 +1,7 @@
 # UrbanSafe CABA — Validación final y entrega
 
 **Hito:** Paso 12  
-**Estado:** aprobado por el responsable el 2026-11-10. Cerrado, con las condiciones P1, P2 y P4 pendientes de la sección 5  
+**Estado:** aprobado por el responsable el 2026-11-10. Cerrado, con las condiciones P2 y P4 pendientes de la sección 5. La condición P1 se resolvió el 2026-11-13 con la [revisión independiente](independent_model_review.md)  
 **Fecha:** 2026-11-10  
 **Skills aplicadas:** `validate-data`, `ml-scientific-reviewer` y `colab-reproducibility-audit`  
 **Evidencia:** [docs/evidence/paso12/](evidence/paso12/), [`scripts/check_traceability.py`](../scripts/check_traceability.py) y [`scripts/export_models.py`](../scripts/export_models.py)
@@ -20,7 +20,7 @@
 | `python -m src.data_processing --download` (descarga del CDN oficial) | ✔ Los 10 archivos fuente se verificaron por SHA-256 |
 | Hashes de los 5 datos procesados frente a [processed_sha256.txt](evidence/paso04/processed_sha256.txt) | ✔ 5 de 5 idénticos |
 | `python -m src.features` | ✔ 4.032 filas; 2.880 completas en desarrollo y 576 en test |
-| `python -m pytest -q tests` | ✔ **55 de 55** |
+| `python -m pytest -q tests` | ✔ **55 de 55** en esa fecha. Hoy la suite tiene 66 pruebas y pasan todas (verificado en la revisión independiente del 2026-11-13) |
 | Notebooks `00` → `07` en orden (`nbconvert --execute`) | ✔ Los 8 corrieron sin errores (alrededor de 13 minutos) |
 | `python scripts/export_models.py` | ✔ Modelos con el **mismo SHA-256** que en la versión de trabajo; sus predicciones de 2025 coinciden con las de los notebooks |
 
@@ -63,7 +63,7 @@ Todas las salidas de `reports/` se compararon. Los CSV se compararon con toleran
 |---|---|---|
 | Elección del tema y objetivo | [research_proposal.md](research_proposal.md) (preguntas, objetivos, H1–H8) | ✔ |
 | Investigación y selección de datasets | [data_inventory.md](data_inventory.md), [source_register.csv](source_register.csv), [feasibility_report.md](feasibility_report.md) y `notebooks/00_data_audit.ipynb` | ✔ |
-| Repositorio y ambiente | Repo privado en GitHub; `requirements.txt` con versiones fijas; README reproducido en una sala limpia (§1) | ✔ |
+| Repositorio y ambiente | Repo público en GitHub; `requirements.txt` con versiones fijas; README reproducido en una sala limpia (§1) | ✔ |
 | AED, transformación y visualización con pandas | `src/data_processing.py`, `notebooks/01_EDA.ipynb` y [eda_findings.md](eda_findings.md) | ✔ |
 | Feature engineering | `src/features.py`, `notebooks/02_feature_engineering.ipynb` y [experimental_protocol.md](experimental_protocol.md) (13 controles de fuga) | ✔ |
 | Modelo de regresión supervisada | `notebooks/03_regression.ipynb`, [regression_report.md](regression_report.md) y `models/regresion_final.joblib` | ✔ |
@@ -87,7 +87,7 @@ Todas las salidas de `reports/` se compararon. Los CSV se compararon con toleran
 
 | # | Tema | Impacto | Acción sugerida |
 |---|---|---|---|
-| P1 | **Sin revisión independiente del modelado.** Los dictámenes de los Pasos 06 a 10 son autoauditorías; una revisión externa ya encontró una fuga (corregida) | Medio | Encargar una revisión independiente antes de presentar (AGENTS.md: un agente distinto, si se autoriza la delegación) |
+| P1 | ~~Sin revisión independiente del modelado~~ | — | **Resuelto el 2026-11-13.** Un agente distinto del implementador revisó los Pasos 06 a 10 ([dictamen](independent_model_review.md)): *apto con condiciones*, sin hallazgos críticos. Las condiciones (H8 indicativa, H6 acotada y las correcciones de redacción R3–R14) se aplicaron en los informes, los notebooks (solo celdas de texto), la presentación y la web |
 | P2 | Consulta institucional **no enviada** | Bajo; no bloquea | Enviarla para confirmar la provisionalidad de 2025 y la caída de 2019 |
 | P3 | 2025 posiblemente provisorio | Medio para el test | V2024 retrospectiva da la misma conclusión |
 | P4 | La presentación es un artifact **privado** | Bajo | Compartirla o exportarla a PPTX o PDF desde *Share* para la entrega |
@@ -98,11 +98,11 @@ Todas las salidas de `reports/` se compararon. Los CSV se compararon con toleran
 
 **Tipo de revisión.** **Autoauditoría** de validación de datos y de reproducibilidad. Se hizo con ejecución real en un entorno limpio, no solo por lectura.
 
-**Dictamen: apto para la entrega, con las condiciones P1, P4 y P6.**
-- El proyecto **se reproduce desde las fuentes oficiales** siguiendo el README: los datos procesados quedan idénticos por hash, las 55 pruebas pasan, los 8 notebooks corren en orden y las 31 figuras son idénticas píxel a píxel.
+**Dictamen: apto para la entrega, con las condiciones P1 y P4** (P6 ya estaba resuelta). P1 quedó resuelta el 2026-11-13 con la revisión independiente; queda P4.
+- El proyecto **se reproduce desde las fuentes oficiales** siguiendo el README: los datos procesados quedan idénticos por hash, las 55 pruebas de entonces pasan (hoy son 66), los 8 notebooks corren en orden y las 31 figuras son idénticas píxel a píxel.
 - Las métricas coinciden, y la única fuente de no determinismo encontrada (el orden) quedó corregida.
 - Las cifras comunicadas se pueden rastrear hasta su artefacto y, para las centrales, recalcular desde la fuente cruda.
-- Las conclusiones están respaldadas por la evidencia y acotadas por sus límites: el historial es casi óptimo, los modelos no lo superan de forma relevante, hay un perfil de borde robusto y no se hacen afirmaciones causales ni de riesgo por exposición.
+- Las conclusiones están respaldadas por la evidencia y acotadas por sus límites: los modelos no superan de forma relevante al historial, hay un perfil de borde estable (que equivale a un umbral sobre la proporción de hechos en vías rápidas) y no se hacen afirmaciones causales ni de riesgo por exposición (H8 es indicativa).
 
 ## 7. Verificación del criterio de aceptación del Paso 12
 

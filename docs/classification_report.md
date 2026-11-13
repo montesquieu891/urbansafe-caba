@@ -25,7 +25,7 @@
 | Incertidumbre entre meses (bloques de 3 meses) | — | IC 95 % [−0,017; +0,058], **incluye el 0** |
 | ¿Cumple el criterio de mejora? | **No** (umbral de relevancia: 0,02) | **No** (el IC por bloques incluye el 0) |
 
-**Conclusión (H4 y la parte de H5 que se evalúa aquí).** El clasificador supera de forma **pequeña y estable** al ranking por la media de 12 meses, y esa ventaja no depende del desempate. Pero queda **por debajo del umbral de relevancia fijado a priori** y **no es significativa entre meses** en el test. La ventaja se concentra en las plazas inciertas del top 10: 65 % de aciertos del modelo frente a 62 % del baseline fuera del núcleo persistente. Frente a la persistencia, la mejora es clara (0,808 frente a 0,733).
+**Conclusión (H4 y la parte de H5 que se evalúa aquí).** El clasificador supera de forma **pequeña** al ranking por la media de 12 meses en los tres *folds*, y esa ventaja no depende del desempate. Como se eligió la mejor de 56 configuraciones con diferencias de milésimas, la ventaja de validación (+0,016) es una estimación optimista (efecto del ganador; revisión independiente, R8). Pero queda **por debajo del umbral de relevancia fijado a priori** y **no es significativa entre meses** en el test. La ventaja se concentra en las plazas inciertas del top 10: 65 % de aciertos del modelo frente a 62 % del baseline fuera del núcleo persistente. Frente a la persistencia, la mejora es clara (0,808 frente a 0,746, ambas como P@10 esperada; con el desempate R0, la persistencia obtiene 0,733).
 
 ## 2. Modelos comparados
 
@@ -36,7 +36,7 @@ Se probaron 56 configuraciones con la misma validación expansiva y la misma reg
 | **Regresión logística L2** | 16 | C = 0,01, sin ponderación, sin pandemia | **0,795** | +0,016 | 0,808 |
 | *Random forest* | 24 | Profundidad 8, hoja mínima 20, `balanced_subsample`, sin pandemia | 0,789 | +0,010 | 0,808 |
 | HGB | 16 | 7 hojas, hoja mínima 20, `balanced` | 0,776 | −0,003 | 0,800 |
-| Baselines: media de 12 meses / persistencia | — | — | 0,779 / 0,728 | — | 0,792 / 0,733 |
+| Baselines: media de 12 meses / persistencia | — | — | 0,779 / 0,728 | — | 0,792 / 0,746 (0,733 con R0) |
 
 - **Ninguna** de las 56 configuraciones alcanza ΔP@10 ≥ 0,02 en la media de validación.
 - **Ponderación de clases.** Empeora la calibración: Brier medio de 0,089 frente a 0,069. En la logística seleccionada, 0,095 frente a 0,066. No mejora el ranking.
@@ -112,6 +112,8 @@ La ejecución tarda unos 3 minutos y la grilla, unos 2. Hay 50 pruebas automatiz
 - No hay infraestructura (D11) ni exposición.
 
 **Dictamen: aprobado.** No hay hallazgos que invaliden la evaluación. El clasificador se seleccionó con métricas fijadas a priori, es estable entre *folds* (supera al baseline en los tres, aunque por menos de 0,02 en dos) y la calibración se describe para el período evaluado. Su utilidad territorial es **marginal** frente a la media de 12 meses. Se recomienda una revisión independiente antes de cerrar el Paso 10.
+
+**Revisión independiente posterior (2026-11-13; [dictamen](independent_model_review.md)).** Reprodujo la P@10 (0,808 frente a 0,792) y confirmó que no hay fuga ni uso del test para seleccionar. Pidió precisar la comparación con la persistencia en la misma métrica (R7), el efecto del ganador en la ventaja de validación (R8) y no presentar como «buena» una calibración comprobada en un solo año (R6). Las tres precisiones están aplicadas en este informe y en el notebook 04.
 
 ## 8. Verificación del criterio de aceptación del Paso 08
 
