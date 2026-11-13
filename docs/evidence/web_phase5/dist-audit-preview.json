@@ -1,13 +1,13 @@
 {
   "resultado": "aprobado",
-  "commit": "60d04ba8f6852bc12b7be9acbed2bfe7271bae7f",
+  "commit": "d605668715a0b6927431d9508ea4c66fa6eb851d",
   "arbol_con_cambios": false,
   "schema_version": "1.0.0",
   "data_version": "2019-2025-692728914e40",
   "fecha_corte": "2025-12-31",
-  "js_inicial_bytes": 28751,
-  "total_bytes": 7195544,
-  "total_gzip_bytes": 827768,
+  "js_inicial_bytes": 28869,
+  "total_bytes": 7195662,
+  "total_gzip_bytes": 827818,
   "archivos": [
     {
       "ruta": "_astro/atlas.Bba-tTEg.css",
@@ -15,9 +15,9 @@
       "sha256": "023dde0bc496474d8afe0213beb42501f6e07555e53ecf04d2864510872f1ed5"
     },
     {
-      "ruta": "_astro/index.astro_astro_type_script_index_0_lang.Np3nRiV9.js",
-      "bytes": 28751,
-      "sha256": "d4293df21311285dcf121e24ef3e8c871bd7d26d218bfbd222643e13030d200d"
+      "ruta": "_astro/index.astro_astro_type_script_index_0_lang.COGBDoBO.js",
+      "bytes": 28869,
+      "sha256": "fd9b9737231ca4cd1a42514eacdd933cffc31fbd2a1983de376537c2c2266962"
     },
     {
       "ruta": "_astro/maplibre-gl-worker-DTh23QKw.js",
@@ -82,7 +82,7 @@
     {
       "ruta": "index.html",
       "bytes": 12647,
-      "sha256": "697335f901dfdb17eae7906f754b66efd631e8c12fcba09d0419b4d13b335045"
+      "sha256": "3865a71b2b5a71d64afecdc4da3f78dbd7d57d2a29fcf00aec45be853b208b92"
     }
   ],
   "errores": []
