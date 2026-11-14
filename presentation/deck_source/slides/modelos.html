@@ -4,10 +4,10 @@
 <table style="font-size:28px;color:#1F2A3D">
 <tr><th style="width:24%">Tarea</th><th style="width:26%">Modelo elegido</th><th style="width:26%">Frente al mes anterior</th><th style="width:24%">Frente a 12 meses</th></tr>
 <tr><td>¿Cuántos siniestros por barrio?</td><td>Regresión Poisson</td><td>Error −1,0 por barrio y mes (mejora)</td><td>Igual: 4,07 frente a 4,06</td></tr>
-<tr style="background:#F1F0EB"><td>¿Qué barrios estarán en el top 10?</td><td>Regresión logística</td><td>Aciertos 81 % frente a 73 % (mejora)</td><td>81 % frente a 79 %: no concluyente</td></tr>
-<tr><td>¿Qué perfiles hay?</td><td>K-Means</td><td>—</td><td>Un perfil robusto (borde) y dos débiles</td></tr>
+<tr style="background:#F1F0EB"><td>¿Qué barrios estarán en el top 10?</td><td>Regresión logística</td><td>Aciertos 81 % frente a 75 % (mejora)</td><td>81 % frente a 79 %: no concluyente</td></tr>
+<tr><td>¿Qué perfiles hay?</td><td>K-Means</td><td>—</td><td>Un grupo de borde estable, explicado por el tipo de vía, y una subdivisión débil</td></tr>
 </table>
-<p style="font-size:28px;line-height:1.4;color:#4A5568">El clasificador es una “persistencia refinada”: el 75 % de su decisión depende del historial del barrio. Sus probabilidades están bien calibradas en 2025.</p>
+<p style="font-size:28px;line-height:1.4;color:#4A5568">El clasificador es una “persistencia refinada”: el 75 % de su decisión depende del historial del barrio. Su calibración es razonable en 2025, un solo año, y sobreestima en los barrios de borde.</p>
 <p style="position:absolute;left:128px;bottom:64px;width:1664px;font-size:24px;color:#6A7179">Diferencia frente a 12 meses en clasificación: 2 aciertos más en 120; intervalo de confianza 95 % de −0,02 a +0,06.</p>
 <aside>La regresión Poisson regularizada y la logística fueron las mejores de 94 configuraciones. Ambas superan con claridad a repetir el mes anterior, pero no al promedio de 12 meses: la mejora queda por debajo del umbral fijado de antemano y su intervalo incluye el cero. Con un mes más de demora en los datos, los modelos empeoran o quedan iguales. La importancia de variables (SHAP) describe patrones, no causas.</aside>
 </section>
